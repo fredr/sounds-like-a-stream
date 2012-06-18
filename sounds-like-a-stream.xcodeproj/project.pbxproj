@@ -20,68 +20,17 @@
 		353A4707158F7B340046524F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353A46E8158F7B340046524F /* Foundation.framework */; };
 		353A470F158F7B340046524F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 353A470D158F7B340046524F /* InfoPlist.strings */; };
 		353A4712158F7B340046524F /* sounds_like_a_streamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4711158F7B340046524F /* sounds_like_a_streamTests.m */; };
-		353A47EB158F7C540046524F /* SoundCloudAPI.framework-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 353A4725158F7C540046524F /* SoundCloudAPI.framework-Info.plist */; };
-		353A47EC158F7C540046524F /* SCAccount+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A472C158F7C540046524F /* SCAccount+Private.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A47ED158F7C540046524F /* SCAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A472E158F7C540046524F /* SCAccount.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A47EE158F7C540046524F /* SCConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4731158F7C540046524F /* SCConstants.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A47EF158F7C540046524F /* SCRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4733158F7C540046524F /* SCRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A47F0158F7C540046524F /* SCSoundCloud+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4735158F7C540046524F /* SCSoundCloud+Private.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A47F1158F7C540046524F /* SCSoundCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4737158F7C540046524F /* SCSoundCloud.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A47F2158F7C540046524F /* SoundCloud.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 353A473B158F7C540046524F /* SoundCloud.bundle */; };
-		353A47F3158F7C540046524F /* SoundCloudUI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 353A473C158F7C540046524F /* SoundCloudUI-Info.plist */; };
-		353A47F4158F7C540046524F /* NSData+SoundCloudUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4743158F7C540046524F /* NSData+SoundCloudUI.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A47F5158F7C540046524F /* NSString+SoundCloudUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4745158F7C540046524F /* NSString+SoundCloudUI.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A47F6158F7C540046524F /* QuartzCore+SoundCloudUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4747158F7C540046524F /* QuartzCore+SoundCloudUI.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A47F7158F7C540046524F /* UIColor+SoundCloudUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4749158F7C540046524F /* UIColor+SoundCloudUI.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A47F8158F7C540046524F /* UIDevice+SoundCloudUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A474B158F7C540046524F /* UIDevice+SoundCloudUI.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A47F9158F7C540046524F /* UIImage+SoundCloudUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A474D158F7C540046524F /* UIImage+SoundCloudUI.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A47FA158F7C540046524F /* UIView+SoundCloudUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A474F158F7C540046524F /* UIView+SoundCloudUI.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A47FB158F7C540046524F /* UIViewController+SoundCloudUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4751158F7C540046524F /* UIViewController+SoundCloudUI.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A47FC158F7C540046524F /* SCAddConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4754158F7C540046524F /* SCAddConnectionViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A47FD158F7C540046524F /* SCBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4757158F7C540046524F /* SCBundle.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A47FE158F7C540046524F /* SCConnectToSoundCloudTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4759158F7C540046524F /* SCConnectToSoundCloudTitleView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A47FF158F7C540046524F /* SCCoverImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A475B158F7C540046524F /* SCCoverImageButton.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A4800158F7C540046524F /* SCFoursquarePlacePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A475D158F7C540046524F /* SCFoursquarePlacePickerController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A4801158F7C540046524F /* SCHorizontalLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4760158F7C540046524F /* SCHorizontalLineView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A4802158F7C540046524F /* SCLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4762158F7C540046524F /* SCLoginView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A4803158F7C540046524F /* SCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4764158F7C540046524F /* SCLoginViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A4804158F7C540046524F /* SCNameAndEmailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4766158F7C540046524F /* SCNameAndEmailCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A4805158F7C540046524F /* SCRecordingSaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4768158F7C540046524F /* SCRecordingSaveViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A4806158F7C540046524F /* SCRecordingSaveViewControllerHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A476A158F7C540046524F /* SCRecordingSaveViewControllerHeaderView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A4807158F7C540046524F /* SCRecordingUploadProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A476C158F7C540046524F /* SCRecordingUploadProgressView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A4808158F7C540046524F /* SCShareToSoundCloudTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A476E158F7C540046524F /* SCShareToSoundCloudTitleView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A4809158F7C540046524F /* SCShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4770158F7C540046524F /* SCShareViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A480A158F7C540046524F /* SCSharingMailPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4772158F7C540046524F /* SCSharingMailPickerController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A480B158F7C540046524F /* SCSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4774158F7C540046524F /* SCSwitch.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A480C158F7C540046524F /* SCSwitchLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4776158F7C540046524F /* SCSwitchLabel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A480D158F7C540046524F /* SCTableCellBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4778158F7C540046524F /* SCTableCellBackgroundView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A480E158F7C540046524F /* SCTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A477A158F7C540046524F /* SCTextField.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A480F158F7C540046524F /* SCUIErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A477D158F7C540046524F /* SCUIErrors.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A4810158F7C540046524F /* SCUnderlinedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A477F158F7C540046524F /* SCUnderlinedButton.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A4812158F7C540046524F /* JSONKit-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 353A4784158F7C540046524F /* JSONKit-Info.plist */; };
-		353A4817158F7C540046524F /* OAuth2Client.framework-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 353A4790158F7C540046524F /* OAuth2Client.framework-Info.plist */; };
-		353A4819158F7C540046524F /* NSData+NXOAuth2.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4797158F7C540046524F /* NSData+NXOAuth2.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A481A158F7C540046524F /* NSString+NXOAuth2.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4799158F7C540046524F /* NSString+NXOAuth2.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A481B158F7C540046524F /* NSURL+NXOAuth2.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A479B158F7C540046524F /* NSURL+NXOAuth2.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A481C158F7C540046524F /* NXOAuth2AccessToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A479F158F7C540046524F /* NXOAuth2AccessToken.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A481D158F7C540046524F /* NXOAuth2Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A47A1158F7C540046524F /* NXOAuth2Account.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A481E158F7C540046524F /* NXOAuth2AccountStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A47A3158F7C540046524F /* NXOAuth2AccountStore.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A481F158F7C540046524F /* NXOAuth2Client.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A47A5158F7C540046524F /* NXOAuth2Client.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A4820158F7C540046524F /* NXOAuth2Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A47A8158F7C540046524F /* NXOAuth2Connection.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A4821158F7C540046524F /* NXOAuth2Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A47AB158F7C540046524F /* NXOAuth2Constants.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A4822158F7C540046524F /* NXOAuth2FileStreamWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A47AD158F7C540046524F /* NXOAuth2FileStreamWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A4823158F7C540046524F /* NXOAuth2PostBodyPart.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A47AF158F7C540046524F /* NXOAuth2PostBodyPart.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A4824158F7C540046524F /* NXOAuth2PostBodyStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A47B1158F7C540046524F /* NXOAuth2PostBodyStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A4825158F7C540046524F /* NXOAuth2Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A47B3158F7C540046524F /* NXOAuth2Request.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A482E158F7C540046524F /* NSAttributedString+Attributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A47C8158F7C540046524F /* NSAttributedString+Attributes.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		353A482F158F7C540046524F /* OHAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A47CB158F7C540046524F /* OHAttributedLabel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		353A4855158F838F0046524F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353A4854158F838F0046524F /* QuartzCore.framework */; };
 		353A4858158F83970046524F /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353A4856158F83970046524F /* AddressBook.framework */; };
 		353A4859158F83970046524F /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353A4857158F83970046524F /* AddressBookUI.framework */; };
 		353A485B158F83A10046524F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353A485A158F83A10046524F /* CoreLocation.framework */; };
 		353A485D158F83A90046524F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353A485C158F83A90046524F /* Security.framework */; };
 		353A485F158F83BA0046524F /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353A485E158F83BA0046524F /* CoreText.framework */; };
-		353A4863158F85B00046524F /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4862158F85B00046524F /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		353A4DA6158F87810046524F /* libJSONKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 353A4D8E158F87710046524F /* libJSONKit.a */; };
+		353A4DA7158F87810046524F /* libOAuth2Client.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 353A4D96158F87710046524F /* libOAuth2Client.a */; };
+		353A4DA8158F87810046524F /* libOHAttributedLabel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 353A4D99158F87710046524F /* libOHAttributedLabel.a */; };
+		353A4DA9158F87810046524F /* libSoundCloudAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 353A4D9F158F87710046524F /* libSoundCloudAPI.a */; };
+		353A4DAA158F87810046524F /* libSoundCloudUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 353A4DA3158F87710046524F /* libSoundCloudUI.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +40,76 @@
 			proxyType = 1;
 			remoteGlobalIDString = 353A46E1158F7B340046524F;
 			remoteInfo = "sounds-like-a-stream";
+		};
+		353A4D89158F87710046524F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 353A4D3E158F87700046524F /* AttributedLabel Example.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = "AttributedLabel Example";
+		};
+		353A4D8D158F87710046524F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 353A4CCA158F87700046524F /* JSONKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6803523148F6D22008A51BA;
+			remoteInfo = libJSONKit;
+		};
+		353A4D8F158F87710046524F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 353A4CCA158F87700046524F /* JSONKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6AE0202148F825C0004909F;
+			remoteInfo = JSONKit.framework;
+		};
+		353A4D93158F87710046524F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 353A4D15158F87700046524F /* OAuth2Client.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 942FFCD612315E0A00E6C65E;
+			remoteInfo = OAuth2Client.framework;
+		};
+		353A4D95158F87710046524F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 353A4D15158F87700046524F /* OAuth2Client.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = OAuth2Client;
+		};
+		353A4D98158F87710046524F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 353A4D71158F87700046524F /* OHAttributedLabel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F62728FA148F70DF00314599;
+			remoteInfo = OHAttributedLabel;
+		};
+		353A4D9C158F87710046524F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 353A4BDC158F87700046524F /* SoundCloudAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 94535F86123FAFDF00BD668A;
+			remoteInfo = SoundCloudAPI.framework;
+		};
+		353A4D9E158F87710046524F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 353A4BDC158F87700046524F /* SoundCloudAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = SoundCloudAPI;
+		};
+		353A4DA2158F87710046524F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 353A4C63158F87700046524F /* SoundCloudUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6EF8C6113F929D700B20B40;
+			remoteInfo = libSoundCloudUI;
+		};
+		353A4DA4158F87710046524F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 353A4C63158F87700046524F /* SoundCloudUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F62E0CE5148FB27100BE8F14;
+			remoteInfo = SoundCloudUI.framework;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -114,134 +133,399 @@
 		353A470E158F7B340046524F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		353A4710158F7B340046524F /* sounds_like_a_streamTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sounds_like_a_streamTests.h; sourceTree = "<group>"; };
 		353A4711158F7B340046524F /* sounds_like_a_streamTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sounds_like_a_streamTests.m; sourceTree = "<group>"; };
-		353A4725158F7C540046524F /* SoundCloudAPI.framework-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SoundCloudAPI.framework-Info.plist"; sourceTree = "<group>"; };
-		353A472B158F7C540046524F /* SCAccount+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SCAccount+Private.h"; sourceTree = "<group>"; };
-		353A472C158F7C540046524F /* SCAccount+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SCAccount+Private.m"; sourceTree = "<group>"; };
-		353A472D158F7C540046524F /* SCAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAccount.h; sourceTree = "<group>"; };
-		353A472E158F7C540046524F /* SCAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAccount.m; sourceTree = "<group>"; };
-		353A472F158F7C540046524F /* SCAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAPI.h; sourceTree = "<group>"; };
-		353A4730158F7C540046524F /* SCConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCConstants.h; sourceTree = "<group>"; };
-		353A4731158F7C540046524F /* SCConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCConstants.m; sourceTree = "<group>"; };
-		353A4732158F7C540046524F /* SCRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRequest.h; sourceTree = "<group>"; };
-		353A4733158F7C540046524F /* SCRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRequest.m; sourceTree = "<group>"; };
-		353A4734158F7C540046524F /* SCSoundCloud+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SCSoundCloud+Private.h"; sourceTree = "<group>"; };
-		353A4735158F7C540046524F /* SCSoundCloud+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SCSoundCloud+Private.m"; sourceTree = "<group>"; };
-		353A4736158F7C540046524F /* SCSoundCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSoundCloud.h; sourceTree = "<group>"; };
-		353A4737158F7C540046524F /* SCSoundCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSoundCloud.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		353A4738158F7C540046524F /* SCSoundCloudAPI-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SCSoundCloudAPI-Private.h"; sourceTree = "<group>"; };
-		353A4739158F7C540046524F /* SoundCloudAPI_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundCloudAPI_Prefix.pch; sourceTree = "<group>"; };
-		353A473B158F7C540046524F /* SoundCloud.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SoundCloud.bundle; sourceTree = "<group>"; };
-		353A473C158F7C540046524F /* SoundCloudUI-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SoundCloudUI-Info.plist"; sourceTree = "<group>"; };
-		353A4742158F7C540046524F /* NSData+SoundCloudUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SoundCloudUI.h"; sourceTree = "<group>"; };
-		353A4743158F7C540046524F /* NSData+SoundCloudUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SoundCloudUI.m"; sourceTree = "<group>"; };
-		353A4744158F7C540046524F /* NSString+SoundCloudUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SoundCloudUI.h"; sourceTree = "<group>"; };
-		353A4745158F7C540046524F /* NSString+SoundCloudUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SoundCloudUI.m"; sourceTree = "<group>"; };
-		353A4746158F7C540046524F /* QuartzCore+SoundCloudUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QuartzCore+SoundCloudUI.h"; sourceTree = "<group>"; };
-		353A4747158F7C540046524F /* QuartzCore+SoundCloudUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "QuartzCore+SoundCloudUI.m"; sourceTree = "<group>"; };
-		353A4748158F7C540046524F /* UIColor+SoundCloudUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SoundCloudUI.h"; sourceTree = "<group>"; };
-		353A4749158F7C540046524F /* UIColor+SoundCloudUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SoundCloudUI.m"; sourceTree = "<group>"; };
-		353A474A158F7C540046524F /* UIDevice+SoundCloudUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+SoundCloudUI.h"; sourceTree = "<group>"; };
-		353A474B158F7C540046524F /* UIDevice+SoundCloudUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+SoundCloudUI.m"; sourceTree = "<group>"; };
-		353A474C158F7C540046524F /* UIImage+SoundCloudUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SoundCloudUI.h"; sourceTree = "<group>"; };
-		353A474D158F7C540046524F /* UIImage+SoundCloudUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SoundCloudUI.m"; sourceTree = "<group>"; };
-		353A474E158F7C540046524F /* UIView+SoundCloudUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SoundCloudUI.h"; sourceTree = "<group>"; };
-		353A474F158F7C540046524F /* UIView+SoundCloudUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SoundCloudUI.m"; sourceTree = "<group>"; };
-		353A4750158F7C540046524F /* UIViewController+SoundCloudUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SoundCloudUI.h"; sourceTree = "<group>"; };
-		353A4751158F7C540046524F /* UIViewController+SoundCloudUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SoundCloudUI.m"; sourceTree = "<group>"; };
-		353A4753158F7C540046524F /* SCAddConnectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAddConnectionViewController.h; sourceTree = "<group>"; };
-		353A4754158F7C540046524F /* SCAddConnectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAddConnectionViewController.m; sourceTree = "<group>"; };
-		353A4755158F7C540046524F /* SCAddConnectionViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAddConnectionViewControllerDelegate.h; sourceTree = "<group>"; };
-		353A4756158F7C540046524F /* SCBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBundle.h; sourceTree = "<group>"; };
-		353A4757158F7C540046524F /* SCBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBundle.m; sourceTree = "<group>"; };
-		353A4758158F7C540046524F /* SCConnectToSoundCloudTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCConnectToSoundCloudTitleView.h; sourceTree = "<group>"; };
-		353A4759158F7C540046524F /* SCConnectToSoundCloudTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCConnectToSoundCloudTitleView.m; sourceTree = "<group>"; };
-		353A475A158F7C540046524F /* SCCoverImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCCoverImageButton.h; sourceTree = "<group>"; };
-		353A475B158F7C540046524F /* SCCoverImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCCoverImageButton.m; sourceTree = "<group>"; };
-		353A475C158F7C540046524F /* SCFoursquarePlacePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFoursquarePlacePickerController.h; sourceTree = "<group>"; };
-		353A475D158F7C540046524F /* SCFoursquarePlacePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFoursquarePlacePickerController.m; sourceTree = "<group>"; };
-		353A475E158F7C540046524F /* SCFoursquarePlacePickerControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFoursquarePlacePickerControllerDelegate.h; sourceTree = "<group>"; };
-		353A475F158F7C540046524F /* SCHorizontalLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCHorizontalLineView.h; sourceTree = "<group>"; };
-		353A4760158F7C540046524F /* SCHorizontalLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCHorizontalLineView.m; sourceTree = "<group>"; };
-		353A4761158F7C540046524F /* SCLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLoginView.h; sourceTree = "<group>"; };
-		353A4762158F7C540046524F /* SCLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLoginView.m; sourceTree = "<group>"; };
-		353A4763158F7C540046524F /* SCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLoginViewController.h; sourceTree = "<group>"; };
-		353A4764158F7C540046524F /* SCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLoginViewController.m; sourceTree = "<group>"; };
-		353A4765158F7C540046524F /* SCNameAndEmailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCNameAndEmailCell.h; sourceTree = "<group>"; };
-		353A4766158F7C540046524F /* SCNameAndEmailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCNameAndEmailCell.m; sourceTree = "<group>"; };
-		353A4767158F7C540046524F /* SCRecordingSaveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRecordingSaveViewController.h; sourceTree = "<group>"; };
-		353A4768158F7C540046524F /* SCRecordingSaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRecordingSaveViewController.m; sourceTree = "<group>"; };
-		353A4769158F7C540046524F /* SCRecordingSaveViewControllerHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRecordingSaveViewControllerHeaderView.h; sourceTree = "<group>"; };
-		353A476A158F7C540046524F /* SCRecordingSaveViewControllerHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRecordingSaveViewControllerHeaderView.m; sourceTree = "<group>"; };
-		353A476B158F7C540046524F /* SCRecordingUploadProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRecordingUploadProgressView.h; sourceTree = "<group>"; };
-		353A476C158F7C540046524F /* SCRecordingUploadProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRecordingUploadProgressView.m; sourceTree = "<group>"; };
-		353A476D158F7C540046524F /* SCShareToSoundCloudTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCShareToSoundCloudTitleView.h; sourceTree = "<group>"; };
-		353A476E158F7C540046524F /* SCShareToSoundCloudTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCShareToSoundCloudTitleView.m; sourceTree = "<group>"; };
-		353A476F158F7C540046524F /* SCShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCShareViewController.h; sourceTree = "<group>"; };
-		353A4770158F7C540046524F /* SCShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCShareViewController.m; sourceTree = "<group>"; };
-		353A4771158F7C540046524F /* SCSharingMailPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSharingMailPickerController.h; sourceTree = "<group>"; };
-		353A4772158F7C540046524F /* SCSharingMailPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSharingMailPickerController.m; sourceTree = "<group>"; };
-		353A4773158F7C540046524F /* SCSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSwitch.h; sourceTree = "<group>"; };
-		353A4774158F7C540046524F /* SCSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSwitch.m; sourceTree = "<group>"; };
-		353A4775158F7C540046524F /* SCSwitchLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSwitchLabel.h; sourceTree = "<group>"; };
-		353A4776158F7C540046524F /* SCSwitchLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSwitchLabel.m; sourceTree = "<group>"; };
-		353A4777158F7C540046524F /* SCTableCellBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTableCellBackgroundView.h; sourceTree = "<group>"; };
-		353A4778158F7C540046524F /* SCTableCellBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTableCellBackgroundView.m; sourceTree = "<group>"; };
-		353A4779158F7C540046524F /* SCTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTextField.h; sourceTree = "<group>"; };
-		353A477A158F7C540046524F /* SCTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTextField.m; sourceTree = "<group>"; };
-		353A477B158F7C540046524F /* SCUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCUI.h; sourceTree = "<group>"; };
-		353A477C158F7C540046524F /* SCUIErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCUIErrors.h; sourceTree = "<group>"; };
-		353A477D158F7C540046524F /* SCUIErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCUIErrors.m; sourceTree = "<group>"; };
-		353A477E158F7C540046524F /* SCUnderlinedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCUnderlinedButton.h; sourceTree = "<group>"; };
-		353A477F158F7C540046524F /* SCUnderlinedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCUnderlinedButton.m; sourceTree = "<group>"; };
-		353A4780158F7C540046524F /* SoundCloudUI-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SoundCloudUI-Prefix.pch"; sourceTree = "<group>"; };
-		353A4784158F7C540046524F /* JSONKit-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "JSONKit-Info.plist"; sourceTree = "<group>"; };
-		353A4785158F7C540046524F /* JSONKit-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONKit-Prefix.pch"; sourceTree = "<group>"; };
-		353A4786158F7C540046524F /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
-		353A478E158F7C540046524F /* NXOAuth2Account+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NXOAuth2Account+Private.h"; sourceTree = "<group>"; };
-		353A4790158F7C540046524F /* OAuth2Client.framework-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "OAuth2Client.framework-Info.plist"; sourceTree = "<group>"; };
-		353A4796158F7C540046524F /* NSData+NXOAuth2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+NXOAuth2.h"; sourceTree = "<group>"; };
-		353A4797158F7C540046524F /* NSData+NXOAuth2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+NXOAuth2.m"; sourceTree = "<group>"; };
-		353A4798158F7C540046524F /* NSString+NXOAuth2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NXOAuth2.h"; sourceTree = "<group>"; };
-		353A4799158F7C540046524F /* NSString+NXOAuth2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NXOAuth2.m"; sourceTree = "<group>"; };
-		353A479A158F7C540046524F /* NSURL+NXOAuth2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+NXOAuth2.h"; sourceTree = "<group>"; };
-		353A479B158F7C540046524F /* NSURL+NXOAuth2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+NXOAuth2.m"; sourceTree = "<group>"; };
-		353A479D158F7C540046524F /* NXOAuth2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXOAuth2.h; sourceTree = "<group>"; };
-		353A479E158F7C540046524F /* NXOAuth2AccessToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXOAuth2AccessToken.h; sourceTree = "<group>"; };
-		353A479F158F7C540046524F /* NXOAuth2AccessToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXOAuth2AccessToken.m; sourceTree = "<group>"; };
-		353A47A0158F7C540046524F /* NXOAuth2Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXOAuth2Account.h; sourceTree = "<group>"; };
-		353A47A1158F7C540046524F /* NXOAuth2Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXOAuth2Account.m; sourceTree = "<group>"; };
-		353A47A2158F7C540046524F /* NXOAuth2AccountStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXOAuth2AccountStore.h; sourceTree = "<group>"; };
-		353A47A3158F7C540046524F /* NXOAuth2AccountStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXOAuth2AccountStore.m; sourceTree = "<group>"; };
-		353A47A4158F7C540046524F /* NXOAuth2Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXOAuth2Client.h; sourceTree = "<group>"; };
-		353A47A5158F7C540046524F /* NXOAuth2Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXOAuth2Client.m; sourceTree = "<group>"; };
-		353A47A6158F7C540046524F /* NXOAuth2ClientDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXOAuth2ClientDelegate.h; sourceTree = "<group>"; };
-		353A47A7158F7C540046524F /* NXOAuth2Connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXOAuth2Connection.h; sourceTree = "<group>"; };
-		353A47A8158F7C540046524F /* NXOAuth2Connection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXOAuth2Connection.m; sourceTree = "<group>"; };
-		353A47A9158F7C540046524F /* NXOAuth2ConnectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXOAuth2ConnectionDelegate.h; sourceTree = "<group>"; };
-		353A47AA158F7C540046524F /* NXOAuth2Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXOAuth2Constants.h; sourceTree = "<group>"; };
-		353A47AB158F7C540046524F /* NXOAuth2Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXOAuth2Constants.m; sourceTree = "<group>"; };
-		353A47AC158F7C540046524F /* NXOAuth2FileStreamWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXOAuth2FileStreamWrapper.h; sourceTree = "<group>"; };
-		353A47AD158F7C540046524F /* NXOAuth2FileStreamWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXOAuth2FileStreamWrapper.m; sourceTree = "<group>"; };
-		353A47AE158F7C540046524F /* NXOAuth2PostBodyPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXOAuth2PostBodyPart.h; sourceTree = "<group>"; };
-		353A47AF158F7C540046524F /* NXOAuth2PostBodyPart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXOAuth2PostBodyPart.m; sourceTree = "<group>"; };
-		353A47B0158F7C540046524F /* NXOAuth2PostBodyStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXOAuth2PostBodyStream.h; sourceTree = "<group>"; };
-		353A47B1158F7C540046524F /* NXOAuth2PostBodyStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXOAuth2PostBodyStream.m; sourceTree = "<group>"; };
-		353A47B2158F7C540046524F /* NXOAuth2Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXOAuth2Request.h; sourceTree = "<group>"; };
-		353A47B3158F7C540046524F /* NXOAuth2Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXOAuth2Request.m; sourceTree = "<group>"; };
-		353A47B4158F7C540046524F /* NXOAuth2TrustDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXOAuth2TrustDelegate.h; sourceTree = "<group>"; };
-		353A47B5158F7C540046524F /* OAuth2Client_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuth2Client_Prefix.pch; sourceTree = "<group>"; };
-		353A47C7158F7C540046524F /* NSAttributedString+Attributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Attributes.h"; sourceTree = "<group>"; };
-		353A47C8158F7C540046524F /* NSAttributedString+Attributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Attributes.m"; sourceTree = "<group>"; };
-		353A47C9158F7C540046524F /* OHAttributedLabel-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OHAttributedLabel-Prefix.pch"; sourceTree = "<group>"; };
-		353A47CA158F7C540046524F /* OHAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHAttributedLabel.h; sourceTree = "<group>"; };
-		353A47CB158F7C540046524F /* OHAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHAttributedLabel.m; sourceTree = "<group>"; };
 		353A4854158F838F0046524F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		353A4856158F83970046524F /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		353A4857158F83970046524F /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		353A485A158F83A10046524F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		353A485C158F83A90046524F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		353A485E158F83BA0046524F /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
-		353A4862158F85B00046524F /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		353A4BA6158F87700046524F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		353A4BA9158F87700046524F /* libSoundCloudAPI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSoundCloudAPI.a; sourceTree = "<group>"; };
+		353A4BAD158F87700046524F /* SoundCloudAPI-all-target-headers.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SoundCloudAPI-all-target-headers.hmap"; sourceTree = "<group>"; };
+		353A4BAE158F87700046524F /* SoundCloudAPI-generated-files.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SoundCloudAPI-generated-files.hmap"; sourceTree = "<group>"; };
+		353A4BAF158F87700046524F /* SoundCloudAPI-own-target-headers.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SoundCloudAPI-own-target-headers.hmap"; sourceTree = "<group>"; };
+		353A4BB0158F87700046524F /* SoundCloudAPI-project-headers.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SoundCloudAPI-project-headers.hmap"; sourceTree = "<group>"; };
+		353A4BB1158F87700046524F /* SoundCloudAPI.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = SoundCloudAPI.hmap; sourceTree = "<group>"; };
+		353A4BB4158F87700046524F /* build-state.dat */ = {isa = PBXFileReference; lastKnownFileType = text; path = "build-state.dat"; sourceTree = "<group>"; };
+		353A4BB5158F87700046524F /* build-state~.dat */ = {isa = PBXFileReference; lastKnownFileType = text; path = "build-state~.dat"; sourceTree = "<group>"; };
+		353A4BB8158F87700046524F /* SCAccount+Private.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = "SCAccount+Private.d"; sourceTree = "<group>"; };
+		353A4BB9158F87700046524F /* SCAccount+Private.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SCAccount+Private.dia"; sourceTree = "<group>"; };
+		353A4BBA158F87700046524F /* SCAccount+Private.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = "SCAccount+Private.o"; sourceTree = "<group>"; };
+		353A4BBB158F87700046524F /* SCAccount.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = SCAccount.d; sourceTree = "<group>"; };
+		353A4BBC158F87700046524F /* SCAccount.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCAccount.dia; sourceTree = "<group>"; };
+		353A4BBD158F87700046524F /* SCAccount.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = SCAccount.o; sourceTree = "<group>"; };
+		353A4BBE158F87700046524F /* SCConstants.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = SCConstants.d; sourceTree = "<group>"; };
+		353A4BBF158F87700046524F /* SCConstants.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCConstants.dia; sourceTree = "<group>"; };
+		353A4BC0158F87700046524F /* SCConstants.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = SCConstants.o; sourceTree = "<group>"; };
+		353A4BC1158F87700046524F /* SCRequest.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = SCRequest.d; sourceTree = "<group>"; };
+		353A4BC2158F87700046524F /* SCRequest.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCRequest.dia; sourceTree = "<group>"; };
+		353A4BC3158F87700046524F /* SCRequest.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = SCRequest.o; sourceTree = "<group>"; };
+		353A4BC4158F87700046524F /* SCSoundCloud+Private.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = "SCSoundCloud+Private.d"; sourceTree = "<group>"; };
+		353A4BC5158F87700046524F /* SCSoundCloud+Private.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SCSoundCloud+Private.dia"; sourceTree = "<group>"; };
+		353A4BC6158F87700046524F /* SCSoundCloud+Private.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = "SCSoundCloud+Private.o"; sourceTree = "<group>"; };
+		353A4BC7158F87700046524F /* SCSoundCloud.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = SCSoundCloud.d; sourceTree = "<group>"; };
+		353A4BC8158F87700046524F /* SCSoundCloud.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCSoundCloud.dia; sourceTree = "<group>"; };
+		353A4BC9158F87700046524F /* SCSoundCloud.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = SCSoundCloud.o; sourceTree = "<group>"; };
+		353A4BCA158F87700046524F /* SoundCloudAPI.LinkFileList */ = {isa = PBXFileReference; lastKnownFileType = text; path = SoundCloudAPI.LinkFileList; sourceTree = "<group>"; };
+		353A4BCB158F87700046524F /* SoundCloudAPI-all-target-headers.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SoundCloudAPI-all-target-headers.hmap"; sourceTree = "<group>"; };
+		353A4BCC158F87700046524F /* SoundCloudAPI-generated-files.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SoundCloudAPI-generated-files.hmap"; sourceTree = "<group>"; };
+		353A4BCD158F87700046524F /* SoundCloudAPI-own-target-headers.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SoundCloudAPI-own-target-headers.hmap"; sourceTree = "<group>"; };
+		353A4BCE158F87700046524F /* SoundCloudAPI-project-headers.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SoundCloudAPI-project-headers.hmap"; sourceTree = "<group>"; };
+		353A4BCF158F87700046524F /* SoundCloudAPI.dep */ = {isa = PBXFileReference; lastKnownFileType = text; path = SoundCloudAPI.dep; sourceTree = "<group>"; };
+		353A4BD0158F87700046524F /* SoundCloudAPI.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = SoundCloudAPI.hmap; sourceTree = "<group>"; };
+		353A4BD1158F87700046524F /* SoundCloudAPI~.dep */ = {isa = PBXFileReference; lastKnownFileType = text; path = "SoundCloudAPI~.dep"; sourceTree = "<group>"; };
+		353A4BD3158F87700046524F /* libSoundCloudAPI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSoundCloudAPI.a; sourceTree = "<group>"; };
+		353A4BD4158F87700046524F /* Changes.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = Changes.md; sourceTree = "<group>"; };
+		353A4BD5158F87700046524F /* GeneralUsage.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = GeneralUsage.md; sourceTree = "<group>"; };
+		353A4BD6158F87700046524F /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		353A4BD7158F87700046524F /* NOTICE */ = {isa = PBXFileReference; lastKnownFileType = text; path = NOTICE; sourceTree = "<group>"; };
+		353A4BD8158F87700046524F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		353A4BD9158F87700046524F /* Setup.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = Setup.md; sourceTree = "<group>"; };
+		353A4BDA158F87700046524F /* Sharing.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = Sharing.md; sourceTree = "<group>"; };
+		353A4BDB158F87700046524F /* SoundCloudAPI.framework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SoundCloudAPI.framework-Info.plist"; sourceTree = "<group>"; };
+		353A4BDC158F87700046524F /* SoundCloudAPI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SoundCloudAPI.xcodeproj; sourceTree = "<group>"; };
+		353A4BE1158F87700046524F /* SCAccount+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCAccount+Private.h"; sourceTree = "<group>"; };
+		353A4BE2158F87700046524F /* SCAccount+Private.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SCAccount+Private.m"; sourceTree = "<group>"; };
+		353A4BE3158F87700046524F /* SCAccount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAccount.h; sourceTree = "<group>"; };
+		353A4BE4158F87700046524F /* SCAccount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAccount.m; sourceTree = "<group>"; };
+		353A4BE5158F87700046524F /* SCAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAPI.h; sourceTree = "<group>"; };
+		353A4BE6158F87700046524F /* SCConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCConstants.h; sourceTree = "<group>"; };
+		353A4BE7158F87700046524F /* SCConstants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCConstants.m; sourceTree = "<group>"; };
+		353A4BE8158F87700046524F /* SCRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCRequest.h; sourceTree = "<group>"; };
+		353A4BE9158F87700046524F /* SCRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCRequest.m; sourceTree = "<group>"; };
+		353A4BEA158F87700046524F /* SCSoundCloud+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCSoundCloud+Private.h"; sourceTree = "<group>"; };
+		353A4BEB158F87700046524F /* SCSoundCloud+Private.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SCSoundCloud+Private.m"; sourceTree = "<group>"; };
+		353A4BEC158F87700046524F /* SCSoundCloud.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCSoundCloud.h; sourceTree = "<group>"; };
+		353A4BED158F87700046524F /* SCSoundCloud.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCSoundCloud.m; sourceTree = "<group>"; };
+		353A4BEE158F87700046524F /* SCSoundCloudAPI-Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCSoundCloudAPI-Private.h"; sourceTree = "<group>"; };
+		353A4BEF158F87700046524F /* SoundCloudAPI_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoundCloudAPI_Prefix.pch; sourceTree = "<group>"; };
+		353A4BF3158F87700046524F /* libSoundCloudUI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSoundCloudUI.a; sourceTree = "<group>"; };
+		353A4BF7158F87700046524F /* SoundCloudUI-all-target-headers.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SoundCloudUI-all-target-headers.hmap"; sourceTree = "<group>"; };
+		353A4BF8158F87700046524F /* SoundCloudUI-generated-files.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SoundCloudUI-generated-files.hmap"; sourceTree = "<group>"; };
+		353A4BF9158F87700046524F /* SoundCloudUI-own-target-headers.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SoundCloudUI-own-target-headers.hmap"; sourceTree = "<group>"; };
+		353A4BFA158F87700046524F /* SoundCloudUI-project-headers.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SoundCloudUI-project-headers.hmap"; sourceTree = "<group>"; };
+		353A4BFB158F87700046524F /* SoundCloudUI.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = SoundCloudUI.hmap; sourceTree = "<group>"; };
+		353A4BFE158F87700046524F /* build-state.dat */ = {isa = PBXFileReference; lastKnownFileType = text; path = "build-state.dat"; sourceTree = "<group>"; };
+		353A4BFF158F87700046524F /* build-state~.dat */ = {isa = PBXFileReference; lastKnownFileType = text; path = "build-state~.dat"; sourceTree = "<group>"; };
+		353A4C00158F87700046524F /* libSoundCloudUI.dep */ = {isa = PBXFileReference; lastKnownFileType = text; path = libSoundCloudUI.dep; sourceTree = "<group>"; };
+		353A4C01158F87700046524F /* libSoundCloudUI~.dep */ = {isa = PBXFileReference; lastKnownFileType = text; path = "libSoundCloudUI~.dep"; sourceTree = "<group>"; };
+		353A4C04158F87700046524F /* NSData+SoundCloudUI.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = "NSData+SoundCloudUI.d"; sourceTree = "<group>"; };
+		353A4C05158F87700046524F /* NSData+SoundCloudUI.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NSData+SoundCloudUI.dia"; sourceTree = "<group>"; };
+		353A4C06158F87700046524F /* NSData+SoundCloudUI.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = "NSData+SoundCloudUI.o"; sourceTree = "<group>"; };
+		353A4C07158F87700046524F /* NSString+SoundCloudUI.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = "NSString+SoundCloudUI.d"; sourceTree = "<group>"; };
+		353A4C08158F87700046524F /* NSString+SoundCloudUI.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NSString+SoundCloudUI.dia"; sourceTree = "<group>"; };
+		353A4C09158F87700046524F /* NSString+SoundCloudUI.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = "NSString+SoundCloudUI.o"; sourceTree = "<group>"; };
+		353A4C0A158F87700046524F /* QuartzCore+SoundCloudUI.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = "QuartzCore+SoundCloudUI.d"; sourceTree = "<group>"; };
+		353A4C0B158F87700046524F /* QuartzCore+SoundCloudUI.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = "QuartzCore+SoundCloudUI.dia"; sourceTree = "<group>"; };
+		353A4C0C158F87700046524F /* QuartzCore+SoundCloudUI.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = "QuartzCore+SoundCloudUI.o"; sourceTree = "<group>"; };
+		353A4C0D158F87700046524F /* SCAddConnectionViewController.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = SCAddConnectionViewController.d; sourceTree = "<group>"; };
+		353A4C0E158F87700046524F /* SCAddConnectionViewController.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCAddConnectionViewController.dia; sourceTree = "<group>"; };
+		353A4C0F158F87700046524F /* SCAddConnectionViewController.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = SCAddConnectionViewController.o; sourceTree = "<group>"; };
+		353A4C10158F87700046524F /* SCBundle.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = SCBundle.d; sourceTree = "<group>"; };
+		353A4C11158F87700046524F /* SCBundle.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCBundle.dia; sourceTree = "<group>"; };
+		353A4C12158F87700046524F /* SCBundle.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = SCBundle.o; sourceTree = "<group>"; };
+		353A4C13158F87700046524F /* SCConnectToSoundCloudTitleView.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = SCConnectToSoundCloudTitleView.d; sourceTree = "<group>"; };
+		353A4C14158F87700046524F /* SCConnectToSoundCloudTitleView.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCConnectToSoundCloudTitleView.dia; sourceTree = "<group>"; };
+		353A4C15158F87700046524F /* SCConnectToSoundCloudTitleView.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = SCConnectToSoundCloudTitleView.o; sourceTree = "<group>"; };
+		353A4C16158F87700046524F /* SCCoverImageButton.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = SCCoverImageButton.d; sourceTree = "<group>"; };
+		353A4C17158F87700046524F /* SCCoverImageButton.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCCoverImageButton.dia; sourceTree = "<group>"; };
+		353A4C18158F87700046524F /* SCCoverImageButton.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = SCCoverImageButton.o; sourceTree = "<group>"; };
+		353A4C19158F87700046524F /* SCFoursquarePlacePickerController.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = SCFoursquarePlacePickerController.d; sourceTree = "<group>"; };
+		353A4C1A158F87700046524F /* SCFoursquarePlacePickerController.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCFoursquarePlacePickerController.dia; sourceTree = "<group>"; };
+		353A4C1B158F87700046524F /* SCFoursquarePlacePickerController.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = SCFoursquarePlacePickerController.o; sourceTree = "<group>"; };
+		353A4C1C158F87700046524F /* SCHorizontalLineView.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = SCHorizontalLineView.d; sourceTree = "<group>"; };
+		353A4C1D158F87700046524F /* SCHorizontalLineView.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCHorizontalLineView.dia; sourceTree = "<group>"; };
+		353A4C1E158F87700046524F /* SCHorizontalLineView.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = SCHorizontalLineView.o; sourceTree = "<group>"; };
+		353A4C1F158F87700046524F /* SCLoginView.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = SCLoginView.d; sourceTree = "<group>"; };
+		353A4C20158F87700046524F /* SCLoginView.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCLoginView.dia; sourceTree = "<group>"; };
+		353A4C21158F87700046524F /* SCLoginView.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = SCLoginView.o; sourceTree = "<group>"; };
+		353A4C22158F87700046524F /* SCLoginViewController.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = SCLoginViewController.d; sourceTree = "<group>"; };
+		353A4C23158F87700046524F /* SCLoginViewController.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCLoginViewController.dia; sourceTree = "<group>"; };
+		353A4C24158F87700046524F /* SCLoginViewController.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = SCLoginViewController.o; sourceTree = "<group>"; };
+		353A4C25158F87700046524F /* SCNameAndEmailCell.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = SCNameAndEmailCell.d; sourceTree = "<group>"; };
+		353A4C26158F87700046524F /* SCNameAndEmailCell.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCNameAndEmailCell.dia; sourceTree = "<group>"; };
+		353A4C27158F87700046524F /* SCNameAndEmailCell.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = SCNameAndEmailCell.o; sourceTree = "<group>"; };
+		353A4C28158F87700046524F /* SCRecordingSaveViewController.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = SCRecordingSaveViewController.d; sourceTree = "<group>"; };
+		353A4C29158F87700046524F /* SCRecordingSaveViewController.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCRecordingSaveViewController.dia; sourceTree = "<group>"; };
+		353A4C2A158F87700046524F /* SCRecordingSaveViewController.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = SCRecordingSaveViewController.o; sourceTree = "<group>"; };
+		353A4C2B158F87700046524F /* SCRecordingSaveViewControllerHeaderView.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = SCRecordingSaveViewControllerHeaderView.d; sourceTree = "<group>"; };
+		353A4C2C158F87700046524F /* SCRecordingSaveViewControllerHeaderView.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCRecordingSaveViewControllerHeaderView.dia; sourceTree = "<group>"; };
+		353A4C2D158F87700046524F /* SCRecordingSaveViewControllerHeaderView.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = SCRecordingSaveViewControllerHeaderView.o; sourceTree = "<group>"; };
+		353A4C2E158F87700046524F /* SCRecordingUploadProgressView.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = SCRecordingUploadProgressView.d; sourceTree = "<group>"; };
+		353A4C2F158F87700046524F /* SCRecordingUploadProgressView.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCRecordingUploadProgressView.dia; sourceTree = "<group>"; };
+		353A4C30158F87700046524F /* SCRecordingUploadProgressView.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = SCRecordingUploadProgressView.o; sourceTree = "<group>"; };
+		353A4C31158F87700046524F /* SCShareToSoundCloudTitleView.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = SCShareToSoundCloudTitleView.d; sourceTree = "<group>"; };
+		353A4C32158F87700046524F /* SCShareToSoundCloudTitleView.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCShareToSoundCloudTitleView.dia; sourceTree = "<group>"; };
+		353A4C33158F87700046524F /* SCShareToSoundCloudTitleView.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = SCShareToSoundCloudTitleView.o; sourceTree = "<group>"; };
+		353A4C34158F87700046524F /* SCShareViewController.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = SCShareViewController.d; sourceTree = "<group>"; };
+		353A4C35158F87700046524F /* SCShareViewController.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCShareViewController.dia; sourceTree = "<group>"; };
+		353A4C36158F87700046524F /* SCShareViewController.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = SCShareViewController.o; sourceTree = "<group>"; };
+		353A4C37158F87700046524F /* SCSharingMailPickerController.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = SCSharingMailPickerController.d; sourceTree = "<group>"; };
+		353A4C38158F87700046524F /* SCSharingMailPickerController.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCSharingMailPickerController.dia; sourceTree = "<group>"; };
+		353A4C39158F87700046524F /* SCSharingMailPickerController.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = SCSharingMailPickerController.o; sourceTree = "<group>"; };
+		353A4C3A158F87700046524F /* SCSwitch.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = SCSwitch.d; sourceTree = "<group>"; };
+		353A4C3B158F87700046524F /* SCSwitch.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCSwitch.dia; sourceTree = "<group>"; };
+		353A4C3C158F87700046524F /* SCSwitch.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = SCSwitch.o; sourceTree = "<group>"; };
+		353A4C3D158F87700046524F /* SCSwitchLabel.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = SCSwitchLabel.d; sourceTree = "<group>"; };
+		353A4C3E158F87700046524F /* SCSwitchLabel.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCSwitchLabel.dia; sourceTree = "<group>"; };
+		353A4C3F158F87700046524F /* SCSwitchLabel.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = SCSwitchLabel.o; sourceTree = "<group>"; };
+		353A4C40158F87700046524F /* SCTableCellBackgroundView.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = SCTableCellBackgroundView.d; sourceTree = "<group>"; };
+		353A4C41158F87700046524F /* SCTableCellBackgroundView.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCTableCellBackgroundView.dia; sourceTree = "<group>"; };
+		353A4C42158F87700046524F /* SCTableCellBackgroundView.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = SCTableCellBackgroundView.o; sourceTree = "<group>"; };
+		353A4C43158F87700046524F /* SCTextField.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = SCTextField.d; sourceTree = "<group>"; };
+		353A4C44158F87700046524F /* SCTextField.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCTextField.dia; sourceTree = "<group>"; };
+		353A4C45158F87700046524F /* SCTextField.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = SCTextField.o; sourceTree = "<group>"; };
+		353A4C46158F87700046524F /* SCUIErrors.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = SCUIErrors.d; sourceTree = "<group>"; };
+		353A4C47158F87700046524F /* SCUIErrors.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCUIErrors.dia; sourceTree = "<group>"; };
+		353A4C48158F87700046524F /* SCUIErrors.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = SCUIErrors.o; sourceTree = "<group>"; };
+		353A4C49158F87700046524F /* SCUnderlinedButton.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = SCUnderlinedButton.d; sourceTree = "<group>"; };
+		353A4C4A158F87700046524F /* SCUnderlinedButton.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCUnderlinedButton.dia; sourceTree = "<group>"; };
+		353A4C4B158F87700046524F /* SCUnderlinedButton.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = SCUnderlinedButton.o; sourceTree = "<group>"; };
+		353A4C4C158F87700046524F /* SoundCloudUI.LinkFileList */ = {isa = PBXFileReference; lastKnownFileType = text; path = SoundCloudUI.LinkFileList; sourceTree = "<group>"; };
+		353A4C4D158F87700046524F /* UIColor+SoundCloudUI.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = "UIColor+SoundCloudUI.d"; sourceTree = "<group>"; };
+		353A4C4E158F87700046524F /* UIColor+SoundCloudUI.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UIColor+SoundCloudUI.dia"; sourceTree = "<group>"; };
+		353A4C4F158F87700046524F /* UIColor+SoundCloudUI.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = "UIColor+SoundCloudUI.o"; sourceTree = "<group>"; };
+		353A4C50158F87700046524F /* UIDevice+SoundCloudUI.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = "UIDevice+SoundCloudUI.d"; sourceTree = "<group>"; };
+		353A4C51158F87700046524F /* UIDevice+SoundCloudUI.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UIDevice+SoundCloudUI.dia"; sourceTree = "<group>"; };
+		353A4C52158F87700046524F /* UIDevice+SoundCloudUI.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = "UIDevice+SoundCloudUI.o"; sourceTree = "<group>"; };
+		353A4C53158F87700046524F /* UIImage+SoundCloudUI.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = "UIImage+SoundCloudUI.d"; sourceTree = "<group>"; };
+		353A4C54158F87700046524F /* UIImage+SoundCloudUI.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UIImage+SoundCloudUI.dia"; sourceTree = "<group>"; };
+		353A4C55158F87700046524F /* UIImage+SoundCloudUI.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = "UIImage+SoundCloudUI.o"; sourceTree = "<group>"; };
+		353A4C56158F87700046524F /* UIView+SoundCloudUI.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = "UIView+SoundCloudUI.d"; sourceTree = "<group>"; };
+		353A4C57158F87700046524F /* UIView+SoundCloudUI.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UIView+SoundCloudUI.dia"; sourceTree = "<group>"; };
+		353A4C58158F87700046524F /* UIView+SoundCloudUI.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = "UIView+SoundCloudUI.o"; sourceTree = "<group>"; };
+		353A4C59158F87700046524F /* UIViewController+SoundCloudUI.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = "UIViewController+SoundCloudUI.d"; sourceTree = "<group>"; };
+		353A4C5A158F87700046524F /* UIViewController+SoundCloudUI.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UIViewController+SoundCloudUI.dia"; sourceTree = "<group>"; };
+		353A4C5B158F87700046524F /* UIViewController+SoundCloudUI.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = "UIViewController+SoundCloudUI.o"; sourceTree = "<group>"; };
+		353A4C5C158F87700046524F /* SoundCloudUI-all-target-headers.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SoundCloudUI-all-target-headers.hmap"; sourceTree = "<group>"; };
+		353A4C5D158F87700046524F /* SoundCloudUI-generated-files.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SoundCloudUI-generated-files.hmap"; sourceTree = "<group>"; };
+		353A4C5E158F87700046524F /* SoundCloudUI-own-target-headers.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SoundCloudUI-own-target-headers.hmap"; sourceTree = "<group>"; };
+		353A4C5F158F87700046524F /* SoundCloudUI-project-headers.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SoundCloudUI-project-headers.hmap"; sourceTree = "<group>"; };
+		353A4C60158F87700046524F /* SoundCloudUI.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = SoundCloudUI.hmap; sourceTree = "<group>"; };
+		353A4C61158F87700046524F /* SoundCloud.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SoundCloud.bundle; sourceTree = "<group>"; };
+		353A4C62158F87700046524F /* SoundCloudUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SoundCloudUI-Info.plist"; sourceTree = "<group>"; };
+		353A4C63158F87700046524F /* SoundCloudUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SoundCloudUI.xcodeproj; sourceTree = "<group>"; };
+		353A4C68158F87700046524F /* NSData+SoundCloudUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+SoundCloudUI.h"; sourceTree = "<group>"; };
+		353A4C69158F87700046524F /* NSData+SoundCloudUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+SoundCloudUI.m"; sourceTree = "<group>"; };
+		353A4C6A158F87700046524F /* NSString+SoundCloudUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+SoundCloudUI.h"; sourceTree = "<group>"; };
+		353A4C6B158F87700046524F /* NSString+SoundCloudUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+SoundCloudUI.m"; sourceTree = "<group>"; };
+		353A4C6C158F87700046524F /* QuartzCore+SoundCloudUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QuartzCore+SoundCloudUI.h"; sourceTree = "<group>"; };
+		353A4C6D158F87700046524F /* QuartzCore+SoundCloudUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "QuartzCore+SoundCloudUI.m"; sourceTree = "<group>"; };
+		353A4C6E158F87700046524F /* UIColor+SoundCloudUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+SoundCloudUI.h"; sourceTree = "<group>"; };
+		353A4C6F158F87700046524F /* UIColor+SoundCloudUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SoundCloudUI.m"; sourceTree = "<group>"; };
+		353A4C70158F87700046524F /* UIDevice+SoundCloudUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+SoundCloudUI.h"; sourceTree = "<group>"; };
+		353A4C71158F87700046524F /* UIDevice+SoundCloudUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+SoundCloudUI.m"; sourceTree = "<group>"; };
+		353A4C72158F87700046524F /* UIImage+SoundCloudUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+SoundCloudUI.h"; sourceTree = "<group>"; };
+		353A4C73158F87700046524F /* UIImage+SoundCloudUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SoundCloudUI.m"; sourceTree = "<group>"; };
+		353A4C74158F87700046524F /* UIView+SoundCloudUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+SoundCloudUI.h"; sourceTree = "<group>"; };
+		353A4C75158F87700046524F /* UIView+SoundCloudUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SoundCloudUI.m"; sourceTree = "<group>"; };
+		353A4C76158F87700046524F /* UIViewController+SoundCloudUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SoundCloudUI.h"; sourceTree = "<group>"; };
+		353A4C77158F87700046524F /* UIViewController+SoundCloudUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SoundCloudUI.m"; sourceTree = "<group>"; };
+		353A4C79158F87700046524F /* SCAddConnectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAddConnectionViewController.h; sourceTree = "<group>"; };
+		353A4C7A158F87700046524F /* SCAddConnectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAddConnectionViewController.m; sourceTree = "<group>"; };
+		353A4C7B158F87700046524F /* SCAddConnectionViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAddConnectionViewControllerDelegate.h; sourceTree = "<group>"; };
+		353A4C7C158F87700046524F /* SCBundle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCBundle.h; sourceTree = "<group>"; };
+		353A4C7D158F87700046524F /* SCBundle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCBundle.m; sourceTree = "<group>"; };
+		353A4C7E158F87700046524F /* SCConnectToSoundCloudTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCConnectToSoundCloudTitleView.h; sourceTree = "<group>"; };
+		353A4C7F158F87700046524F /* SCConnectToSoundCloudTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCConnectToSoundCloudTitleView.m; sourceTree = "<group>"; };
+		353A4C80158F87700046524F /* SCCoverImageButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCoverImageButton.h; sourceTree = "<group>"; };
+		353A4C81158F87700046524F /* SCCoverImageButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCoverImageButton.m; sourceTree = "<group>"; };
+		353A4C82158F87700046524F /* SCFoursquarePlacePickerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCFoursquarePlacePickerController.h; sourceTree = "<group>"; };
+		353A4C83158F87700046524F /* SCFoursquarePlacePickerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCFoursquarePlacePickerController.m; sourceTree = "<group>"; };
+		353A4C84158F87700046524F /* SCFoursquarePlacePickerControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCFoursquarePlacePickerControllerDelegate.h; sourceTree = "<group>"; };
+		353A4C85158F87700046524F /* SCHorizontalLineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCHorizontalLineView.h; sourceTree = "<group>"; };
+		353A4C86158F87700046524F /* SCHorizontalLineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCHorizontalLineView.m; sourceTree = "<group>"; };
+		353A4C87158F87700046524F /* SCLoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCLoginView.h; sourceTree = "<group>"; };
+		353A4C88158F87700046524F /* SCLoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCLoginView.m; sourceTree = "<group>"; };
+		353A4C89158F87700046524F /* SCLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCLoginViewController.h; sourceTree = "<group>"; };
+		353A4C8A158F87700046524F /* SCLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCLoginViewController.m; sourceTree = "<group>"; };
+		353A4C8B158F87700046524F /* SCNameAndEmailCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCNameAndEmailCell.h; sourceTree = "<group>"; };
+		353A4C8C158F87700046524F /* SCNameAndEmailCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCNameAndEmailCell.m; sourceTree = "<group>"; };
+		353A4C8D158F87700046524F /* SCRecordingSaveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCRecordingSaveViewController.h; sourceTree = "<group>"; };
+		353A4C8E158F87700046524F /* SCRecordingSaveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCRecordingSaveViewController.m; sourceTree = "<group>"; };
+		353A4C8F158F87700046524F /* SCRecordingSaveViewControllerHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCRecordingSaveViewControllerHeaderView.h; sourceTree = "<group>"; };
+		353A4C90158F87700046524F /* SCRecordingSaveViewControllerHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCRecordingSaveViewControllerHeaderView.m; sourceTree = "<group>"; };
+		353A4C91158F87700046524F /* SCRecordingUploadProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCRecordingUploadProgressView.h; sourceTree = "<group>"; };
+		353A4C92158F87700046524F /* SCRecordingUploadProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCRecordingUploadProgressView.m; sourceTree = "<group>"; };
+		353A4C93158F87700046524F /* SCShareToSoundCloudTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCShareToSoundCloudTitleView.h; sourceTree = "<group>"; };
+		353A4C94158F87700046524F /* SCShareToSoundCloudTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCShareToSoundCloudTitleView.m; sourceTree = "<group>"; };
+		353A4C95158F87700046524F /* SCShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCShareViewController.h; sourceTree = "<group>"; };
+		353A4C96158F87700046524F /* SCShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCShareViewController.m; sourceTree = "<group>"; };
+		353A4C97158F87700046524F /* SCSharingMailPickerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCSharingMailPickerController.h; sourceTree = "<group>"; };
+		353A4C98158F87700046524F /* SCSharingMailPickerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCSharingMailPickerController.m; sourceTree = "<group>"; };
+		353A4C99158F87700046524F /* SCSwitch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCSwitch.h; sourceTree = "<group>"; };
+		353A4C9A158F87700046524F /* SCSwitch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCSwitch.m; sourceTree = "<group>"; };
+		353A4C9B158F87700046524F /* SCSwitchLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCSwitchLabel.h; sourceTree = "<group>"; };
+		353A4C9C158F87700046524F /* SCSwitchLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCSwitchLabel.m; sourceTree = "<group>"; };
+		353A4C9D158F87700046524F /* SCTableCellBackgroundView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCTableCellBackgroundView.h; sourceTree = "<group>"; };
+		353A4C9E158F87700046524F /* SCTableCellBackgroundView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCTableCellBackgroundView.m; sourceTree = "<group>"; };
+		353A4C9F158F87700046524F /* SCTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCTextField.h; sourceTree = "<group>"; };
+		353A4CA0158F87700046524F /* SCTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCTextField.m; sourceTree = "<group>"; };
+		353A4CA1158F87700046524F /* SCUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCUI.h; sourceTree = "<group>"; };
+		353A4CA2158F87700046524F /* SCUIErrors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCUIErrors.h; sourceTree = "<group>"; };
+		353A4CA3158F87700046524F /* SCUIErrors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCUIErrors.m; sourceTree = "<group>"; };
+		353A4CA4158F87700046524F /* SCUnderlinedButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCUnderlinedButton.h; sourceTree = "<group>"; };
+		353A4CA5158F87700046524F /* SCUnderlinedButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCUnderlinedButton.m; sourceTree = "<group>"; };
+		353A4CA6158F87700046524F /* SoundCloudUI-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SoundCloudUI-Prefix.pch"; sourceTree = "<group>"; };
+		353A4CAA158F87700046524F /* libJSONKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libJSONKit.a; sourceTree = "<group>"; };
+		353A4CAE158F87700046524F /* JSONKit-all-target-headers.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JSONKit-all-target-headers.hmap"; sourceTree = "<group>"; };
+		353A4CAF158F87700046524F /* JSONKit-generated-files.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JSONKit-generated-files.hmap"; sourceTree = "<group>"; };
+		353A4CB0158F87700046524F /* JSONKit-own-target-headers.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JSONKit-own-target-headers.hmap"; sourceTree = "<group>"; };
+		353A4CB1158F87700046524F /* JSONKit-project-headers.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JSONKit-project-headers.hmap"; sourceTree = "<group>"; };
+		353A4CB2158F87700046524F /* JSONKit.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = JSONKit.hmap; sourceTree = "<group>"; };
+		353A4CB5158F87700046524F /* build-state.dat */ = {isa = PBXFileReference; lastKnownFileType = text; path = "build-state.dat"; sourceTree = "<group>"; };
+		353A4CB6158F87700046524F /* build-state~.dat */ = {isa = PBXFileReference; lastKnownFileType = text; path = "build-state~.dat"; sourceTree = "<group>"; };
+		353A4CB7158F87700046524F /* JSONKit-all-target-headers.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JSONKit-all-target-headers.hmap"; sourceTree = "<group>"; };
+		353A4CB8158F87700046524F /* JSONKit-generated-files.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JSONKit-generated-files.hmap"; sourceTree = "<group>"; };
+		353A4CB9158F87700046524F /* JSONKit-own-target-headers.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JSONKit-own-target-headers.hmap"; sourceTree = "<group>"; };
+		353A4CBA158F87700046524F /* JSONKit-project-headers.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JSONKit-project-headers.hmap"; sourceTree = "<group>"; };
+		353A4CBB158F87700046524F /* JSONKit.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = JSONKit.hmap; sourceTree = "<group>"; };
+		353A4CBC158F87700046524F /* libJSONKit.dep */ = {isa = PBXFileReference; lastKnownFileType = text; path = libJSONKit.dep; sourceTree = "<group>"; };
+		353A4CBD158F87700046524F /* libJSONKit~.dep */ = {isa = PBXFileReference; lastKnownFileType = text; path = "libJSONKit~.dep"; sourceTree = "<group>"; };
+		353A4CC0158F87700046524F /* JSONKit.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = JSONKit.d; sourceTree = "<group>"; };
+		353A4CC1158F87700046524F /* JSONKit.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = JSONKit.dia; sourceTree = "<group>"; };
+		353A4CC2158F87700046524F /* JSONKit.LinkFileList */ = {isa = PBXFileReference; lastKnownFileType = text; path = JSONKit.LinkFileList; sourceTree = "<group>"; };
+		353A4CC3158F87700046524F /* JSONKit.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = JSONKit.o; sourceTree = "<group>"; };
+		353A4CC4158F87700046524F /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
+		353A4CC6158F87700046524F /* JSONKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JSONKit-Info.plist"; sourceTree = "<group>"; };
+		353A4CC7158F87700046524F /* JSONKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JSONKit-Prefix.pch"; sourceTree = "<group>"; };
+		353A4CC8158F87700046524F /* JSONKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		353A4CC9158F87700046524F /* JSONKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		353A4CCA158F87700046524F /* JSONKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = JSONKit.xcodeproj; sourceTree = "<group>"; };
+		353A4CCD158F87700046524F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		353A4CCF158F87700046524F /* .gitmodules */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitmodules; sourceTree = "<group>"; };
+		353A4CD2158F87700046524F /* libOAuth2Client.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOAuth2Client.a; sourceTree = "<group>"; };
+		353A4CD6158F87700046524F /* OAuth2Client-all-target-headers.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OAuth2Client-all-target-headers.hmap"; sourceTree = "<group>"; };
+		353A4CD7158F87700046524F /* OAuth2Client-generated-files.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OAuth2Client-generated-files.hmap"; sourceTree = "<group>"; };
+		353A4CD8158F87700046524F /* OAuth2Client-own-target-headers.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OAuth2Client-own-target-headers.hmap"; sourceTree = "<group>"; };
+		353A4CD9158F87700046524F /* OAuth2Client-project-headers.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OAuth2Client-project-headers.hmap"; sourceTree = "<group>"; };
+		353A4CDA158F87700046524F /* OAuth2Client.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = OAuth2Client.hmap; sourceTree = "<group>"; };
+		353A4CDD158F87700046524F /* build-state.dat */ = {isa = PBXFileReference; lastKnownFileType = text; path = "build-state.dat"; sourceTree = "<group>"; };
+		353A4CDE158F87700046524F /* build-state~.dat */ = {isa = PBXFileReference; lastKnownFileType = text; path = "build-state~.dat"; sourceTree = "<group>"; };
+		353A4CDF158F87700046524F /* OAuth2Client-all-target-headers.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OAuth2Client-all-target-headers.hmap"; sourceTree = "<group>"; };
+		353A4CE0158F87700046524F /* OAuth2Client-generated-files.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OAuth2Client-generated-files.hmap"; sourceTree = "<group>"; };
+		353A4CE1158F87700046524F /* OAuth2Client-own-target-headers.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OAuth2Client-own-target-headers.hmap"; sourceTree = "<group>"; };
+		353A4CE2158F87700046524F /* OAuth2Client-project-headers.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OAuth2Client-project-headers.hmap"; sourceTree = "<group>"; };
+		353A4CE3158F87700046524F /* OAuth2Client.dep */ = {isa = PBXFileReference; lastKnownFileType = text; path = OAuth2Client.dep; sourceTree = "<group>"; };
+		353A4CE4158F87700046524F /* OAuth2Client.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = OAuth2Client.hmap; sourceTree = "<group>"; };
+		353A4CE5158F87700046524F /* OAuth2Client~.dep */ = {isa = PBXFileReference; lastKnownFileType = text; path = "OAuth2Client~.dep"; sourceTree = "<group>"; };
+		353A4CE8158F87700046524F /* NSData+NXOAuth2.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = "NSData+NXOAuth2.d"; sourceTree = "<group>"; };
+		353A4CE9158F87700046524F /* NSData+NXOAuth2.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NSData+NXOAuth2.dia"; sourceTree = "<group>"; };
+		353A4CEA158F87700046524F /* NSData+NXOAuth2.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = "NSData+NXOAuth2.o"; sourceTree = "<group>"; };
+		353A4CEB158F87700046524F /* NSString+NXOAuth2.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = "NSString+NXOAuth2.d"; sourceTree = "<group>"; };
+		353A4CEC158F87700046524F /* NSString+NXOAuth2.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NSString+NXOAuth2.dia"; sourceTree = "<group>"; };
+		353A4CED158F87700046524F /* NSString+NXOAuth2.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = "NSString+NXOAuth2.o"; sourceTree = "<group>"; };
+		353A4CEE158F87700046524F /* NSURL+NXOAuth2.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = "NSURL+NXOAuth2.d"; sourceTree = "<group>"; };
+		353A4CEF158F87700046524F /* NSURL+NXOAuth2.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NSURL+NXOAuth2.dia"; sourceTree = "<group>"; };
+		353A4CF0158F87700046524F /* NSURL+NXOAuth2.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = "NSURL+NXOAuth2.o"; sourceTree = "<group>"; };
+		353A4CF1158F87700046524F /* NXOAuth2AccessToken.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = NXOAuth2AccessToken.d; sourceTree = "<group>"; };
+		353A4CF2158F87700046524F /* NXOAuth2AccessToken.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = NXOAuth2AccessToken.dia; sourceTree = "<group>"; };
+		353A4CF3158F87700046524F /* NXOAuth2AccessToken.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = NXOAuth2AccessToken.o; sourceTree = "<group>"; };
+		353A4CF4158F87700046524F /* NXOAuth2Account.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = NXOAuth2Account.d; sourceTree = "<group>"; };
+		353A4CF5158F87700046524F /* NXOAuth2Account.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = NXOAuth2Account.dia; sourceTree = "<group>"; };
+		353A4CF6158F87700046524F /* NXOAuth2Account.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = NXOAuth2Account.o; sourceTree = "<group>"; };
+		353A4CF7158F87700046524F /* NXOAuth2AccountStore.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = NXOAuth2AccountStore.d; sourceTree = "<group>"; };
+		353A4CF8158F87700046524F /* NXOAuth2AccountStore.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = NXOAuth2AccountStore.dia; sourceTree = "<group>"; };
+		353A4CF9158F87700046524F /* NXOAuth2AccountStore.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = NXOAuth2AccountStore.o; sourceTree = "<group>"; };
+		353A4CFA158F87700046524F /* NXOAuth2Client.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = NXOAuth2Client.d; sourceTree = "<group>"; };
+		353A4CFB158F87700046524F /* NXOAuth2Client.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = NXOAuth2Client.dia; sourceTree = "<group>"; };
+		353A4CFC158F87700046524F /* NXOAuth2Client.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = NXOAuth2Client.o; sourceTree = "<group>"; };
+		353A4CFD158F87700046524F /* NXOAuth2Connection.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = NXOAuth2Connection.d; sourceTree = "<group>"; };
+		353A4CFE158F87700046524F /* NXOAuth2Connection.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = NXOAuth2Connection.dia; sourceTree = "<group>"; };
+		353A4CFF158F87700046524F /* NXOAuth2Connection.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = NXOAuth2Connection.o; sourceTree = "<group>"; };
+		353A4D00158F87700046524F /* NXOAuth2Constants.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = NXOAuth2Constants.d; sourceTree = "<group>"; };
+		353A4D01158F87700046524F /* NXOAuth2Constants.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = NXOAuth2Constants.dia; sourceTree = "<group>"; };
+		353A4D02158F87700046524F /* NXOAuth2Constants.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = NXOAuth2Constants.o; sourceTree = "<group>"; };
+		353A4D03158F87700046524F /* NXOAuth2FileStreamWrapper.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = NXOAuth2FileStreamWrapper.d; sourceTree = "<group>"; };
+		353A4D04158F87700046524F /* NXOAuth2FileStreamWrapper.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = NXOAuth2FileStreamWrapper.dia; sourceTree = "<group>"; };
+		353A4D05158F87700046524F /* NXOAuth2FileStreamWrapper.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = NXOAuth2FileStreamWrapper.o; sourceTree = "<group>"; };
+		353A4D06158F87700046524F /* NXOAuth2PostBodyPart.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = NXOAuth2PostBodyPart.d; sourceTree = "<group>"; };
+		353A4D07158F87700046524F /* NXOAuth2PostBodyPart.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = NXOAuth2PostBodyPart.dia; sourceTree = "<group>"; };
+		353A4D08158F87700046524F /* NXOAuth2PostBodyPart.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = NXOAuth2PostBodyPart.o; sourceTree = "<group>"; };
+		353A4D09158F87700046524F /* NXOAuth2PostBodyStream.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = NXOAuth2PostBodyStream.d; sourceTree = "<group>"; };
+		353A4D0A158F87700046524F /* NXOAuth2PostBodyStream.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = NXOAuth2PostBodyStream.dia; sourceTree = "<group>"; };
+		353A4D0B158F87700046524F /* NXOAuth2PostBodyStream.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = NXOAuth2PostBodyStream.o; sourceTree = "<group>"; };
+		353A4D0C158F87700046524F /* NXOAuth2Request.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = NXOAuth2Request.d; sourceTree = "<group>"; };
+		353A4D0D158F87700046524F /* NXOAuth2Request.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = NXOAuth2Request.dia; sourceTree = "<group>"; };
+		353A4D0E158F87700046524F /* NXOAuth2Request.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = NXOAuth2Request.o; sourceTree = "<group>"; };
+		353A4D0F158F87700046524F /* OAuth2Client.LinkFileList */ = {isa = PBXFileReference; lastKnownFileType = text; path = OAuth2Client.LinkFileList; sourceTree = "<group>"; };
+		353A4D11158F87700046524F /* libOAuth2Client.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOAuth2Client.a; sourceTree = "<group>"; };
+		353A4D12158F87700046524F /* NXOAuth2Account+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NXOAuth2Account+Private.h"; sourceTree = "<group>"; };
+		353A4D13158F87700046524F /* NXOAuth2Client.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = NXOAuth2Client.md; sourceTree = "<group>"; };
+		353A4D14158F87700046524F /* OAuth2Client.framework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OAuth2Client.framework-Info.plist"; sourceTree = "<group>"; };
+		353A4D15158F87700046524F /* OAuth2Client.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = OAuth2Client.xcodeproj; sourceTree = "<group>"; };
+		353A4D18158F87700046524F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		353A4D1A158F87700046524F /* NSData+NXOAuth2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+NXOAuth2.h"; sourceTree = "<group>"; };
+		353A4D1B158F87700046524F /* NSData+NXOAuth2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+NXOAuth2.m"; sourceTree = "<group>"; };
+		353A4D1C158F87700046524F /* NSString+NXOAuth2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+NXOAuth2.h"; sourceTree = "<group>"; };
+		353A4D1D158F87700046524F /* NSString+NXOAuth2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+NXOAuth2.m"; sourceTree = "<group>"; };
+		353A4D1E158F87700046524F /* NSURL+NXOAuth2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+NXOAuth2.h"; sourceTree = "<group>"; };
+		353A4D1F158F87700046524F /* NSURL+NXOAuth2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+NXOAuth2.m"; sourceTree = "<group>"; };
+		353A4D21158F87700046524F /* NXOAuth2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NXOAuth2.h; sourceTree = "<group>"; };
+		353A4D22158F87700046524F /* NXOAuth2AccessToken.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NXOAuth2AccessToken.h; sourceTree = "<group>"; };
+		353A4D23158F87700046524F /* NXOAuth2AccessToken.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NXOAuth2AccessToken.m; sourceTree = "<group>"; };
+		353A4D24158F87700046524F /* NXOAuth2Account.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NXOAuth2Account.h; sourceTree = "<group>"; };
+		353A4D25158F87700046524F /* NXOAuth2Account.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NXOAuth2Account.m; sourceTree = "<group>"; };
+		353A4D26158F87700046524F /* NXOAuth2AccountStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NXOAuth2AccountStore.h; sourceTree = "<group>"; };
+		353A4D27158F87700046524F /* NXOAuth2AccountStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NXOAuth2AccountStore.m; sourceTree = "<group>"; };
+		353A4D28158F87700046524F /* NXOAuth2Client.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NXOAuth2Client.h; sourceTree = "<group>"; };
+		353A4D29158F87700046524F /* NXOAuth2Client.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NXOAuth2Client.m; sourceTree = "<group>"; };
+		353A4D2A158F87700046524F /* NXOAuth2ClientDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NXOAuth2ClientDelegate.h; sourceTree = "<group>"; };
+		353A4D2B158F87700046524F /* NXOAuth2Connection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NXOAuth2Connection.h; sourceTree = "<group>"; };
+		353A4D2C158F87700046524F /* NXOAuth2Connection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NXOAuth2Connection.m; sourceTree = "<group>"; };
+		353A4D2D158F87700046524F /* NXOAuth2ConnectionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NXOAuth2ConnectionDelegate.h; sourceTree = "<group>"; };
+		353A4D2E158F87700046524F /* NXOAuth2Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NXOAuth2Constants.h; sourceTree = "<group>"; };
+		353A4D2F158F87700046524F /* NXOAuth2Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NXOAuth2Constants.m; sourceTree = "<group>"; };
+		353A4D30158F87700046524F /* NXOAuth2FileStreamWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NXOAuth2FileStreamWrapper.h; sourceTree = "<group>"; };
+		353A4D31158F87700046524F /* NXOAuth2FileStreamWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NXOAuth2FileStreamWrapper.m; sourceTree = "<group>"; };
+		353A4D32158F87700046524F /* NXOAuth2PostBodyPart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NXOAuth2PostBodyPart.h; sourceTree = "<group>"; };
+		353A4D33158F87700046524F /* NXOAuth2PostBodyPart.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NXOAuth2PostBodyPart.m; sourceTree = "<group>"; };
+		353A4D34158F87700046524F /* NXOAuth2PostBodyStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NXOAuth2PostBodyStream.h; sourceTree = "<group>"; };
+		353A4D35158F87700046524F /* NXOAuth2PostBodyStream.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NXOAuth2PostBodyStream.m; sourceTree = "<group>"; };
+		353A4D36158F87700046524F /* NXOAuth2Request.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NXOAuth2Request.h; sourceTree = "<group>"; };
+		353A4D37158F87700046524F /* NXOAuth2Request.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NXOAuth2Request.m; sourceTree = "<group>"; };
+		353A4D38158F87700046524F /* NXOAuth2TrustDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NXOAuth2TrustDelegate.h; sourceTree = "<group>"; };
+		353A4D39158F87700046524F /* OAuth2Client_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OAuth2Client_Prefix.pch; sourceTree = "<group>"; };
+		353A4D3B158F87700046524F /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
+		353A4D3C158F87700046524F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		353A4D3E158F87700046524F /* AttributedLabel Example.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "AttributedLabel Example.xcodeproj"; sourceTree = "<group>"; };
+		353A4D41158F87700046524F /* AttributedLabel_Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AttributedLabel_Example-Info.plist"; sourceTree = "<group>"; };
+		353A4D42158F87700046524F /* AttributedLabel_Example_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttributedLabel_Example_Prefix.pch; sourceTree = "<group>"; };
+		353A4D47158F87700046524F /* AttribLbl-all-target-headers.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AttribLbl-all-target-headers.hmap"; sourceTree = "<group>"; };
+		353A4D48158F87700046524F /* AttribLbl-generated-files.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AttribLbl-generated-files.hmap"; sourceTree = "<group>"; };
+		353A4D49158F87700046524F /* AttribLbl-own-target-headers.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AttribLbl-own-target-headers.hmap"; sourceTree = "<group>"; };
+		353A4D4A158F87700046524F /* AttribLbl-project-headers.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AttribLbl-project-headers.hmap"; sourceTree = "<group>"; };
+		353A4D4B158F87700046524F /* AttribLbl.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = AttribLbl.hmap; sourceTree = "<group>"; };
+		353A4D4D158F87700046524F /* AttributedLabel_ExampleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttributedLabel_ExampleAppDelegate.h; sourceTree = "<group>"; };
+		353A4D4E158F87700046524F /* AttributedLabel_ExampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttributedLabel_ExampleAppDelegate.m; sourceTree = "<group>"; };
+		353A4D4F158F87700046524F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		353A4D50158F87700046524F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		353A4D51158F87700046524F /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		353A4D54158F87700046524F /* libOHAttributedLabel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOHAttributedLabel.a; sourceTree = "<group>"; };
+		353A4D58158F87700046524F /* build-state.dat */ = {isa = PBXFileReference; lastKnownFileType = text; path = "build-state.dat"; sourceTree = "<group>"; };
+		353A4D59158F87700046524F /* build-state~.dat */ = {isa = PBXFileReference; lastKnownFileType = text; path = "build-state~.dat"; sourceTree = "<group>"; };
+		353A4D5C158F87700046524F /* NSAttributedString+Attributes.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = "NSAttributedString+Attributes.d"; sourceTree = "<group>"; };
+		353A4D5D158F87700046524F /* NSAttributedString+Attributes.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NSAttributedString+Attributes.dia"; sourceTree = "<group>"; };
+		353A4D5E158F87700046524F /* NSAttributedString+Attributes.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = "NSAttributedString+Attributes.o"; sourceTree = "<group>"; };
+		353A4D5F158F87700046524F /* OHAttributedLabel.d */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dtrace; path = OHAttributedLabel.d; sourceTree = "<group>"; };
+		353A4D60158F87700046524F /* OHAttributedLabel.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = OHAttributedLabel.dia; sourceTree = "<group>"; };
+		353A4D61158F87700046524F /* OHAttributedLabel.LinkFileList */ = {isa = PBXFileReference; lastKnownFileType = text; path = OHAttributedLabel.LinkFileList; sourceTree = "<group>"; };
+		353A4D62158F87700046524F /* OHAttributedLabel.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = OHAttributedLabel.o; sourceTree = "<group>"; };
+		353A4D63158F87700046524F /* OHAttributedLabel-all-target-headers.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OHAttributedLabel-all-target-headers.hmap"; sourceTree = "<group>"; };
+		353A4D64158F87700046524F /* OHAttributedLabel-generated-files.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OHAttributedLabel-generated-files.hmap"; sourceTree = "<group>"; };
+		353A4D65158F87700046524F /* OHAttributedLabel-own-target-headers.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OHAttributedLabel-own-target-headers.hmap"; sourceTree = "<group>"; };
+		353A4D66158F87700046524F /* OHAttributedLabel-project-headers.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OHAttributedLabel-project-headers.hmap"; sourceTree = "<group>"; };
+		353A4D67158F87700046524F /* OHAttributedLabel.dep */ = {isa = PBXFileReference; lastKnownFileType = text; path = OHAttributedLabel.dep; sourceTree = "<group>"; };
+		353A4D68158F87700046524F /* OHAttributedLabel.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = OHAttributedLabel.hmap; sourceTree = "<group>"; };
+		353A4D69158F87700046524F /* OHAttributedLabel~.dep */ = {isa = PBXFileReference; lastKnownFileType = text; path = "OHAttributedLabel~.dep"; sourceTree = "<group>"; };
+		353A4D6A158F87700046524F /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		353A4D6C158F87700046524F /* NSAttributedString+Attributes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Attributes.h"; sourceTree = "<group>"; };
+		353A4D6D158F87700046524F /* NSAttributedString+Attributes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Attributes.m"; sourceTree = "<group>"; };
+		353A4D6E158F87700046524F /* OHAttributedLabel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OHAttributedLabel-Prefix.pch"; sourceTree = "<group>"; };
+		353A4D6F158F87700046524F /* OHAttributedLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OHAttributedLabel.h; sourceTree = "<group>"; };
+		353A4D70158F87700046524F /* OHAttributedLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OHAttributedLabel.m; sourceTree = "<group>"; };
+		353A4D71158F87700046524F /* OHAttributedLabel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = OHAttributedLabel.xcodeproj; sourceTree = "<group>"; };
+		353A4D74158F87700046524F /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +533,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				353A4DA6158F87810046524F /* libJSONKit.a in Frameworks */,
+				353A4DA7158F87810046524F /* libOAuth2Client.a in Frameworks */,
+				353A4DA8158F87810046524F /* libOHAttributedLabel.a in Frameworks */,
+				353A4DA9158F87810046524F /* libSoundCloudAPI.a in Frameworks */,
+				353A4DAA158F87810046524F /* libSoundCloudUI.a in Frameworks */,
 				353A485F158F83BA0046524F /* CoreText.framework in Frameworks */,
 				353A46EB158F7B340046524F /* CoreGraphics.framework in Frameworks */,
 				353A485D158F83A90046524F /* Security.framework in Frameworks */,
@@ -277,7 +566,7 @@
 		353A46D7158F7B340046524F = {
 			isa = PBXGroup;
 			children = (
-				353A471B158F7C540046524F /* vendor */,
+				353A4BA4158F87700046524F /* vendor */,
 				353A46EC158F7B340046524F /* sounds-like-a-stream */,
 				353A470A158F7B340046524F /* sounds-like-a-streamTests */,
 				353A46E5158F7B340046524F /* Frameworks */,
@@ -354,245 +643,970 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		353A471B158F7C540046524F /* vendor */ = {
+		353A4BA4158F87700046524F /* vendor */ = {
 			isa = PBXGroup;
 			children = (
-				353A471C158F7C540046524F /* CocoaSoundCloudAPI */,
-				353A473A158F7C540046524F /* CocoaSoundCloudUI */,
-				353A4781158F7C540046524F /* JSONKit */,
-				353A478C158F7C540046524F /* OAuth2Client */,
-				353A47B6158F7C540046524F /* OHAttributedLabel */,
+				353A4BA5158F87700046524F /* CocoaSoundCloudAPI */,
+				353A4BF0158F87700046524F /* CocoaSoundCloudUI */,
+				353A4CA7158F87700046524F /* JSONKit */,
+				353A4CCE158F87700046524F /* OAuth2Client */,
+				353A4D3A158F87700046524F /* OHAttributedLabel */,
 			);
 			path = vendor;
 			sourceTree = "<group>";
 		};
-		353A471C158F7C540046524F /* CocoaSoundCloudAPI */ = {
+		353A4BA5158F87700046524F /* CocoaSoundCloudAPI */ = {
 			isa = PBXGroup;
 			children = (
-				353A4725158F7C540046524F /* SoundCloudAPI.framework-Info.plist */,
-				353A4729158F7C540046524F /* Sources */,
+				353A4BA6158F87700046524F /* .gitignore */,
+				353A4BA7158F87700046524F /* build */,
+				353A4BD4158F87700046524F /* Changes.md */,
+				353A4BD5158F87700046524F /* GeneralUsage.md */,
+				353A4BD6158F87700046524F /* LICENSE */,
+				353A4BD7158F87700046524F /* NOTICE */,
+				353A4BD8158F87700046524F /* README.md */,
+				353A4BD9158F87700046524F /* Setup.md */,
+				353A4BDA158F87700046524F /* Sharing.md */,
+				353A4BDB158F87700046524F /* SoundCloudAPI.framework-Info.plist */,
+				353A4BDC158F87700046524F /* SoundCloudAPI.xcodeproj */,
+				353A4BDF158F87700046524F /* Sources */,
 			);
 			path = CocoaSoundCloudAPI;
 			sourceTree = "<group>";
 		};
-		353A4729158F7C540046524F /* Sources */ = {
+		353A4BA7158F87700046524F /* build */ = {
 			isa = PBXGroup;
 			children = (
-				353A472A158F7C540046524F /* SoundCloudAPI */,
-				353A4739158F7C540046524F /* SoundCloudAPI_Prefix.pch */,
+				353A4BA8158F87700046524F /* Debug-iphonesimulator */,
+				353A4BAA158F87700046524F /* SoundCloudAPI.build */,
+				353A4BD2158F87700046524F /* UninstalledProducts */,
+			);
+			path = build;
+			sourceTree = "<group>";
+		};
+		353A4BA8158F87700046524F /* Debug-iphonesimulator */ = {
+			isa = PBXGroup;
+			children = (
+				353A4BA9158F87700046524F /* libSoundCloudAPI.a */,
+			);
+			path = "Debug-iphonesimulator";
+			sourceTree = "<group>";
+		};
+		353A4BAA158F87700046524F /* SoundCloudAPI.build */ = {
+			isa = PBXGroup;
+			children = (
+				353A4BAB158F87700046524F /* Debug */,
+				353A4BB2158F87700046524F /* Debug-iphonesimulator */,
+			);
+			path = SoundCloudAPI.build;
+			sourceTree = "<group>";
+		};
+		353A4BAB158F87700046524F /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				353A4BAC158F87700046524F /* SoundCloudAPI.framework.build */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		353A4BAC158F87700046524F /* SoundCloudAPI.framework.build */ = {
+			isa = PBXGroup;
+			children = (
+				353A4BAD158F87700046524F /* SoundCloudAPI-all-target-headers.hmap */,
+				353A4BAE158F87700046524F /* SoundCloudAPI-generated-files.hmap */,
+				353A4BAF158F87700046524F /* SoundCloudAPI-own-target-headers.hmap */,
+				353A4BB0158F87700046524F /* SoundCloudAPI-project-headers.hmap */,
+				353A4BB1158F87700046524F /* SoundCloudAPI.hmap */,
+			);
+			path = SoundCloudAPI.framework.build;
+			sourceTree = "<group>";
+		};
+		353A4BB2158F87700046524F /* Debug-iphonesimulator */ = {
+			isa = PBXGroup;
+			children = (
+				353A4BB3158F87700046524F /* SoundCloudAPI.build */,
+			);
+			path = "Debug-iphonesimulator";
+			sourceTree = "<group>";
+		};
+		353A4BB3158F87700046524F /* SoundCloudAPI.build */ = {
+			isa = PBXGroup;
+			children = (
+				353A4BB4158F87700046524F /* build-state.dat */,
+				353A4BB5158F87700046524F /* build-state~.dat */,
+				353A4BB6158F87700046524F /* Objects-normal */,
+				353A4BCB158F87700046524F /* SoundCloudAPI-all-target-headers.hmap */,
+				353A4BCC158F87700046524F /* SoundCloudAPI-generated-files.hmap */,
+				353A4BCD158F87700046524F /* SoundCloudAPI-own-target-headers.hmap */,
+				353A4BCE158F87700046524F /* SoundCloudAPI-project-headers.hmap */,
+				353A4BCF158F87700046524F /* SoundCloudAPI.dep */,
+				353A4BD0158F87700046524F /* SoundCloudAPI.hmap */,
+				353A4BD1158F87700046524F /* SoundCloudAPI~.dep */,
+			);
+			path = SoundCloudAPI.build;
+			sourceTree = "<group>";
+		};
+		353A4BB6158F87700046524F /* Objects-normal */ = {
+			isa = PBXGroup;
+			children = (
+				353A4BB7158F87700046524F /* i386 */,
+			);
+			path = "Objects-normal";
+			sourceTree = "<group>";
+		};
+		353A4BB7158F87700046524F /* i386 */ = {
+			isa = PBXGroup;
+			children = (
+				353A4BB8158F87700046524F /* SCAccount+Private.d */,
+				353A4BB9158F87700046524F /* SCAccount+Private.dia */,
+				353A4BBA158F87700046524F /* SCAccount+Private.o */,
+				353A4BBB158F87700046524F /* SCAccount.d */,
+				353A4BBC158F87700046524F /* SCAccount.dia */,
+				353A4BBD158F87700046524F /* SCAccount.o */,
+				353A4BBE158F87700046524F /* SCConstants.d */,
+				353A4BBF158F87700046524F /* SCConstants.dia */,
+				353A4BC0158F87700046524F /* SCConstants.o */,
+				353A4BC1158F87700046524F /* SCRequest.d */,
+				353A4BC2158F87700046524F /* SCRequest.dia */,
+				353A4BC3158F87700046524F /* SCRequest.o */,
+				353A4BC4158F87700046524F /* SCSoundCloud+Private.d */,
+				353A4BC5158F87700046524F /* SCSoundCloud+Private.dia */,
+				353A4BC6158F87700046524F /* SCSoundCloud+Private.o */,
+				353A4BC7158F87700046524F /* SCSoundCloud.d */,
+				353A4BC8158F87700046524F /* SCSoundCloud.dia */,
+				353A4BC9158F87700046524F /* SCSoundCloud.o */,
+				353A4BCA158F87700046524F /* SoundCloudAPI.LinkFileList */,
+			);
+			path = i386;
+			sourceTree = "<group>";
+		};
+		353A4BD2158F87700046524F /* UninstalledProducts */ = {
+			isa = PBXGroup;
+			children = (
+				353A4BD3158F87700046524F /* libSoundCloudAPI.a */,
+			);
+			path = UninstalledProducts;
+			sourceTree = "<group>";
+		};
+		353A4BDD158F87700046524F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				353A4D9D158F87710046524F /* SoundCloudAPI.framework */,
+				353A4D9F158F87710046524F /* libSoundCloudAPI.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		353A4BDF158F87700046524F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				353A4BE0158F87700046524F /* SoundCloudAPI */,
+				353A4BEF158F87700046524F /* SoundCloudAPI_Prefix.pch */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		353A472A158F7C540046524F /* SoundCloudAPI */ = {
+		353A4BE0158F87700046524F /* SoundCloudAPI */ = {
 			isa = PBXGroup;
 			children = (
-				353A472B158F7C540046524F /* SCAccount+Private.h */,
-				353A472C158F7C540046524F /* SCAccount+Private.m */,
-				353A472D158F7C540046524F /* SCAccount.h */,
-				353A472E158F7C540046524F /* SCAccount.m */,
-				353A472F158F7C540046524F /* SCAPI.h */,
-				353A4730158F7C540046524F /* SCConstants.h */,
-				353A4731158F7C540046524F /* SCConstants.m */,
-				353A4732158F7C540046524F /* SCRequest.h */,
-				353A4733158F7C540046524F /* SCRequest.m */,
-				353A4734158F7C540046524F /* SCSoundCloud+Private.h */,
-				353A4735158F7C540046524F /* SCSoundCloud+Private.m */,
-				353A4736158F7C540046524F /* SCSoundCloud.h */,
-				353A4737158F7C540046524F /* SCSoundCloud.m */,
-				353A4738158F7C540046524F /* SCSoundCloudAPI-Private.h */,
+				353A4BE1158F87700046524F /* SCAccount+Private.h */,
+				353A4BE2158F87700046524F /* SCAccount+Private.m */,
+				353A4BE3158F87700046524F /* SCAccount.h */,
+				353A4BE4158F87700046524F /* SCAccount.m */,
+				353A4BE5158F87700046524F /* SCAPI.h */,
+				353A4BE6158F87700046524F /* SCConstants.h */,
+				353A4BE7158F87700046524F /* SCConstants.m */,
+				353A4BE8158F87700046524F /* SCRequest.h */,
+				353A4BE9158F87700046524F /* SCRequest.m */,
+				353A4BEA158F87700046524F /* SCSoundCloud+Private.h */,
+				353A4BEB158F87700046524F /* SCSoundCloud+Private.m */,
+				353A4BEC158F87700046524F /* SCSoundCloud.h */,
+				353A4BED158F87700046524F /* SCSoundCloud.m */,
+				353A4BEE158F87700046524F /* SCSoundCloudAPI-Private.h */,
 			);
 			path = SoundCloudAPI;
 			sourceTree = "<group>";
 		};
-		353A473A158F7C540046524F /* CocoaSoundCloudUI */ = {
+		353A4BF0158F87700046524F /* CocoaSoundCloudUI */ = {
 			isa = PBXGroup;
 			children = (
-				353A473B158F7C540046524F /* SoundCloud.bundle */,
-				353A473C158F7C540046524F /* SoundCloudUI-Info.plist */,
-				353A4740158F7C540046524F /* Sources */,
+				353A4BF1158F87700046524F /* build */,
+				353A4C61158F87700046524F /* SoundCloud.bundle */,
+				353A4C62158F87700046524F /* SoundCloudUI-Info.plist */,
+				353A4C63158F87700046524F /* SoundCloudUI.xcodeproj */,
+				353A4C66158F87700046524F /* Sources */,
 			);
 			path = CocoaSoundCloudUI;
 			sourceTree = "<group>";
 		};
-		353A4740158F7C540046524F /* Sources */ = {
+		353A4BF1158F87700046524F /* build */ = {
 			isa = PBXGroup;
 			children = (
-				353A4741158F7C540046524F /* CocoaAdditions */,
-				353A4752158F7C540046524F /* SoundCloudUI */,
-				353A4780158F7C540046524F /* SoundCloudUI-Prefix.pch */,
+				353A4BF2158F87700046524F /* Debug-iphonesimulator */,
+				353A4BF4158F87700046524F /* SoundCloudUI.build */,
+			);
+			path = build;
+			sourceTree = "<group>";
+		};
+		353A4BF2158F87700046524F /* Debug-iphonesimulator */ = {
+			isa = PBXGroup;
+			children = (
+				353A4BF3158F87700046524F /* libSoundCloudUI.a */,
+			);
+			path = "Debug-iphonesimulator";
+			sourceTree = "<group>";
+		};
+		353A4BF4158F87700046524F /* SoundCloudUI.build */ = {
+			isa = PBXGroup;
+			children = (
+				353A4BF5158F87700046524F /* Debug */,
+				353A4BFC158F87700046524F /* Debug-iphonesimulator */,
+			);
+			path = SoundCloudUI.build;
+			sourceTree = "<group>";
+		};
+		353A4BF5158F87700046524F /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				353A4BF6158F87700046524F /* SoundCloudUI.framework.build */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		353A4BF6158F87700046524F /* SoundCloudUI.framework.build */ = {
+			isa = PBXGroup;
+			children = (
+				353A4BF7158F87700046524F /* SoundCloudUI-all-target-headers.hmap */,
+				353A4BF8158F87700046524F /* SoundCloudUI-generated-files.hmap */,
+				353A4BF9158F87700046524F /* SoundCloudUI-own-target-headers.hmap */,
+				353A4BFA158F87700046524F /* SoundCloudUI-project-headers.hmap */,
+				353A4BFB158F87700046524F /* SoundCloudUI.hmap */,
+			);
+			path = SoundCloudUI.framework.build;
+			sourceTree = "<group>";
+		};
+		353A4BFC158F87700046524F /* Debug-iphonesimulator */ = {
+			isa = PBXGroup;
+			children = (
+				353A4BFD158F87700046524F /* libSoundCloudUI.build */,
+			);
+			path = "Debug-iphonesimulator";
+			sourceTree = "<group>";
+		};
+		353A4BFD158F87700046524F /* libSoundCloudUI.build */ = {
+			isa = PBXGroup;
+			children = (
+				353A4BFE158F87700046524F /* build-state.dat */,
+				353A4BFF158F87700046524F /* build-state~.dat */,
+				353A4C00158F87700046524F /* libSoundCloudUI.dep */,
+				353A4C01158F87700046524F /* libSoundCloudUI~.dep */,
+				353A4C02158F87700046524F /* Objects-normal */,
+				353A4C5C158F87700046524F /* SoundCloudUI-all-target-headers.hmap */,
+				353A4C5D158F87700046524F /* SoundCloudUI-generated-files.hmap */,
+				353A4C5E158F87700046524F /* SoundCloudUI-own-target-headers.hmap */,
+				353A4C5F158F87700046524F /* SoundCloudUI-project-headers.hmap */,
+				353A4C60158F87700046524F /* SoundCloudUI.hmap */,
+			);
+			path = libSoundCloudUI.build;
+			sourceTree = "<group>";
+		};
+		353A4C02158F87700046524F /* Objects-normal */ = {
+			isa = PBXGroup;
+			children = (
+				353A4C03158F87700046524F /* i386 */,
+			);
+			path = "Objects-normal";
+			sourceTree = "<group>";
+		};
+		353A4C03158F87700046524F /* i386 */ = {
+			isa = PBXGroup;
+			children = (
+				353A4C04158F87700046524F /* NSData+SoundCloudUI.d */,
+				353A4C05158F87700046524F /* NSData+SoundCloudUI.dia */,
+				353A4C06158F87700046524F /* NSData+SoundCloudUI.o */,
+				353A4C07158F87700046524F /* NSString+SoundCloudUI.d */,
+				353A4C08158F87700046524F /* NSString+SoundCloudUI.dia */,
+				353A4C09158F87700046524F /* NSString+SoundCloudUI.o */,
+				353A4C0A158F87700046524F /* QuartzCore+SoundCloudUI.d */,
+				353A4C0B158F87700046524F /* QuartzCore+SoundCloudUI.dia */,
+				353A4C0C158F87700046524F /* QuartzCore+SoundCloudUI.o */,
+				353A4C0D158F87700046524F /* SCAddConnectionViewController.d */,
+				353A4C0E158F87700046524F /* SCAddConnectionViewController.dia */,
+				353A4C0F158F87700046524F /* SCAddConnectionViewController.o */,
+				353A4C10158F87700046524F /* SCBundle.d */,
+				353A4C11158F87700046524F /* SCBundle.dia */,
+				353A4C12158F87700046524F /* SCBundle.o */,
+				353A4C13158F87700046524F /* SCConnectToSoundCloudTitleView.d */,
+				353A4C14158F87700046524F /* SCConnectToSoundCloudTitleView.dia */,
+				353A4C15158F87700046524F /* SCConnectToSoundCloudTitleView.o */,
+				353A4C16158F87700046524F /* SCCoverImageButton.d */,
+				353A4C17158F87700046524F /* SCCoverImageButton.dia */,
+				353A4C18158F87700046524F /* SCCoverImageButton.o */,
+				353A4C19158F87700046524F /* SCFoursquarePlacePickerController.d */,
+				353A4C1A158F87700046524F /* SCFoursquarePlacePickerController.dia */,
+				353A4C1B158F87700046524F /* SCFoursquarePlacePickerController.o */,
+				353A4C1C158F87700046524F /* SCHorizontalLineView.d */,
+				353A4C1D158F87700046524F /* SCHorizontalLineView.dia */,
+				353A4C1E158F87700046524F /* SCHorizontalLineView.o */,
+				353A4C1F158F87700046524F /* SCLoginView.d */,
+				353A4C20158F87700046524F /* SCLoginView.dia */,
+				353A4C21158F87700046524F /* SCLoginView.o */,
+				353A4C22158F87700046524F /* SCLoginViewController.d */,
+				353A4C23158F87700046524F /* SCLoginViewController.dia */,
+				353A4C24158F87700046524F /* SCLoginViewController.o */,
+				353A4C25158F87700046524F /* SCNameAndEmailCell.d */,
+				353A4C26158F87700046524F /* SCNameAndEmailCell.dia */,
+				353A4C27158F87700046524F /* SCNameAndEmailCell.o */,
+				353A4C28158F87700046524F /* SCRecordingSaveViewController.d */,
+				353A4C29158F87700046524F /* SCRecordingSaveViewController.dia */,
+				353A4C2A158F87700046524F /* SCRecordingSaveViewController.o */,
+				353A4C2B158F87700046524F /* SCRecordingSaveViewControllerHeaderView.d */,
+				353A4C2C158F87700046524F /* SCRecordingSaveViewControllerHeaderView.dia */,
+				353A4C2D158F87700046524F /* SCRecordingSaveViewControllerHeaderView.o */,
+				353A4C2E158F87700046524F /* SCRecordingUploadProgressView.d */,
+				353A4C2F158F87700046524F /* SCRecordingUploadProgressView.dia */,
+				353A4C30158F87700046524F /* SCRecordingUploadProgressView.o */,
+				353A4C31158F87700046524F /* SCShareToSoundCloudTitleView.d */,
+				353A4C32158F87700046524F /* SCShareToSoundCloudTitleView.dia */,
+				353A4C33158F87700046524F /* SCShareToSoundCloudTitleView.o */,
+				353A4C34158F87700046524F /* SCShareViewController.d */,
+				353A4C35158F87700046524F /* SCShareViewController.dia */,
+				353A4C36158F87700046524F /* SCShareViewController.o */,
+				353A4C37158F87700046524F /* SCSharingMailPickerController.d */,
+				353A4C38158F87700046524F /* SCSharingMailPickerController.dia */,
+				353A4C39158F87700046524F /* SCSharingMailPickerController.o */,
+				353A4C3A158F87700046524F /* SCSwitch.d */,
+				353A4C3B158F87700046524F /* SCSwitch.dia */,
+				353A4C3C158F87700046524F /* SCSwitch.o */,
+				353A4C3D158F87700046524F /* SCSwitchLabel.d */,
+				353A4C3E158F87700046524F /* SCSwitchLabel.dia */,
+				353A4C3F158F87700046524F /* SCSwitchLabel.o */,
+				353A4C40158F87700046524F /* SCTableCellBackgroundView.d */,
+				353A4C41158F87700046524F /* SCTableCellBackgroundView.dia */,
+				353A4C42158F87700046524F /* SCTableCellBackgroundView.o */,
+				353A4C43158F87700046524F /* SCTextField.d */,
+				353A4C44158F87700046524F /* SCTextField.dia */,
+				353A4C45158F87700046524F /* SCTextField.o */,
+				353A4C46158F87700046524F /* SCUIErrors.d */,
+				353A4C47158F87700046524F /* SCUIErrors.dia */,
+				353A4C48158F87700046524F /* SCUIErrors.o */,
+				353A4C49158F87700046524F /* SCUnderlinedButton.d */,
+				353A4C4A158F87700046524F /* SCUnderlinedButton.dia */,
+				353A4C4B158F87700046524F /* SCUnderlinedButton.o */,
+				353A4C4C158F87700046524F /* SoundCloudUI.LinkFileList */,
+				353A4C4D158F87700046524F /* UIColor+SoundCloudUI.d */,
+				353A4C4E158F87700046524F /* UIColor+SoundCloudUI.dia */,
+				353A4C4F158F87700046524F /* UIColor+SoundCloudUI.o */,
+				353A4C50158F87700046524F /* UIDevice+SoundCloudUI.d */,
+				353A4C51158F87700046524F /* UIDevice+SoundCloudUI.dia */,
+				353A4C52158F87700046524F /* UIDevice+SoundCloudUI.o */,
+				353A4C53158F87700046524F /* UIImage+SoundCloudUI.d */,
+				353A4C54158F87700046524F /* UIImage+SoundCloudUI.dia */,
+				353A4C55158F87700046524F /* UIImage+SoundCloudUI.o */,
+				353A4C56158F87700046524F /* UIView+SoundCloudUI.d */,
+				353A4C57158F87700046524F /* UIView+SoundCloudUI.dia */,
+				353A4C58158F87700046524F /* UIView+SoundCloudUI.o */,
+				353A4C59158F87700046524F /* UIViewController+SoundCloudUI.d */,
+				353A4C5A158F87700046524F /* UIViewController+SoundCloudUI.dia */,
+				353A4C5B158F87700046524F /* UIViewController+SoundCloudUI.o */,
+			);
+			path = i386;
+			sourceTree = "<group>";
+		};
+		353A4C64158F87700046524F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				353A4DA3158F87710046524F /* libSoundCloudUI.a */,
+				353A4DA5158F87710046524F /* SoundCloudUI.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		353A4C66158F87700046524F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				353A4C67158F87700046524F /* CocoaAdditions */,
+				353A4C78158F87700046524F /* SoundCloudUI */,
+				353A4CA6158F87700046524F /* SoundCloudUI-Prefix.pch */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		353A4741158F7C540046524F /* CocoaAdditions */ = {
+		353A4C67158F87700046524F /* CocoaAdditions */ = {
 			isa = PBXGroup;
 			children = (
-				353A4742158F7C540046524F /* NSData+SoundCloudUI.h */,
-				353A4743158F7C540046524F /* NSData+SoundCloudUI.m */,
-				353A4744158F7C540046524F /* NSString+SoundCloudUI.h */,
-				353A4745158F7C540046524F /* NSString+SoundCloudUI.m */,
-				353A4746158F7C540046524F /* QuartzCore+SoundCloudUI.h */,
-				353A4747158F7C540046524F /* QuartzCore+SoundCloudUI.m */,
-				353A4748158F7C540046524F /* UIColor+SoundCloudUI.h */,
-				353A4749158F7C540046524F /* UIColor+SoundCloudUI.m */,
-				353A474A158F7C540046524F /* UIDevice+SoundCloudUI.h */,
-				353A474B158F7C540046524F /* UIDevice+SoundCloudUI.m */,
-				353A474C158F7C540046524F /* UIImage+SoundCloudUI.h */,
-				353A474D158F7C540046524F /* UIImage+SoundCloudUI.m */,
-				353A474E158F7C540046524F /* UIView+SoundCloudUI.h */,
-				353A474F158F7C540046524F /* UIView+SoundCloudUI.m */,
-				353A4750158F7C540046524F /* UIViewController+SoundCloudUI.h */,
-				353A4751158F7C540046524F /* UIViewController+SoundCloudUI.m */,
+				353A4C68158F87700046524F /* NSData+SoundCloudUI.h */,
+				353A4C69158F87700046524F /* NSData+SoundCloudUI.m */,
+				353A4C6A158F87700046524F /* NSString+SoundCloudUI.h */,
+				353A4C6B158F87700046524F /* NSString+SoundCloudUI.m */,
+				353A4C6C158F87700046524F /* QuartzCore+SoundCloudUI.h */,
+				353A4C6D158F87700046524F /* QuartzCore+SoundCloudUI.m */,
+				353A4C6E158F87700046524F /* UIColor+SoundCloudUI.h */,
+				353A4C6F158F87700046524F /* UIColor+SoundCloudUI.m */,
+				353A4C70158F87700046524F /* UIDevice+SoundCloudUI.h */,
+				353A4C71158F87700046524F /* UIDevice+SoundCloudUI.m */,
+				353A4C72158F87700046524F /* UIImage+SoundCloudUI.h */,
+				353A4C73158F87700046524F /* UIImage+SoundCloudUI.m */,
+				353A4C74158F87700046524F /* UIView+SoundCloudUI.h */,
+				353A4C75158F87700046524F /* UIView+SoundCloudUI.m */,
+				353A4C76158F87700046524F /* UIViewController+SoundCloudUI.h */,
+				353A4C77158F87700046524F /* UIViewController+SoundCloudUI.m */,
 			);
 			path = CocoaAdditions;
 			sourceTree = "<group>";
 		};
-		353A4752158F7C540046524F /* SoundCloudUI */ = {
+		353A4C78158F87700046524F /* SoundCloudUI */ = {
 			isa = PBXGroup;
 			children = (
-				353A4753158F7C540046524F /* SCAddConnectionViewController.h */,
-				353A4754158F7C540046524F /* SCAddConnectionViewController.m */,
-				353A4755158F7C540046524F /* SCAddConnectionViewControllerDelegate.h */,
-				353A4756158F7C540046524F /* SCBundle.h */,
-				353A4757158F7C540046524F /* SCBundle.m */,
-				353A4758158F7C540046524F /* SCConnectToSoundCloudTitleView.h */,
-				353A4759158F7C540046524F /* SCConnectToSoundCloudTitleView.m */,
-				353A475A158F7C540046524F /* SCCoverImageButton.h */,
-				353A475B158F7C540046524F /* SCCoverImageButton.m */,
-				353A475C158F7C540046524F /* SCFoursquarePlacePickerController.h */,
-				353A475D158F7C540046524F /* SCFoursquarePlacePickerController.m */,
-				353A475E158F7C540046524F /* SCFoursquarePlacePickerControllerDelegate.h */,
-				353A475F158F7C540046524F /* SCHorizontalLineView.h */,
-				353A4760158F7C540046524F /* SCHorizontalLineView.m */,
-				353A4761158F7C540046524F /* SCLoginView.h */,
-				353A4762158F7C540046524F /* SCLoginView.m */,
-				353A4763158F7C540046524F /* SCLoginViewController.h */,
-				353A4764158F7C540046524F /* SCLoginViewController.m */,
-				353A4765158F7C540046524F /* SCNameAndEmailCell.h */,
-				353A4766158F7C540046524F /* SCNameAndEmailCell.m */,
-				353A4767158F7C540046524F /* SCRecordingSaveViewController.h */,
-				353A4768158F7C540046524F /* SCRecordingSaveViewController.m */,
-				353A4769158F7C540046524F /* SCRecordingSaveViewControllerHeaderView.h */,
-				353A476A158F7C540046524F /* SCRecordingSaveViewControllerHeaderView.m */,
-				353A476B158F7C540046524F /* SCRecordingUploadProgressView.h */,
-				353A476C158F7C540046524F /* SCRecordingUploadProgressView.m */,
-				353A476D158F7C540046524F /* SCShareToSoundCloudTitleView.h */,
-				353A476E158F7C540046524F /* SCShareToSoundCloudTitleView.m */,
-				353A476F158F7C540046524F /* SCShareViewController.h */,
-				353A4770158F7C540046524F /* SCShareViewController.m */,
-				353A4771158F7C540046524F /* SCSharingMailPickerController.h */,
-				353A4772158F7C540046524F /* SCSharingMailPickerController.m */,
-				353A4773158F7C540046524F /* SCSwitch.h */,
-				353A4774158F7C540046524F /* SCSwitch.m */,
-				353A4775158F7C540046524F /* SCSwitchLabel.h */,
-				353A4776158F7C540046524F /* SCSwitchLabel.m */,
-				353A4777158F7C540046524F /* SCTableCellBackgroundView.h */,
-				353A4778158F7C540046524F /* SCTableCellBackgroundView.m */,
-				353A4779158F7C540046524F /* SCTextField.h */,
-				353A477A158F7C540046524F /* SCTextField.m */,
-				353A477B158F7C540046524F /* SCUI.h */,
-				353A477C158F7C540046524F /* SCUIErrors.h */,
-				353A477D158F7C540046524F /* SCUIErrors.m */,
-				353A477E158F7C540046524F /* SCUnderlinedButton.h */,
-				353A477F158F7C540046524F /* SCUnderlinedButton.m */,
+				353A4C79158F87700046524F /* SCAddConnectionViewController.h */,
+				353A4C7A158F87700046524F /* SCAddConnectionViewController.m */,
+				353A4C7B158F87700046524F /* SCAddConnectionViewControllerDelegate.h */,
+				353A4C7C158F87700046524F /* SCBundle.h */,
+				353A4C7D158F87700046524F /* SCBundle.m */,
+				353A4C7E158F87700046524F /* SCConnectToSoundCloudTitleView.h */,
+				353A4C7F158F87700046524F /* SCConnectToSoundCloudTitleView.m */,
+				353A4C80158F87700046524F /* SCCoverImageButton.h */,
+				353A4C81158F87700046524F /* SCCoverImageButton.m */,
+				353A4C82158F87700046524F /* SCFoursquarePlacePickerController.h */,
+				353A4C83158F87700046524F /* SCFoursquarePlacePickerController.m */,
+				353A4C84158F87700046524F /* SCFoursquarePlacePickerControllerDelegate.h */,
+				353A4C85158F87700046524F /* SCHorizontalLineView.h */,
+				353A4C86158F87700046524F /* SCHorizontalLineView.m */,
+				353A4C87158F87700046524F /* SCLoginView.h */,
+				353A4C88158F87700046524F /* SCLoginView.m */,
+				353A4C89158F87700046524F /* SCLoginViewController.h */,
+				353A4C8A158F87700046524F /* SCLoginViewController.m */,
+				353A4C8B158F87700046524F /* SCNameAndEmailCell.h */,
+				353A4C8C158F87700046524F /* SCNameAndEmailCell.m */,
+				353A4C8D158F87700046524F /* SCRecordingSaveViewController.h */,
+				353A4C8E158F87700046524F /* SCRecordingSaveViewController.m */,
+				353A4C8F158F87700046524F /* SCRecordingSaveViewControllerHeaderView.h */,
+				353A4C90158F87700046524F /* SCRecordingSaveViewControllerHeaderView.m */,
+				353A4C91158F87700046524F /* SCRecordingUploadProgressView.h */,
+				353A4C92158F87700046524F /* SCRecordingUploadProgressView.m */,
+				353A4C93158F87700046524F /* SCShareToSoundCloudTitleView.h */,
+				353A4C94158F87700046524F /* SCShareToSoundCloudTitleView.m */,
+				353A4C95158F87700046524F /* SCShareViewController.h */,
+				353A4C96158F87700046524F /* SCShareViewController.m */,
+				353A4C97158F87700046524F /* SCSharingMailPickerController.h */,
+				353A4C98158F87700046524F /* SCSharingMailPickerController.m */,
+				353A4C99158F87700046524F /* SCSwitch.h */,
+				353A4C9A158F87700046524F /* SCSwitch.m */,
+				353A4C9B158F87700046524F /* SCSwitchLabel.h */,
+				353A4C9C158F87700046524F /* SCSwitchLabel.m */,
+				353A4C9D158F87700046524F /* SCTableCellBackgroundView.h */,
+				353A4C9E158F87700046524F /* SCTableCellBackgroundView.m */,
+				353A4C9F158F87700046524F /* SCTextField.h */,
+				353A4CA0158F87700046524F /* SCTextField.m */,
+				353A4CA1158F87700046524F /* SCUI.h */,
+				353A4CA2158F87700046524F /* SCUIErrors.h */,
+				353A4CA3158F87700046524F /* SCUIErrors.m */,
+				353A4CA4158F87700046524F /* SCUnderlinedButton.h */,
+				353A4CA5158F87700046524F /* SCUnderlinedButton.m */,
 			);
 			path = SoundCloudUI;
 			sourceTree = "<group>";
 		};
-		353A4781158F7C540046524F /* JSONKit */ = {
+		353A4CA7158F87700046524F /* JSONKit */ = {
 			isa = PBXGroup;
 			children = (
-				353A4783158F7C540046524F /* JSONKit */,
+				353A4CA8158F87700046524F /* build */,
+				353A4CC4158F87700046524F /* CHANGELOG.md */,
+				353A4CC5158F87700046524F /* JSONKit */,
+				353A4CCA158F87700046524F /* JSONKit.xcodeproj */,
+				353A4CCD158F87700046524F /* README.md */,
 			);
 			path = JSONKit;
 			sourceTree = "<group>";
 		};
-		353A4783158F7C540046524F /* JSONKit */ = {
+		353A4CA8158F87700046524F /* build */ = {
 			isa = PBXGroup;
 			children = (
-				353A4862158F85B00046524F /* JSONKit.m */,
-				353A4784158F7C540046524F /* JSONKit-Info.plist */,
-				353A4785158F7C540046524F /* JSONKit-Prefix.pch */,
-				353A4786158F7C540046524F /* JSONKit.h */,
+				353A4CA9158F87700046524F /* Debug-iphonesimulator */,
+				353A4CAB158F87700046524F /* JSONKit.build */,
+			);
+			path = build;
+			sourceTree = "<group>";
+		};
+		353A4CA9158F87700046524F /* Debug-iphonesimulator */ = {
+			isa = PBXGroup;
+			children = (
+				353A4CAA158F87700046524F /* libJSONKit.a */,
+			);
+			path = "Debug-iphonesimulator";
+			sourceTree = "<group>";
+		};
+		353A4CAB158F87700046524F /* JSONKit.build */ = {
+			isa = PBXGroup;
+			children = (
+				353A4CAC158F87700046524F /* Debug */,
+				353A4CB3158F87700046524F /* Debug-iphonesimulator */,
+			);
+			path = JSONKit.build;
+			sourceTree = "<group>";
+		};
+		353A4CAC158F87700046524F /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				353A4CAD158F87700046524F /* JSONKit.framework.build */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		353A4CAD158F87700046524F /* JSONKit.framework.build */ = {
+			isa = PBXGroup;
+			children = (
+				353A4CAE158F87700046524F /* JSONKit-all-target-headers.hmap */,
+				353A4CAF158F87700046524F /* JSONKit-generated-files.hmap */,
+				353A4CB0158F87700046524F /* JSONKit-own-target-headers.hmap */,
+				353A4CB1158F87700046524F /* JSONKit-project-headers.hmap */,
+				353A4CB2158F87700046524F /* JSONKit.hmap */,
+			);
+			path = JSONKit.framework.build;
+			sourceTree = "<group>";
+		};
+		353A4CB3158F87700046524F /* Debug-iphonesimulator */ = {
+			isa = PBXGroup;
+			children = (
+				353A4CB4158F87700046524F /* libJSONKit.build */,
+			);
+			path = "Debug-iphonesimulator";
+			sourceTree = "<group>";
+		};
+		353A4CB4158F87700046524F /* libJSONKit.build */ = {
+			isa = PBXGroup;
+			children = (
+				353A4CB5158F87700046524F /* build-state.dat */,
+				353A4CB6158F87700046524F /* build-state~.dat */,
+				353A4CB7158F87700046524F /* JSONKit-all-target-headers.hmap */,
+				353A4CB8158F87700046524F /* JSONKit-generated-files.hmap */,
+				353A4CB9158F87700046524F /* JSONKit-own-target-headers.hmap */,
+				353A4CBA158F87700046524F /* JSONKit-project-headers.hmap */,
+				353A4CBB158F87700046524F /* JSONKit.hmap */,
+				353A4CBC158F87700046524F /* libJSONKit.dep */,
+				353A4CBD158F87700046524F /* libJSONKit~.dep */,
+				353A4CBE158F87700046524F /* Objects-normal */,
+			);
+			path = libJSONKit.build;
+			sourceTree = "<group>";
+		};
+		353A4CBE158F87700046524F /* Objects-normal */ = {
+			isa = PBXGroup;
+			children = (
+				353A4CBF158F87700046524F /* i386 */,
+			);
+			path = "Objects-normal";
+			sourceTree = "<group>";
+		};
+		353A4CBF158F87700046524F /* i386 */ = {
+			isa = PBXGroup;
+			children = (
+				353A4CC0158F87700046524F /* JSONKit.d */,
+				353A4CC1158F87700046524F /* JSONKit.dia */,
+				353A4CC2158F87700046524F /* JSONKit.LinkFileList */,
+				353A4CC3158F87700046524F /* JSONKit.o */,
+			);
+			path = i386;
+			sourceTree = "<group>";
+		};
+		353A4CC5158F87700046524F /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				353A4CC6158F87700046524F /* JSONKit-Info.plist */,
+				353A4CC7158F87700046524F /* JSONKit-Prefix.pch */,
+				353A4CC8158F87700046524F /* JSONKit.h */,
+				353A4CC9158F87700046524F /* JSONKit.m */,
 			);
 			path = JSONKit;
 			sourceTree = "<group>";
 		};
-		353A478C158F7C540046524F /* OAuth2Client */ = {
+		353A4CCB158F87700046524F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				353A478E158F7C540046524F /* NXOAuth2Account+Private.h */,
-				353A4790158F7C540046524F /* OAuth2Client.framework-Info.plist */,
-				353A4795158F7C540046524F /* Sources */,
+				353A4D8E158F87710046524F /* libJSONKit.a */,
+				353A4D90158F87710046524F /* JSONKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		353A4CCE158F87700046524F /* OAuth2Client */ = {
+			isa = PBXGroup;
+			children = (
+				353A4CCF158F87700046524F /* .gitmodules */,
+				353A4CD0158F87700046524F /* build */,
+				353A4D12158F87700046524F /* NXOAuth2Account+Private.h */,
+				353A4D13158F87700046524F /* NXOAuth2Client.md */,
+				353A4D14158F87700046524F /* OAuth2Client.framework-Info.plist */,
+				353A4D15158F87700046524F /* OAuth2Client.xcodeproj */,
+				353A4D18158F87700046524F /* README.md */,
+				353A4D19158F87700046524F /* Sources */,
 			);
 			path = OAuth2Client;
 			sourceTree = "<group>";
 		};
-		353A4795158F7C540046524F /* Sources */ = {
+		353A4CD0158F87700046524F /* build */ = {
 			isa = PBXGroup;
 			children = (
-				353A4796158F7C540046524F /* NSData+NXOAuth2.h */,
-				353A4797158F7C540046524F /* NSData+NXOAuth2.m */,
-				353A4798158F7C540046524F /* NSString+NXOAuth2.h */,
-				353A4799158F7C540046524F /* NSString+NXOAuth2.m */,
-				353A479A158F7C540046524F /* NSURL+NXOAuth2.h */,
-				353A479B158F7C540046524F /* NSURL+NXOAuth2.m */,
-				353A479C158F7C540046524F /* OAuth2Client */,
-				353A47B5158F7C540046524F /* OAuth2Client_Prefix.pch */,
+				353A4CD1158F87700046524F /* Debug-iphonesimulator */,
+				353A4CD3158F87700046524F /* OAuth2Client.build */,
+				353A4D10158F87700046524F /* UninstalledProducts */,
+			);
+			path = build;
+			sourceTree = "<group>";
+		};
+		353A4CD1158F87700046524F /* Debug-iphonesimulator */ = {
+			isa = PBXGroup;
+			children = (
+				353A4CD2158F87700046524F /* libOAuth2Client.a */,
+			);
+			path = "Debug-iphonesimulator";
+			sourceTree = "<group>";
+		};
+		353A4CD3158F87700046524F /* OAuth2Client.build */ = {
+			isa = PBXGroup;
+			children = (
+				353A4CD4158F87700046524F /* Debug */,
+				353A4CDB158F87700046524F /* Debug-iphonesimulator */,
+			);
+			path = OAuth2Client.build;
+			sourceTree = "<group>";
+		};
+		353A4CD4158F87700046524F /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				353A4CD5158F87700046524F /* OAuth2Client.framework.build */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		353A4CD5158F87700046524F /* OAuth2Client.framework.build */ = {
+			isa = PBXGroup;
+			children = (
+				353A4CD6158F87700046524F /* OAuth2Client-all-target-headers.hmap */,
+				353A4CD7158F87700046524F /* OAuth2Client-generated-files.hmap */,
+				353A4CD8158F87700046524F /* OAuth2Client-own-target-headers.hmap */,
+				353A4CD9158F87700046524F /* OAuth2Client-project-headers.hmap */,
+				353A4CDA158F87700046524F /* OAuth2Client.hmap */,
+			);
+			path = OAuth2Client.framework.build;
+			sourceTree = "<group>";
+		};
+		353A4CDB158F87700046524F /* Debug-iphonesimulator */ = {
+			isa = PBXGroup;
+			children = (
+				353A4CDC158F87700046524F /* OAuth2Client.build */,
+			);
+			path = "Debug-iphonesimulator";
+			sourceTree = "<group>";
+		};
+		353A4CDC158F87700046524F /* OAuth2Client.build */ = {
+			isa = PBXGroup;
+			children = (
+				353A4CDD158F87700046524F /* build-state.dat */,
+				353A4CDE158F87700046524F /* build-state~.dat */,
+				353A4CDF158F87700046524F /* OAuth2Client-all-target-headers.hmap */,
+				353A4CE0158F87700046524F /* OAuth2Client-generated-files.hmap */,
+				353A4CE1158F87700046524F /* OAuth2Client-own-target-headers.hmap */,
+				353A4CE2158F87700046524F /* OAuth2Client-project-headers.hmap */,
+				353A4CE3158F87700046524F /* OAuth2Client.dep */,
+				353A4CE4158F87700046524F /* OAuth2Client.hmap */,
+				353A4CE5158F87700046524F /* OAuth2Client~.dep */,
+				353A4CE6158F87700046524F /* Objects-normal */,
+			);
+			path = OAuth2Client.build;
+			sourceTree = "<group>";
+		};
+		353A4CE6158F87700046524F /* Objects-normal */ = {
+			isa = PBXGroup;
+			children = (
+				353A4CE7158F87700046524F /* i386 */,
+			);
+			path = "Objects-normal";
+			sourceTree = "<group>";
+		};
+		353A4CE7158F87700046524F /* i386 */ = {
+			isa = PBXGroup;
+			children = (
+				353A4CE8158F87700046524F /* NSData+NXOAuth2.d */,
+				353A4CE9158F87700046524F /* NSData+NXOAuth2.dia */,
+				353A4CEA158F87700046524F /* NSData+NXOAuth2.o */,
+				353A4CEB158F87700046524F /* NSString+NXOAuth2.d */,
+				353A4CEC158F87700046524F /* NSString+NXOAuth2.dia */,
+				353A4CED158F87700046524F /* NSString+NXOAuth2.o */,
+				353A4CEE158F87700046524F /* NSURL+NXOAuth2.d */,
+				353A4CEF158F87700046524F /* NSURL+NXOAuth2.dia */,
+				353A4CF0158F87700046524F /* NSURL+NXOAuth2.o */,
+				353A4CF1158F87700046524F /* NXOAuth2AccessToken.d */,
+				353A4CF2158F87700046524F /* NXOAuth2AccessToken.dia */,
+				353A4CF3158F87700046524F /* NXOAuth2AccessToken.o */,
+				353A4CF4158F87700046524F /* NXOAuth2Account.d */,
+				353A4CF5158F87700046524F /* NXOAuth2Account.dia */,
+				353A4CF6158F87700046524F /* NXOAuth2Account.o */,
+				353A4CF7158F87700046524F /* NXOAuth2AccountStore.d */,
+				353A4CF8158F87700046524F /* NXOAuth2AccountStore.dia */,
+				353A4CF9158F87700046524F /* NXOAuth2AccountStore.o */,
+				353A4CFA158F87700046524F /* NXOAuth2Client.d */,
+				353A4CFB158F87700046524F /* NXOAuth2Client.dia */,
+				353A4CFC158F87700046524F /* NXOAuth2Client.o */,
+				353A4CFD158F87700046524F /* NXOAuth2Connection.d */,
+				353A4CFE158F87700046524F /* NXOAuth2Connection.dia */,
+				353A4CFF158F87700046524F /* NXOAuth2Connection.o */,
+				353A4D00158F87700046524F /* NXOAuth2Constants.d */,
+				353A4D01158F87700046524F /* NXOAuth2Constants.dia */,
+				353A4D02158F87700046524F /* NXOAuth2Constants.o */,
+				353A4D03158F87700046524F /* NXOAuth2FileStreamWrapper.d */,
+				353A4D04158F87700046524F /* NXOAuth2FileStreamWrapper.dia */,
+				353A4D05158F87700046524F /* NXOAuth2FileStreamWrapper.o */,
+				353A4D06158F87700046524F /* NXOAuth2PostBodyPart.d */,
+				353A4D07158F87700046524F /* NXOAuth2PostBodyPart.dia */,
+				353A4D08158F87700046524F /* NXOAuth2PostBodyPart.o */,
+				353A4D09158F87700046524F /* NXOAuth2PostBodyStream.d */,
+				353A4D0A158F87700046524F /* NXOAuth2PostBodyStream.dia */,
+				353A4D0B158F87700046524F /* NXOAuth2PostBodyStream.o */,
+				353A4D0C158F87700046524F /* NXOAuth2Request.d */,
+				353A4D0D158F87700046524F /* NXOAuth2Request.dia */,
+				353A4D0E158F87700046524F /* NXOAuth2Request.o */,
+				353A4D0F158F87700046524F /* OAuth2Client.LinkFileList */,
+			);
+			path = i386;
+			sourceTree = "<group>";
+		};
+		353A4D10158F87700046524F /* UninstalledProducts */ = {
+			isa = PBXGroup;
+			children = (
+				353A4D11158F87700046524F /* libOAuth2Client.a */,
+			);
+			path = UninstalledProducts;
+			sourceTree = "<group>";
+		};
+		353A4D16158F87700046524F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				353A4D94158F87710046524F /* OAuth2Client.framework */,
+				353A4D96158F87710046524F /* libOAuth2Client.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		353A4D19158F87700046524F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				353A4D1A158F87700046524F /* NSData+NXOAuth2.h */,
+				353A4D1B158F87700046524F /* NSData+NXOAuth2.m */,
+				353A4D1C158F87700046524F /* NSString+NXOAuth2.h */,
+				353A4D1D158F87700046524F /* NSString+NXOAuth2.m */,
+				353A4D1E158F87700046524F /* NSURL+NXOAuth2.h */,
+				353A4D1F158F87700046524F /* NSURL+NXOAuth2.m */,
+				353A4D20158F87700046524F /* OAuth2Client */,
+				353A4D39158F87700046524F /* OAuth2Client_Prefix.pch */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		353A479C158F7C540046524F /* OAuth2Client */ = {
+		353A4D20158F87700046524F /* OAuth2Client */ = {
 			isa = PBXGroup;
 			children = (
-				353A479D158F7C540046524F /* NXOAuth2.h */,
-				353A479E158F7C540046524F /* NXOAuth2AccessToken.h */,
-				353A479F158F7C540046524F /* NXOAuth2AccessToken.m */,
-				353A47A0158F7C540046524F /* NXOAuth2Account.h */,
-				353A47A1158F7C540046524F /* NXOAuth2Account.m */,
-				353A47A2158F7C540046524F /* NXOAuth2AccountStore.h */,
-				353A47A3158F7C540046524F /* NXOAuth2AccountStore.m */,
-				353A47A4158F7C540046524F /* NXOAuth2Client.h */,
-				353A47A5158F7C540046524F /* NXOAuth2Client.m */,
-				353A47A6158F7C540046524F /* NXOAuth2ClientDelegate.h */,
-				353A47A7158F7C540046524F /* NXOAuth2Connection.h */,
-				353A47A8158F7C540046524F /* NXOAuth2Connection.m */,
-				353A47A9158F7C540046524F /* NXOAuth2ConnectionDelegate.h */,
-				353A47AA158F7C540046524F /* NXOAuth2Constants.h */,
-				353A47AB158F7C540046524F /* NXOAuth2Constants.m */,
-				353A47AC158F7C540046524F /* NXOAuth2FileStreamWrapper.h */,
-				353A47AD158F7C540046524F /* NXOAuth2FileStreamWrapper.m */,
-				353A47AE158F7C540046524F /* NXOAuth2PostBodyPart.h */,
-				353A47AF158F7C540046524F /* NXOAuth2PostBodyPart.m */,
-				353A47B0158F7C540046524F /* NXOAuth2PostBodyStream.h */,
-				353A47B1158F7C540046524F /* NXOAuth2PostBodyStream.m */,
-				353A47B2158F7C540046524F /* NXOAuth2Request.h */,
-				353A47B3158F7C540046524F /* NXOAuth2Request.m */,
-				353A47B4158F7C540046524F /* NXOAuth2TrustDelegate.h */,
+				353A4D21158F87700046524F /* NXOAuth2.h */,
+				353A4D22158F87700046524F /* NXOAuth2AccessToken.h */,
+				353A4D23158F87700046524F /* NXOAuth2AccessToken.m */,
+				353A4D24158F87700046524F /* NXOAuth2Account.h */,
+				353A4D25158F87700046524F /* NXOAuth2Account.m */,
+				353A4D26158F87700046524F /* NXOAuth2AccountStore.h */,
+				353A4D27158F87700046524F /* NXOAuth2AccountStore.m */,
+				353A4D28158F87700046524F /* NXOAuth2Client.h */,
+				353A4D29158F87700046524F /* NXOAuth2Client.m */,
+				353A4D2A158F87700046524F /* NXOAuth2ClientDelegate.h */,
+				353A4D2B158F87700046524F /* NXOAuth2Connection.h */,
+				353A4D2C158F87700046524F /* NXOAuth2Connection.m */,
+				353A4D2D158F87700046524F /* NXOAuth2ConnectionDelegate.h */,
+				353A4D2E158F87700046524F /* NXOAuth2Constants.h */,
+				353A4D2F158F87700046524F /* NXOAuth2Constants.m */,
+				353A4D30158F87700046524F /* NXOAuth2FileStreamWrapper.h */,
+				353A4D31158F87700046524F /* NXOAuth2FileStreamWrapper.m */,
+				353A4D32158F87700046524F /* NXOAuth2PostBodyPart.h */,
+				353A4D33158F87700046524F /* NXOAuth2PostBodyPart.m */,
+				353A4D34158F87700046524F /* NXOAuth2PostBodyStream.h */,
+				353A4D35158F87700046524F /* NXOAuth2PostBodyStream.m */,
+				353A4D36158F87700046524F /* NXOAuth2Request.h */,
+				353A4D37158F87700046524F /* NXOAuth2Request.m */,
+				353A4D38158F87700046524F /* NXOAuth2TrustDelegate.h */,
 			);
 			path = OAuth2Client;
 			sourceTree = "<group>";
 		};
-		353A47B6158F7C540046524F /* OHAttributedLabel */ = {
+		353A4D3A158F87700046524F /* OHAttributedLabel */ = {
 			isa = PBXGroup;
 			children = (
-				353A47C6158F7C540046524F /* OHAttributedLabel */,
+				353A4D3B158F87700046524F /* .gitattributes */,
+				353A4D3C158F87700046524F /* .gitignore */,
+				353A4D3D158F87700046524F /* AttributedLabel Example */,
+				353A4D52158F87700046524F /* build */,
+				353A4D6A158F87700046524F /* LICENSE */,
+				353A4D6B158F87700046524F /* OHAttributedLabel */,
+				353A4D71158F87700046524F /* OHAttributedLabel.xcodeproj */,
+				353A4D74158F87700046524F /* README */,
 			);
 			path = OHAttributedLabel;
 			sourceTree = "<group>";
 		};
-		353A47C6158F7C540046524F /* OHAttributedLabel */ = {
+		353A4D3D158F87700046524F /* AttributedLabel Example */ = {
 			isa = PBXGroup;
 			children = (
-				353A47C7158F7C540046524F /* NSAttributedString+Attributes.h */,
-				353A47C8158F7C540046524F /* NSAttributedString+Attributes.m */,
-				353A47C9158F7C540046524F /* OHAttributedLabel-Prefix.pch */,
-				353A47CA158F7C540046524F /* OHAttributedLabel.h */,
-				353A47CB158F7C540046524F /* OHAttributedLabel.m */,
+				353A4D3E158F87700046524F /* AttributedLabel Example.xcodeproj */,
+				353A4D41158F87700046524F /* AttributedLabel_Example-Info.plist */,
+				353A4D42158F87700046524F /* AttributedLabel_Example_Prefix.pch */,
+				353A4D43158F87700046524F /* build */,
+				353A4D4C158F87700046524F /* Classes */,
+				353A4D4F158F87700046524F /* Icon.png */,
+				353A4D50158F87700046524F /* main.m */,
+				353A4D51158F87700046524F /* MainWindow.xib */,
+			);
+			path = "AttributedLabel Example";
+			sourceTree = "<group>";
+		};
+		353A4D3F158F87700046524F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				353A4D8A158F87710046524F /* AttribLbl.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		353A4D43158F87700046524F /* build */ = {
+			isa = PBXGroup;
+			children = (
+				353A4D44158F87700046524F /* AttributedLabel Example.build */,
+			);
+			path = build;
+			sourceTree = "<group>";
+		};
+		353A4D44158F87700046524F /* AttributedLabel Example.build */ = {
+			isa = PBXGroup;
+			children = (
+				353A4D45158F87700046524F /* Debug-iphonesimulator */,
+			);
+			path = "AttributedLabel Example.build";
+			sourceTree = "<group>";
+		};
+		353A4D45158F87700046524F /* Debug-iphonesimulator */ = {
+			isa = PBXGroup;
+			children = (
+				353A4D46158F87700046524F /* AttributedLabel Example.build */,
+			);
+			path = "Debug-iphonesimulator";
+			sourceTree = "<group>";
+		};
+		353A4D46158F87700046524F /* AttributedLabel Example.build */ = {
+			isa = PBXGroup;
+			children = (
+				353A4D47158F87700046524F /* AttribLbl-all-target-headers.hmap */,
+				353A4D48158F87700046524F /* AttribLbl-generated-files.hmap */,
+				353A4D49158F87700046524F /* AttribLbl-own-target-headers.hmap */,
+				353A4D4A158F87700046524F /* AttribLbl-project-headers.hmap */,
+				353A4D4B158F87700046524F /* AttribLbl.hmap */,
+			);
+			path = "AttributedLabel Example.build";
+			sourceTree = "<group>";
+		};
+		353A4D4C158F87700046524F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				353A4D4D158F87700046524F /* AttributedLabel_ExampleAppDelegate.h */,
+				353A4D4E158F87700046524F /* AttributedLabel_ExampleAppDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		353A4D52158F87700046524F /* build */ = {
+			isa = PBXGroup;
+			children = (
+				353A4D53158F87700046524F /* Debug-iphonesimulator */,
+				353A4D55158F87700046524F /* OHAttributedLabel.build */,
+			);
+			path = build;
+			sourceTree = "<group>";
+		};
+		353A4D53158F87700046524F /* Debug-iphonesimulator */ = {
+			isa = PBXGroup;
+			children = (
+				353A4D54158F87700046524F /* libOHAttributedLabel.a */,
+			);
+			path = "Debug-iphonesimulator";
+			sourceTree = "<group>";
+		};
+		353A4D55158F87700046524F /* OHAttributedLabel.build */ = {
+			isa = PBXGroup;
+			children = (
+				353A4D56158F87700046524F /* Debug-iphonesimulator */,
+			);
+			path = OHAttributedLabel.build;
+			sourceTree = "<group>";
+		};
+		353A4D56158F87700046524F /* Debug-iphonesimulator */ = {
+			isa = PBXGroup;
+			children = (
+				353A4D57158F87700046524F /* OHAttributedLabel.build */,
+			);
+			path = "Debug-iphonesimulator";
+			sourceTree = "<group>";
+		};
+		353A4D57158F87700046524F /* OHAttributedLabel.build */ = {
+			isa = PBXGroup;
+			children = (
+				353A4D58158F87700046524F /* build-state.dat */,
+				353A4D59158F87700046524F /* build-state~.dat */,
+				353A4D5A158F87700046524F /* Objects-normal */,
+				353A4D63158F87700046524F /* OHAttributedLabel-all-target-headers.hmap */,
+				353A4D64158F87700046524F /* OHAttributedLabel-generated-files.hmap */,
+				353A4D65158F87700046524F /* OHAttributedLabel-own-target-headers.hmap */,
+				353A4D66158F87700046524F /* OHAttributedLabel-project-headers.hmap */,
+				353A4D67158F87700046524F /* OHAttributedLabel.dep */,
+				353A4D68158F87700046524F /* OHAttributedLabel.hmap */,
+				353A4D69158F87700046524F /* OHAttributedLabel~.dep */,
+			);
+			path = OHAttributedLabel.build;
+			sourceTree = "<group>";
+		};
+		353A4D5A158F87700046524F /* Objects-normal */ = {
+			isa = PBXGroup;
+			children = (
+				353A4D5B158F87700046524F /* i386 */,
+			);
+			path = "Objects-normal";
+			sourceTree = "<group>";
+		};
+		353A4D5B158F87700046524F /* i386 */ = {
+			isa = PBXGroup;
+			children = (
+				353A4D5C158F87700046524F /* NSAttributedString+Attributes.d */,
+				353A4D5D158F87700046524F /* NSAttributedString+Attributes.dia */,
+				353A4D5E158F87700046524F /* NSAttributedString+Attributes.o */,
+				353A4D5F158F87700046524F /* OHAttributedLabel.d */,
+				353A4D60158F87700046524F /* OHAttributedLabel.dia */,
+				353A4D61158F87700046524F /* OHAttributedLabel.LinkFileList */,
+				353A4D62158F87700046524F /* OHAttributedLabel.o */,
+			);
+			path = i386;
+			sourceTree = "<group>";
+		};
+		353A4D6B158F87700046524F /* OHAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				353A4D6C158F87700046524F /* NSAttributedString+Attributes.h */,
+				353A4D6D158F87700046524F /* NSAttributedString+Attributes.m */,
+				353A4D6E158F87700046524F /* OHAttributedLabel-Prefix.pch */,
+				353A4D6F158F87700046524F /* OHAttributedLabel.h */,
+				353A4D70158F87700046524F /* OHAttributedLabel.m */,
 			);
 			path = OHAttributedLabel;
+			sourceTree = "<group>";
+		};
+		353A4D72158F87700046524F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				353A4D99158F87710046524F /* libOHAttributedLabel.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -654,6 +1668,32 @@
 			mainGroup = 353A46D7158F7B340046524F;
 			productRefGroup = 353A46E3158F7B340046524F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 353A4D3F158F87700046524F /* Products */;
+					ProjectRef = 353A4D3E158F87700046524F /* AttributedLabel Example.xcodeproj */;
+				},
+				{
+					ProductGroup = 353A4CCB158F87700046524F /* Products */;
+					ProjectRef = 353A4CCA158F87700046524F /* JSONKit.xcodeproj */;
+				},
+				{
+					ProductGroup = 353A4D16158F87700046524F /* Products */;
+					ProjectRef = 353A4D15158F87700046524F /* OAuth2Client.xcodeproj */;
+				},
+				{
+					ProductGroup = 353A4D72158F87700046524F /* Products */;
+					ProjectRef = 353A4D71158F87700046524F /* OHAttributedLabel.xcodeproj */;
+				},
+				{
+					ProductGroup = 353A4BDD158F87700046524F /* Products */;
+					ProjectRef = 353A4BDC158F87700046524F /* SoundCloudAPI.xcodeproj */;
+				},
+				{
+					ProductGroup = 353A4C64158F87700046524F /* Products */;
+					ProjectRef = 353A4C63158F87700046524F /* SoundCloudUI.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				353A46E1158F7B340046524F /* sounds-like-a-stream */,
@@ -662,6 +1702,79 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		353A4D8A158F87710046524F /* AttribLbl.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = AttribLbl.app;
+			remoteRef = 353A4D89158F87710046524F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		353A4D8E158F87710046524F /* libJSONKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libJSONKit.a;
+			remoteRef = 353A4D8D158F87710046524F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		353A4D90158F87710046524F /* JSONKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JSONKit.framework;
+			remoteRef = 353A4D8F158F87710046524F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		353A4D94158F87710046524F /* OAuth2Client.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OAuth2Client.framework;
+			remoteRef = 353A4D93158F87710046524F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		353A4D96158F87710046524F /* libOAuth2Client.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOAuth2Client.a;
+			remoteRef = 353A4D95158F87710046524F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		353A4D99158F87710046524F /* libOHAttributedLabel.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOHAttributedLabel.a;
+			remoteRef = 353A4D98158F87710046524F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		353A4D9D158F87710046524F /* SoundCloudAPI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SoundCloudAPI.framework;
+			remoteRef = 353A4D9C158F87710046524F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		353A4D9F158F87710046524F /* libSoundCloudAPI.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSoundCloudAPI.a;
+			remoteRef = 353A4D9E158F87710046524F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		353A4DA3158F87710046524F /* libSoundCloudUI.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSoundCloudUI.a;
+			remoteRef = 353A4DA2158F87710046524F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		353A4DA5158F87710046524F /* SoundCloudUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SoundCloudUI.framework;
+			remoteRef = 353A4DA4158F87710046524F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		353A46E0158F7B340046524F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -669,11 +1782,6 @@
 			files = (
 				353A46F1158F7B340046524F /* InfoPlist.strings in Resources */,
 				353A46FA158F7B340046524F /* MainStoryboard.storyboard in Resources */,
-				353A47EB158F7C540046524F /* SoundCloudAPI.framework-Info.plist in Resources */,
-				353A47F2158F7C540046524F /* SoundCloud.bundle in Resources */,
-				353A47F3158F7C540046524F /* SoundCloudUI-Info.plist in Resources */,
-				353A4812158F7C540046524F /* JSONKit-Info.plist in Resources */,
-				353A4817158F7C540046524F /* OAuth2Client.framework-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -711,57 +1819,6 @@
 				353A46F3158F7B340046524F /* main.m in Sources */,
 				353A46F7158F7B340046524F /* SLASAppDelegate.m in Sources */,
 				353A46FD158F7B340046524F /* SLASViewController.m in Sources */,
-				353A47EC158F7C540046524F /* SCAccount+Private.m in Sources */,
-				353A47ED158F7C540046524F /* SCAccount.m in Sources */,
-				353A47EE158F7C540046524F /* SCConstants.m in Sources */,
-				353A47EF158F7C540046524F /* SCRequest.m in Sources */,
-				353A47F0158F7C540046524F /* SCSoundCloud+Private.m in Sources */,
-				353A47F1158F7C540046524F /* SCSoundCloud.m in Sources */,
-				353A47F4158F7C540046524F /* NSData+SoundCloudUI.m in Sources */,
-				353A47F5158F7C540046524F /* NSString+SoundCloudUI.m in Sources */,
-				353A47F6158F7C540046524F /* QuartzCore+SoundCloudUI.m in Sources */,
-				353A47F7158F7C540046524F /* UIColor+SoundCloudUI.m in Sources */,
-				353A47F8158F7C540046524F /* UIDevice+SoundCloudUI.m in Sources */,
-				353A47F9158F7C540046524F /* UIImage+SoundCloudUI.m in Sources */,
-				353A47FA158F7C540046524F /* UIView+SoundCloudUI.m in Sources */,
-				353A47FB158F7C540046524F /* UIViewController+SoundCloudUI.m in Sources */,
-				353A47FC158F7C540046524F /* SCAddConnectionViewController.m in Sources */,
-				353A47FD158F7C540046524F /* SCBundle.m in Sources */,
-				353A47FE158F7C540046524F /* SCConnectToSoundCloudTitleView.m in Sources */,
-				353A47FF158F7C540046524F /* SCCoverImageButton.m in Sources */,
-				353A4800158F7C540046524F /* SCFoursquarePlacePickerController.m in Sources */,
-				353A4801158F7C540046524F /* SCHorizontalLineView.m in Sources */,
-				353A4802158F7C540046524F /* SCLoginView.m in Sources */,
-				353A4803158F7C540046524F /* SCLoginViewController.m in Sources */,
-				353A4804158F7C540046524F /* SCNameAndEmailCell.m in Sources */,
-				353A4805158F7C540046524F /* SCRecordingSaveViewController.m in Sources */,
-				353A4806158F7C540046524F /* SCRecordingSaveViewControllerHeaderView.m in Sources */,
-				353A4807158F7C540046524F /* SCRecordingUploadProgressView.m in Sources */,
-				353A4808158F7C540046524F /* SCShareToSoundCloudTitleView.m in Sources */,
-				353A4809158F7C540046524F /* SCShareViewController.m in Sources */,
-				353A480A158F7C540046524F /* SCSharingMailPickerController.m in Sources */,
-				353A480B158F7C540046524F /* SCSwitch.m in Sources */,
-				353A480C158F7C540046524F /* SCSwitchLabel.m in Sources */,
-				353A480D158F7C540046524F /* SCTableCellBackgroundView.m in Sources */,
-				353A480E158F7C540046524F /* SCTextField.m in Sources */,
-				353A480F158F7C540046524F /* SCUIErrors.m in Sources */,
-				353A4810158F7C540046524F /* SCUnderlinedButton.m in Sources */,
-				353A4819158F7C540046524F /* NSData+NXOAuth2.m in Sources */,
-				353A481A158F7C540046524F /* NSString+NXOAuth2.m in Sources */,
-				353A481B158F7C540046524F /* NSURL+NXOAuth2.m in Sources */,
-				353A481C158F7C540046524F /* NXOAuth2AccessToken.m in Sources */,
-				353A481D158F7C540046524F /* NXOAuth2Account.m in Sources */,
-				353A481E158F7C540046524F /* NXOAuth2AccountStore.m in Sources */,
-				353A481F158F7C540046524F /* NXOAuth2Client.m in Sources */,
-				353A4820158F7C540046524F /* NXOAuth2Connection.m in Sources */,
-				353A4821158F7C540046524F /* NXOAuth2Constants.m in Sources */,
-				353A4822158F7C540046524F /* NXOAuth2FileStreamWrapper.m in Sources */,
-				353A4823158F7C540046524F /* NXOAuth2PostBodyPart.m in Sources */,
-				353A4824158F7C540046524F /* NXOAuth2PostBodyStream.m in Sources */,
-				353A4825158F7C540046524F /* NXOAuth2Request.m in Sources */,
-				353A482E158F7C540046524F /* NSAttributedString+Attributes.m in Sources */,
-				353A482F158F7C540046524F /* OHAttributedLabel.m in Sources */,
-				353A4863158F85B00046524F /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -871,6 +1928,16 @@
 				GCC_PREFIX_HEADER = "sounds-like-a-stream/sounds-like-a-stream-Prefix.pch";
 				HEADER_SEARCH_PATHS = "./**";
 				INFOPLIST_FILE = "sounds-like-a-stream/sounds-like-a-stream-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/vendor/CocoaSoundCloudAPI/build/Debug-iphonesimulator\"",
+					"\"$(SRCROOT)/vendor/CocoaSoundCloudAPI/build/UninstalledProducts\"",
+					"\"$(SRCROOT)/vendor/CocoaSoundCloudUI/build/Debug-iphonesimulator\"",
+					"\"$(SRCROOT)/vendor/JSONKit/build/Debug-iphonesimulator\"",
+					"\"$(SRCROOT)/vendor/OAuth2Client/build/Debug-iphonesimulator\"",
+					"\"$(SRCROOT)/vendor/OAuth2Client/build/UninstalledProducts\"",
+					"\"$(SRCROOT)/vendor/OHAttributedLabel/build/Debug-iphonesimulator\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -883,6 +1950,16 @@
 				GCC_PREFIX_HEADER = "sounds-like-a-stream/sounds-like-a-stream-Prefix.pch";
 				HEADER_SEARCH_PATHS = "./**";
 				INFOPLIST_FILE = "sounds-like-a-stream/sounds-like-a-stream-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/vendor/CocoaSoundCloudAPI/build/Debug-iphonesimulator\"",
+					"\"$(SRCROOT)/vendor/CocoaSoundCloudAPI/build/UninstalledProducts\"",
+					"\"$(SRCROOT)/vendor/CocoaSoundCloudUI/build/Debug-iphonesimulator\"",
+					"\"$(SRCROOT)/vendor/JSONKit/build/Debug-iphonesimulator\"",
+					"\"$(SRCROOT)/vendor/OAuth2Client/build/Debug-iphonesimulator\"",
+					"\"$(SRCROOT)/vendor/OAuth2Client/build/UninstalledProducts\"",
+					"\"$(SRCROOT)/vendor/OHAttributedLabel/build/Debug-iphonesimulator\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -941,6 +2018,7 @@
 				353A4717158F7B340046524F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		353A4718158F7B340046524F /* Build configuration list for PBXNativeTarget "sounds-like-a-streamTests" */ = {
 			isa = XCConfigurationList;
@@ -949,6 +2027,7 @@
 				353A471A158F7B340046524F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
