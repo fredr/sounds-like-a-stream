@@ -6,11 +6,19 @@
 //  Copyright (c) 2012 Devloop AB. All rights reserved.
 //
 
+#import "SCUI.h"
 #import "SLASAppDelegate.h"
 
 @implementation SLASAppDelegate
 
 @synthesize window = _window;
+
++ (void)initialize;
+{
+    [SCSoundCloud  setClientID:@"c2d1624c7f095d22a68901998193d96e"
+                        secret:@"cd7fd4af56ebf7dfc75b1a154cf0d3da"
+                   redirectURL:[NSURL URLWithString:@"soundslikeastream://oauth2"]];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
