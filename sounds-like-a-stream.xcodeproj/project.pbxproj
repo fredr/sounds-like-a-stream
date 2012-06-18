@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		353A46E7158F7B340046524F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353A46E6158F7B340046524F /* UIKit.framework */; };
+		353A46E9158F7B340046524F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353A46E8158F7B340046524F /* Foundation.framework */; };
+		353A46EB158F7B340046524F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353A46EA158F7B340046524F /* CoreGraphics.framework */; };
+		353A46F1158F7B340046524F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 353A46EF158F7B340046524F /* InfoPlist.strings */; };
+		353A46F3158F7B340046524F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A46F2158F7B340046524F /* main.m */; };
+		353A46F7158F7B340046524F /* SLASAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A46F6158F7B340046524F /* SLASAppDelegate.m */; };
+		353A46FA158F7B340046524F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 353A46F8158F7B340046524F /* MainStoryboard.storyboard */; };
+		353A46FD158F7B340046524F /* SLASViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A46FC158F7B340046524F /* SLASViewController.m */; };
+		353A4705158F7B340046524F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353A4704158F7B340046524F /* SenTestingKit.framework */; };
+		353A4706158F7B340046524F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353A46E6158F7B340046524F /* UIKit.framework */; };
+		353A4707158F7B340046524F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353A46E8158F7B340046524F /* Foundation.framework */; };
+		353A470F158F7B340046524F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 353A470D158F7B340046524F /* InfoPlist.strings */; };
+		353A4712158F7B340046524F /* sounds_like_a_streamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4711158F7B340046524F /* sounds_like_a_streamTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		353A4708158F7B340046524F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 353A46D9158F7B340046524F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 353A46E1158F7B340046524F;
+			remoteInfo = "sounds-like-a-stream";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		353A46E2158F7B340046524F /* sounds-like-a-stream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sounds-like-a-stream.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		353A46E6158F7B340046524F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		353A46E8158F7B340046524F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		353A46EA158F7B340046524F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		353A46EE158F7B340046524F /* sounds-like-a-stream-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "sounds-like-a-stream-Info.plist"; sourceTree = "<group>"; };
+		353A46F0158F7B340046524F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		353A46F2158F7B340046524F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		353A46F4158F7B340046524F /* sounds-like-a-stream-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sounds-like-a-stream-Prefix.pch"; sourceTree = "<group>"; };
+		353A46F5158F7B340046524F /* SLASAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLASAppDelegate.h; sourceTree = "<group>"; };
+		353A46F6158F7B340046524F /* SLASAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLASAppDelegate.m; sourceTree = "<group>"; };
+		353A46F9158F7B340046524F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		353A46FB158F7B340046524F /* SLASViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLASViewController.h; sourceTree = "<group>"; };
+		353A46FC158F7B340046524F /* SLASViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLASViewController.m; sourceTree = "<group>"; };
+		353A4703158F7B340046524F /* sounds-like-a-streamTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sounds-like-a-streamTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		353A4704158F7B340046524F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		353A470C158F7B340046524F /* sounds-like-a-streamTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "sounds-like-a-streamTests-Info.plist"; sourceTree = "<group>"; };
+		353A470E158F7B340046524F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		353A4710158F7B340046524F /* sounds_like_a_streamTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sounds_like_a_streamTests.h; sourceTree = "<group>"; };
+		353A4711158F7B340046524F /* sounds_like_a_streamTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sounds_like_a_streamTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		353A46DF158F7B340046524F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				353A46E7158F7B340046524F /* UIKit.framework in Frameworks */,
+				353A46E9158F7B340046524F /* Foundation.framework in Frameworks */,
+				353A46EB158F7B340046524F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		353A46FF158F7B340046524F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				353A4705158F7B340046524F /* SenTestingKit.framework in Frameworks */,
+				353A4706158F7B340046524F /* UIKit.framework in Frameworks */,
+				353A4707158F7B340046524F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		353A46D7158F7B340046524F = {
+			isa = PBXGroup;
+			children = (
+				353A46EC158F7B340046524F /* sounds-like-a-stream */,
+				353A470A158F7B340046524F /* sounds-like-a-streamTests */,
+				353A46E5158F7B340046524F /* Frameworks */,
+				353A46E3158F7B340046524F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		353A46E3158F7B340046524F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				353A46E2158F7B340046524F /* sounds-like-a-stream.app */,
+				353A4703158F7B340046524F /* sounds-like-a-streamTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		353A46E5158F7B340046524F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				353A46E6158F7B340046524F /* UIKit.framework */,
+				353A46E8158F7B340046524F /* Foundation.framework */,
+				353A46EA158F7B340046524F /* CoreGraphics.framework */,
+				353A4704158F7B340046524F /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		353A46EC158F7B340046524F /* sounds-like-a-stream */ = {
+			isa = PBXGroup;
+			children = (
+				353A46F5158F7B340046524F /* SLASAppDelegate.h */,
+				353A46F6158F7B340046524F /* SLASAppDelegate.m */,
+				353A46F8158F7B340046524F /* MainStoryboard.storyboard */,
+				353A46FB158F7B340046524F /* SLASViewController.h */,
+				353A46FC158F7B340046524F /* SLASViewController.m */,
+				353A46ED158F7B340046524F /* Supporting Files */,
+			);
+			path = "sounds-like-a-stream";
+			sourceTree = "<group>";
+		};
+		353A46ED158F7B340046524F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				353A46EE158F7B340046524F /* sounds-like-a-stream-Info.plist */,
+				353A46EF158F7B340046524F /* InfoPlist.strings */,
+				353A46F2158F7B340046524F /* main.m */,
+				353A46F4158F7B340046524F /* sounds-like-a-stream-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		353A470A158F7B340046524F /* sounds-like-a-streamTests */ = {
+			isa = PBXGroup;
+			children = (
+				353A4710158F7B340046524F /* sounds_like_a_streamTests.h */,
+				353A4711158F7B340046524F /* sounds_like_a_streamTests.m */,
+				353A470B158F7B340046524F /* Supporting Files */,
+			);
+			path = "sounds-like-a-streamTests";
+			sourceTree = "<group>";
+		};
+		353A470B158F7B340046524F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				353A470C158F7B340046524F /* sounds-like-a-streamTests-Info.plist */,
+				353A470D158F7B340046524F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		353A46E1158F7B340046524F /* sounds-like-a-stream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 353A4715158F7B340046524F /* Build configuration list for PBXNativeTarget "sounds-like-a-stream" */;
+			buildPhases = (
+				353A46DE158F7B340046524F /* Sources */,
+				353A46DF158F7B340046524F /* Frameworks */,
+				353A46E0158F7B340046524F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "sounds-like-a-stream";
+			productName = "sounds-like-a-stream";
+			productReference = 353A46E2158F7B340046524F /* sounds-like-a-stream.app */;
+			productType = "com.apple.product-type.application";
+		};
+		353A4702158F7B340046524F /* sounds-like-a-streamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 353A4718158F7B340046524F /* Build configuration list for PBXNativeTarget "sounds-like-a-streamTests" */;
+			buildPhases = (
+				353A46FE158F7B340046524F /* Sources */,
+				353A46FF158F7B340046524F /* Frameworks */,
+				353A4700158F7B340046524F /* Resources */,
+				353A4701158F7B340046524F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				353A4709158F7B340046524F /* PBXTargetDependency */,
+			);
+			name = "sounds-like-a-streamTests";
+			productName = "sounds-like-a-streamTests";
+			productReference = 353A4703158F7B340046524F /* sounds-like-a-streamTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		353A46D9158F7B340046524F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SLAS;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Devloop AB";
+			};
+			buildConfigurationList = 353A46DC158F7B340046524F /* Build configuration list for PBXProject "sounds-like-a-stream" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 353A46D7158F7B340046524F;
+			productRefGroup = 353A46E3158F7B340046524F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				353A46E1158F7B340046524F /* sounds-like-a-stream */,
+				353A4702158F7B340046524F /* sounds-like-a-streamTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		353A46E0158F7B340046524F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				353A46F1158F7B340046524F /* InfoPlist.strings in Resources */,
+				353A46FA158F7B340046524F /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		353A4700158F7B340046524F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				353A470F158F7B340046524F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		353A4701158F7B340046524F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		353A46DE158F7B340046524F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				353A46F3158F7B340046524F /* main.m in Sources */,
+				353A46F7158F7B340046524F /* SLASAppDelegate.m in Sources */,
+				353A46FD158F7B340046524F /* SLASViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		353A46FE158F7B340046524F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				353A4712158F7B340046524F /* sounds_like_a_streamTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		353A4709158F7B340046524F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 353A46E1158F7B340046524F /* sounds-like-a-stream */;
+			targetProxy = 353A4708158F7B340046524F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		353A46EF158F7B340046524F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				353A46F0158F7B340046524F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		353A46F8158F7B340046524F /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				353A46F9158F7B340046524F /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		353A470D158F7B340046524F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				353A470E158F7B340046524F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		353A4713158F7B340046524F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		353A4714158F7B340046524F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		353A4716158F7B340046524F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sounds-like-a-stream/sounds-like-a-stream-Prefix.pch";
+				INFOPLIST_FILE = "sounds-like-a-stream/sounds-like-a-stream-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		353A4717158F7B340046524F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sounds-like-a-stream/sounds-like-a-stream-Prefix.pch";
+				INFOPLIST_FILE = "sounds-like-a-stream/sounds-like-a-stream-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		353A4719158F7B340046524F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/sounds-like-a-stream.app/sounds-like-a-stream";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sounds-like-a-stream/sounds-like-a-stream-Prefix.pch";
+				INFOPLIST_FILE = "sounds-like-a-streamTests/sounds-like-a-streamTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		353A471A158F7B340046524F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/sounds-like-a-stream.app/sounds-like-a-stream";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sounds-like-a-stream/sounds-like-a-stream-Prefix.pch";
+				INFOPLIST_FILE = "sounds-like-a-streamTests/sounds-like-a-streamTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		353A46DC158F7B340046524F /* Build configuration list for PBXProject "sounds-like-a-stream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				353A4713158F7B340046524F /* Debug */,
+				353A4714158F7B340046524F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		353A4715158F7B340046524F /* Build configuration list for PBXNativeTarget "sounds-like-a-stream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				353A4716158F7B340046524F /* Debug */,
+				353A4717158F7B340046524F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		353A4718158F7B340046524F /* Build configuration list for PBXNativeTarget "sounds-like-a-streamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				353A4719158F7B340046524F /* Debug */,
+				353A471A158F7B340046524F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 353A46D9158F7B340046524F /* Project object */;
+}
