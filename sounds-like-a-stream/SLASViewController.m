@@ -6,6 +6,7 @@
 //  Copyright (c) 2012 Devloop AB. All rights reserved.
 //
 
+#import "SCUI.h"
 #import "SLASViewController.h"
 
 @interface SLASViewController ()
@@ -17,7 +18,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+}
+
+- (void) viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    if ([SCSoundCloud account] == nil) {
+        [self login];
+    }
 }
 
 - (void)viewDidUnload
@@ -31,4 +40,27 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+#pragma mark - SoundCloud
+- (void)login;
+{
+    [SCSoundCloud requestAccessWithPreparedAuthorizationURLHandler:^(NSURL *preparedURL){
+        
+        SCLoginViewController *loginViewController;
+        loginViewController = [SCLoginViewController loginViewControllerWithPreparedURL:preparedURL
+                                                                      completionHandler:^(NSError *error){
+                                                                          
+                                                                          if (SC_CANCELED(error)) {
+                                                                              NSLog(@"Canceled!");
+                                                                          } else if (error) {
+                                                                              NSLog(@"Ooops, something went wrong: %@", [error localizedDescription]);
+                                                                          } else {
+                                                                              NSLog(@"Done!");
+                                                                          }
+                                                                      }];
+        
+        [self presentModalViewController:loginViewController
+                                animated:YES];
+        
+    }];
+}
 @end
