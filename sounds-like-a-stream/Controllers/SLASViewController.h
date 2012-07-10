@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class SLASStream;
+
 @interface SLASViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
 
-@property (nonatomic, strong) NSArray * tracks;
+@property (nonatomic, strong) SLASStream * stream;
 
 
 @end

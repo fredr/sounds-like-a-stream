@@ -11,5 +11,8 @@
 @interface SLASStream : NSObject
 
 @property (nonatomic, strong) NSArray * tracks;
+@property (nonatomic, strong) NSString * pageCursor;
+@property (nonatomic, assign) BOOL haveMore;
+
 
 @end

@@ -10,6 +10,18 @@
 
 @implementation SLASStream
 
-@synthesize tracks;
+@synthesize tracks, pageCursor, haveMore;
+
+- (id)init {
+    self = [super init];
+    if (self) {
+        pageCursor = @"";
+        haveMore = YES;
+        tracks = [[NSArray alloc] init];
+    }
+
+    return self;
+}
+
 
 @end

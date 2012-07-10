@@ -46,6 +46,35 @@
     }
 
     SLASStream * stream = [[SLASStream alloc] init];
+
+
+    // check if there is a next page
+    NSString * nextURL = [self.trackData objectForKey:@"next_href"];
+    if (nextURL.length == 0) {
+        stream.haveMore = NO;
+    }
+    else {
+        // extract the cursor parameter, since the next_href forgets .json
+
+        NSURL *next = [NSURL URLWithString:nextURL];
+
+        for (NSString *param in [[next query] componentsSeparatedByString:@"&"]) {
+          NSArray *keyValue = [param componentsSeparatedByString:@"="];
+          if([keyValue count] == 2) {
+              NSString *key = [keyValue objectAtIndex:0];
+              NSString *value = [keyValue objectAtIndex:1];
+
+              if ([key isEqualToString:@"cursor"]) {
+                  stream.pageCursor = value;
+              }
+
+          }
+        }
+
+    }
+
+
+
     stream.tracks = tracks;
 
     return stream;

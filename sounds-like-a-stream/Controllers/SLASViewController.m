@@ -16,15 +16,17 @@
 
 @end
 
-@implementation SLASViewController
+@implementation SLASViewController {
+}
 
-@synthesize tracks;
+@synthesize stream;
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
-    self.tracks = [[NSMutableArray alloc] init];
+    self.stream = [[SLASStream alloc] init];
 
 }
 
@@ -55,11 +57,15 @@
 #pragma mark - SoundCloud
 - (void)getStream
 {
+    // don't request anything if we already got all
+    if (!self.stream.haveMore) return;
+
     SCAccount *account = [SCSoundCloud account];
     SLASStreamHandler *handler = [[SLASStreamHandler alloc] init];
 
     NSDictionary * parameters = [[NSDictionary alloc] initWithObjectsAndKeys:
             @"12", @"limit",
+            self.stream.pageCursor, @"cursor",
             nil];
 
     [SCRequest  performMethod:SCRequestMethodGET
@@ -74,9 +80,12 @@
                     } else {
 
                         [handler initWithData:data];
-                        SLASStream * stream = [handler process];
+                        SLASStream * streamPage = [handler process];
 
-                        self.tracks = [self.tracks arrayByAddingObjectsFromArray:stream.tracks];
+                        self.stream.tracks = [self.stream.tracks arrayByAddingObjectsFromArray:streamPage.tracks];
+                        self.stream.pageCursor = streamPage.pageCursor;
+                        self.stream.haveMore = streamPage.haveMore;
+
                         [self.tableView reloadData];
                     }
       }];
@@ -114,7 +123,7 @@
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.tracks count];
+    return [self.stream.tracks count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath  {
@@ -131,7 +140,7 @@
    	}
 
    	// Set up the cell.
-    SLASTrack * track = [self.tracks objectAtIndex:(NSUInteger)indexPath.row];
+    SLASTrack * track = [self.stream.tracks objectAtIndex:(NSUInteger)indexPath.row];
    	cell.textLabel.text = [track name];
 
    	return cell;
@@ -140,7 +149,11 @@
 
 #pragma mark - UITableViewDelegate
 
-
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row >= self.stream.tracks.count - 1) {
+        [self getStream];
+    }
+}
 
 @end
 
