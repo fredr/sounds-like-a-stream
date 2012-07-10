@@ -31,6 +31,9 @@
 		353A4DA8158F87810046524F /* libOHAttributedLabel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 353A4D99158F87710046524F /* libOHAttributedLabel.a */; };
 		353A4DA9158F87810046524F /* libSoundCloudAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 353A4D9F158F87710046524F /* libSoundCloudAPI.a */; };
 		353A4DAA158F87810046524F /* libSoundCloudUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 353A4DA3158F87710046524F /* libSoundCloudUI.a */; };
+		353A4DAA158F878100465254 /* SLASStreamHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4DAA158F878100465253 /* SLASStreamHandler.m */; };
+		353A4DAA158F878100465258 /* SLASTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4DAA158F878100465257 /* SLASTrack.m */; };
+		353A4DAA158F87810046525B /* SLASStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4DAA158F87810046525A /* SLASStream.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -526,6 +529,13 @@
 		353A4D70158F87700046524F /* OHAttributedLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OHAttributedLabel.m; sourceTree = "<group>"; };
 		353A4D71158F87700046524F /* OHAttributedLabel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = OHAttributedLabel.xcodeproj; sourceTree = "<group>"; };
 		353A4D74158F87700046524F /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		353A4DAA158F878100465252 /* SLASHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLASHandler.h; sourceTree = "<group>"; };
+		353A4DAA158F878100465253 /* SLASStreamHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLASStreamHandler.m; sourceTree = "<group>"; };
+		353A4DAA158F878100465255 /* SLASStreamHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLASStreamHandler.h; sourceTree = "<group>"; };
+		353A4DAA158F878100465257 /* SLASTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLASTrack.m; sourceTree = "<group>"; };
+		353A4DAA158F878100465259 /* SLASTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLASTrack.h; sourceTree = "<group>"; };
+		353A4DAA158F87810046525A /* SLASStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLASStream.m; sourceTree = "<group>"; };
+		353A4DAA158F87810046525C /* SLASStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLASStream.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -606,9 +616,10 @@
 				353A46F5158F7B340046524F /* SLASAppDelegate.h */,
 				353A46F6158F7B340046524F /* SLASAppDelegate.m */,
 				353A46F8158F7B340046524F /* MainStoryboard.storyboard */,
-				353A46FB158F7B340046524F /* SLASViewController.h */,
-				353A46FC158F7B340046524F /* SLASViewController.m */,
 				353A46ED158F7B340046524F /* Supporting Files */,
+				353A4DAA158F878100465250 /* Handlers */,
+				353A4DAA158F878100465251 /* Controllers */,
+				353A4DAA158F878100465256 /* Models */,
 			);
 			path = "sounds-like-a-stream";
 			sourceTree = "<group>";
@@ -1609,6 +1620,36 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		353A4DAA158F878100465250 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				353A4DAA158F878100465255 /* SLASStreamHandler.h */,
+				353A4DAA158F878100465253 /* SLASStreamHandler.m */,
+				353A4DAA158F878100465252 /* SLASHandler.h */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		353A4DAA158F878100465251 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				353A46FC158F7B340046524F /* SLASViewController.m */,
+				353A46FB158F7B340046524F /* SLASViewController.h */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		353A4DAA158F878100465256 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				353A4DAA158F87810046525C /* SLASStream.h */,
+				353A4DAA158F87810046525A /* SLASStream.m */,
+				353A4DAA158F878100465259 /* SLASTrack.h */,
+				353A4DAA158F878100465257 /* SLASTrack.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1819,6 +1860,9 @@
 				353A46F3158F7B340046524F /* main.m in Sources */,
 				353A46F7158F7B340046524F /* SLASAppDelegate.m in Sources */,
 				353A46FD158F7B340046524F /* SLASViewController.m in Sources */,
+				353A4DAA158F878100465254 /* SLASStreamHandler.m in Sources */,
+				353A4DAA158F878100465258 /* SLASTrack.m in Sources */,
+				353A4DAA158F87810046525B /* SLASStream.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1939,6 +1983,7 @@
 					"\"$(SRCROOT)/vendor/OHAttributedLabel/build/Debug-iphonesimulator\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/vendor/JSONKit/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1961,6 +2006,7 @@
 					"\"$(SRCROOT)/vendor/OHAttributedLabel/build/Debug-iphonesimulator\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/vendor/JSONKit/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

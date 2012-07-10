@@ -8,6 +8,8 @@
 
 #import "SCUI.h"
 #import "SLASViewController.h"
+#import "SLASStreamHandler.h"
+#import "SLASStream.h"
 
 @interface SLASViewController ()
 
@@ -25,7 +27,12 @@
     [super viewDidAppear:animated];
     
     if ([SCSoundCloud account] == nil) {
+        // login user if we dont have any account info
         [self login];
+    }
+    else {
+        // get stream if the user is already logged in
+        [self getStream];
     }
 }
 
@@ -41,7 +48,29 @@
 }
 
 #pragma mark - SoundCloud
-- (void)login;
+- (void)getStream
+{
+    SCAccount *account = [SCSoundCloud account];
+    SLASStreamHandler *handler = [[SLASStreamHandler alloc] init];
+
+    [SCRequest  performMethod:SCRequestMethodGET
+                   onResource:[NSURL URLWithString:@"https://api.soundcloud.com/me/activities/track.json"]
+              usingParameters:nil
+                  withAccount:account
+       sendingProgressHandler:nil
+              responseHandler:^(NSURLResponse *response, NSData *data, NSError *error){
+                    // Handle the response
+                    if (error) {
+                        NSLog(@"Ooops, something went wrong: %@", [error localizedDescription]);
+                    } else {
+
+                        [handler initWithData:data];
+                        SLASStream * stream = [handler process];
+                    }
+      }];
+    }
+
+- (void)login
 {
     [SCSoundCloud requestAccessWithPreparedAuthorizationURLHandler:^(NSURL *preparedURL){
         
@@ -51,9 +80,15 @@
                                                                           
                                                                           if (SC_CANCELED(error)) {
                                                                               NSLog(@"Canceled!");
+
                                                                           } else if (error) {
                                                                               NSLog(@"Ooops, something went wrong: %@", [error localizedDescription]);
+
                                                                           } else {
+
+                                                                              // Succeeded to login, get stream
+
+                                                                              [self getStream];
                                                                               NSLog(@"Done!");
                                                                           }
                                                                       }];

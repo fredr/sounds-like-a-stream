@@ -15,8 +15,8 @@
 
 + (void)initialize;
 {
-    [SCSoundCloud  setClientID:@"c2d1624c7f095d22a68901998193d96e"
-                        secret:@"cd7fd4af56ebf7dfc75b1a154cf0d3da"
+    [SCSoundCloud  setClientID:@"3b48d7ecd4932e1ebf63c6ada4655a55"
+                        secret:@"abd5a42dd2005b7059387cf785010a4d"
                    redirectURL:[NSURL URLWithString:@"soundslikeastream://oauth2"]];
 }
 

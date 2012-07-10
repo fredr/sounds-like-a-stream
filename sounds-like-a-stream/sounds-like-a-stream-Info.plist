@@ -36,5 +36,16 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>soundslikeastream</string>
+			</array>
+			<key>CFBundleURLName</key>
+			<string>com.enestad.${PRODUCT_NAME:rfc1034identifier}</string>
+		</dict>
+	</array>
 </dict>
 </plist>
