@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SLASViewController : UIViewController
+@interface SLASViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
 
-
+@property (nonatomic, strong) NSArray * tracks;
 
 
 @end

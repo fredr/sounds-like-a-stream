@@ -10,6 +10,7 @@
 #import "SLASViewController.h"
 #import "SLASStreamHandler.h"
 #import "SLASStream.h"
+#import "SLASTrack.h"
 
 @interface SLASViewController ()
 
@@ -17,10 +18,14 @@
 
 @implementation SLASViewController
 
+@synthesize tracks;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+
+    self.tracks = [[NSMutableArray alloc] init];
+
 }
 
 - (void) viewDidAppear:(BOOL)animated {
@@ -53,9 +58,13 @@
     SCAccount *account = [SCSoundCloud account];
     SLASStreamHandler *handler = [[SLASStreamHandler alloc] init];
 
+    NSDictionary * parameters = [[NSDictionary alloc] initWithObjectsAndKeys:
+            @"12", @"limit",
+            nil];
+
     [SCRequest  performMethod:SCRequestMethodGET
                    onResource:[NSURL URLWithString:@"https://api.soundcloud.com/me/activities/track.json"]
-              usingParameters:nil
+              usingParameters:parameters
                   withAccount:account
        sendingProgressHandler:nil
               responseHandler:^(NSURLResponse *response, NSData *data, NSError *error){
@@ -66,6 +75,9 @@
 
                         [handler initWithData:data];
                         SLASStream * stream = [handler process];
+
+                        self.tracks = [self.tracks arrayByAddingObjectsFromArray:stream.tracks];
+                        [self.tableView reloadData];
                     }
       }];
     }
@@ -98,4 +110,37 @@
         
     }];
 }
+
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self.tracks count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath  {
+
+    static NSString *MyIdentifier = @"StreamCell";
+
+   	// Try to retrieve from the table view a now-unused cell with the given identifier.
+   	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
+
+   	// If no cell is available, create a new one using the given identifier.
+   	if (cell == nil) {
+   		// Use the default cell style.
+   		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:MyIdentifier];
+   	}
+
+   	// Set up the cell.
+    SLASTrack * track = [self.tracks objectAtIndex:(NSUInteger)indexPath.row];
+   	cell.textLabel.text = [track name];
+
+   	return cell;
+}
+
+
+#pragma mark - UITableViewDelegate
+
+
+
 @end
+
