@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="MMG-Uw-Vho">
     <dependencies>
         <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="5">
+        <!--View Controller - Stream-->
+        <scene sceneID="5a8-sJ-yV8">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
-                <viewController id="2" customClass="SLASViewController" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="imU-sW-jaK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="MoS-vL-0fm" customClass="SLASViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="75" sectionHeaderHeight="22" sectionFooterHeight="22" id="2GZ-7i-zA2">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StreamCell" rowHeight="75" id="LbM-5s-x04" customClass="SLASStreamTableViewCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StreamCell" rowHeight="75" id="LbM-5s-x04" customClass="SLASStreamTableViewCell">
                                 <rect key="frame" x="0.0" y="22" width="320" height="75"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -39,12 +39,37 @@
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="2" id="RMh-vW-Rvz"/>
-                            <outlet property="delegate" destination="2" id="ZHJ-hW-EKe"/>
+                            <outlet property="dataSource" destination="MoS-vL-0fm" id="ifb-nn-hS2"/>
+                            <outlet property="delegate" destination="MoS-vL-0fm" id="v1x-fr-NJP"/>
                         </connections>
                     </tableView>
-                </viewController>
+                    <navigationItem key="navigationItem" title="Stream" id="fnI-cE-YTY">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="GGi-uP-2dc">
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <connections>
+                                <action selector="logout" destination="MoS-vL-0fm" id="4PX-Jn-lQq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
             </objects>
+            <point key="canvasLocation" x="938" y="69"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="reO-wY-JLZ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="90M-2N-JOB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="MMG-Uw-Vho" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="XwZ-0f-iiE">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="MoS-vL-0fm" kind="relationship" relationship="rootViewController" id="ei3-nr-f2w"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="404" y="69"/>
         </scene>
     </scenes>
     <classes>
@@ -56,6 +81,9 @@
         </class>
         <class className="SLASViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SLASViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="logout"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

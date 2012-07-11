@@ -11,6 +11,8 @@
 @implementation SLASTrack
 
 @synthesize name;
+@synthesize id;
+@synthesize permalink;
 @synthesize waveformURL;
 
 

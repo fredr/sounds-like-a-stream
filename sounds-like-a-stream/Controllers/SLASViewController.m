@@ -200,5 +200,40 @@
     }
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    SLASTrack * track = [self.stream.tracks objectAtIndex:(NSUInteger)indexPath.row];
+
+    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"soundcloud:tracks:"]]) {
+
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"soundcloud:tracks:%@", track.id]]];
+
+    }
+    else {
+
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:track.permalink]];
+
+    }
+
+
+
+    // deselect directly, so that the selection don't stick
+	[tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+#pragma mark - IBActions
+
+-(IBAction)logout {
+    [SCSoundCloud removeAccess];
+
+    self.stream = [[SLASStream alloc] init];
+    self.isLoading = NO;
+    self.waveformCache = [[NSMutableDictionary alloc] init];
+    [self.tableView reloadData];
+
+    [self login];
+
+}
+
 @end
 
