@@ -15,6 +15,7 @@
 @property (nonatomic, strong) SLASStream * stream;
 @property (nonatomic, assign) BOOL isLoading;
 @property (nonatomic, strong) UIActivityIndicatorView * loadingView;
+@property (nonatomic, strong) NSMutableDictionary * waveformCache;
 
 
 @end

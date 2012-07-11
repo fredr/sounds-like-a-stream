@@ -6,15 +6,12 @@
 //  Copyright (c) 2012 Devloop AB. All rights reserved.
 //
 
-#import <CoreGraphics/CoreGraphics.h>
 #import "SCUI.h"
 #import "SLASViewController.h"
 #import "SLASStreamHandler.h"
 #import "SLASStream.h"
 #import "SLASTrack.h"
-#import "UIColor+SoundCloudUI.h"
-#import "UIImage+SoundCloudUI.h"
-#import "UIImage+Masking.h"
+#import "SLASWaveformView.h"
 
 @interface SLASViewController ()
 
@@ -23,7 +20,7 @@
 @implementation SLASViewController {
 }
 
-@synthesize stream, isLoading, loadingView;
+@synthesize stream, isLoading, loadingView, waveformCache;
 
 
 - (void)viewDidLoad
@@ -32,6 +29,7 @@
 
     self.stream = [[SLASStream alloc] init];
     self.isLoading = NO;
+    self.waveformCache = [[NSMutableDictionary alloc] init];
 
     UIActivityIndicatorView * activityIndicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     activityIndicatorView.frame = CGRectMake(0, 0, 360, 40);
@@ -153,40 +151,41 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath  {
 
-    static NSString *MyIdentifier = @"StreamCell";
+    static NSString *CellIdentifier = @"StreamCell";
 
    	// Try to retrieve from the table view a now-unused cell with the given identifier.
-   	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
+   	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 
    	// If no cell is available, create a new one using the given identifier.
    	if (cell == nil) {
    		// Use the default cell style.
-   		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:MyIdentifier];
+   		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
    	}
 
+    // try to get the waveform view from cache first, to prevent flickering, and to prevent us from doing lots of requests
+    SLASWaveformView * view = [self.waveformCache objectForKey:[NSString stringWithFormat:@"%d", indexPath.row]];
+
     // Set up the cell.
+    SLASTrack * track = [self.stream.tracks objectAtIndex:(NSUInteger)indexPath.row];
+    //cell.textLabel.text = [track name];
+    cell.textLabel.backgroundColor = [UIColor clearColor];
 
+    if (view == nil) {
+        view = [[SLASWaveformView alloc] initWithFrame:CGRectMake(0, 0, cell.frame.size.width, cell.frame.size.height)];
+        view.waveformURL = track.waveformURL;
 
-    UIImage * mask = [[UIImage imageNamed:@"mask.png"] fixMaskImage];
-    UIImage * waveform = [mask maskImage:[UIImage imageWithColor:[UIColor blueColor] andSize:cell.frame.size]];
+        // hide things that end up outside the view
+        view.clipsToBounds = YES;
 
+        view.backgroundColor = [UIColor whiteColor];
 
-    UIView * view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 360, 44)];
-    UIImageView *waveImageView = [[UIImageView alloc] initWithImage:waveform];
-    waveImageView.frame = CGRectMake(0, 22, 360, 44);
-    [view addSubview:waveImageView];
-
-    // hide things that end up outside the view
-    view.clipsToBounds = YES;
-
-    view.backgroundColor = [UIColor redColor];
+        // add to cache
+        [self.waveformCache setObject:view forKey:[NSString stringWithFormat:@"%d", indexPath.row]];
+    }
 
     cell.backgroundView = view;
 
 
-    SLASTrack * track = [self.stream.tracks objectAtIndex:(NSUInteger)indexPath.row];
-   	//cell.textLabel.text = [track name];
-    cell.textLabel.backgroundColor = [UIColor clearColor];
 
    	return cell;
 }

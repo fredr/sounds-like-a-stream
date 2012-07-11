@@ -66,10 +66,10 @@
   CGContextFillRect(currentContext, fillRect);
 
   //Snap the picture and close the context
-  UIImage *retval = UIGraphicsGetImageFromCurrentImageContext();
+  UIImage *result = UIGraphicsGetImageFromCurrentImageContext();
   UIGraphicsEndImageContext();
 
-  return retval;
+  return result;
 }
 
 @end
