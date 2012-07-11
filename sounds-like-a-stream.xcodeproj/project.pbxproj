@@ -37,6 +37,7 @@
 		353A4DAA158F878100465267 /* UIImage+Masking.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4DAA158F878100465266 /* UIImage+Masking.m */; };
 		353A4DAA158F87810046526B /* SLASWaveformView.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4DAA158F87810046526A /* SLASWaveformView.m */; };
 		353A4DAA158F87810046526E /* SLASStreamTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4DAA158F87810046526D /* SLASStreamTableViewCell.m */; };
+		3588428F15ADCE0F00838D5A /* SoundCloud.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3588428E15ADCE0F00838D5A /* SoundCloud.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -545,6 +546,7 @@
 		353A4DAA158F87810046526C /* SLASWaveformView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLASWaveformView.h; sourceTree = "<group>"; };
 		353A4DAA158F87810046526D /* SLASStreamTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLASStreamTableViewCell.m; sourceTree = "<group>"; };
 		353A4DAA158F87810046526F /* SLASStreamTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLASStreamTableViewCell.h; sourceTree = "<group>"; };
+		3588428E15ADCE0F00838D5A /* SoundCloud.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SoundCloud.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -622,6 +624,7 @@
 		353A46EC158F7B340046524F /* sounds-like-a-stream */ = {
 			isa = PBXGroup;
 			children = (
+				3588428E15ADCE0F00838D5A /* SoundCloud.bundle */,
 				353A46F5158F7B340046524F /* SLASAppDelegate.h */,
 				353A46F6158F7B340046524F /* SLASAppDelegate.m */,
 				353A46F8158F7B340046524F /* MainStoryboard.storyboard */,
@@ -1854,6 +1857,7 @@
 			files = (
 				353A46F1158F7B340046524F /* InfoPlist.strings in Resources */,
 				353A46FA158F7B340046524F /* MainStoryboard.storyboard in Resources */,
+				3588428F15ADCE0F00838D5A /* SoundCloud.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
