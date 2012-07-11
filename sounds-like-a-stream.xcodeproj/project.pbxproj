@@ -34,6 +34,8 @@
 		353A4DAA158F878100465254 /* SLASStreamHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4DAA158F878100465253 /* SLASStreamHandler.m */; };
 		353A4DAA158F878100465258 /* SLASTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4DAA158F878100465257 /* SLASTrack.m */; };
 		353A4DAA158F87810046525B /* SLASStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4DAA158F87810046525A /* SLASStream.m */; };
+		353A4DAA158F878100465261 /* mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 353A4DAA158F878100465260 /* mask.png */; };
+		353A4DAA158F878100465267 /* UIImage+Masking.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4DAA158F878100465266 /* UIImage+Masking.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -536,6 +538,9 @@
 		353A4DAA158F878100465259 /* SLASTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLASTrack.h; sourceTree = "<group>"; };
 		353A4DAA158F87810046525A /* SLASStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLASStream.m; sourceTree = "<group>"; };
 		353A4DAA158F87810046525C /* SLASStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLASStream.h; sourceTree = "<group>"; };
+		353A4DAA158F878100465260 /* mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mask.png; sourceTree = "<group>"; };
+		353A4DAA158F878100465266 /* UIImage+Masking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Masking.m"; sourceTree = "<group>"; };
+		353A4DAA158F878100465268 /* UIImage+Masking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Masking.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -620,6 +625,8 @@
 				353A4DAA158F878100465250 /* Handlers */,
 				353A4DAA158F878100465251 /* Controllers */,
 				353A4DAA158F878100465256 /* Models */,
+				353A4DAA158F87810046525D /* Images */,
+				353A4DAA158F878100465262 /* Helpers */,
 			);
 			path = "sounds-like-a-stream";
 			sourceTree = "<group>";
@@ -1650,6 +1657,23 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		353A4DAA158F87810046525D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				353A4DAA158F878100465260 /* mask.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		353A4DAA158F878100465262 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				353A4DAA158F878100465268 /* UIImage+Masking.h */,
+				353A4DAA158F878100465266 /* UIImage+Masking.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1823,6 +1847,7 @@
 			files = (
 				353A46F1158F7B340046524F /* InfoPlist.strings in Resources */,
 				353A46FA158F7B340046524F /* MainStoryboard.storyboard in Resources */,
+				353A4DAA158F878100465261 /* mask.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1863,6 +1888,7 @@
 				353A4DAA158F878100465254 /* SLASStreamHandler.m in Sources */,
 				353A4DAA158F878100465258 /* SLASTrack.m in Sources */,
 				353A4DAA158F87810046525B /* SLASStream.m in Sources */,
+				353A4DAA158F878100465267 /* UIImage+Masking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1983,7 +2009,7 @@
 					"\"$(SRCROOT)/vendor/OHAttributedLabel/build/Debug-iphonesimulator\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/vendor/JSONKit/**";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/vendor/JSONKit/** \"${PROJECT_DIR}/vendor/CocoaSoundCloudUI/** \"${PROJECT_DIR}/vendor/CocoaSoundCloudUI/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -2006,7 +2032,7 @@
 					"\"$(SRCROOT)/vendor/OHAttributedLabel/build/Debug-iphonesimulator\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/vendor/JSONKit/**";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/vendor/JSONKit/** \"${PROJECT_DIR}/vendor/CocoaSoundCloudUI/** \"${PROJECT_DIR}/vendor/CocoaSoundCloudUI/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -6,11 +6,15 @@
 //  Copyright (c) 2012 Devloop AB. All rights reserved.
 //
 
+#import <CoreGraphics/CoreGraphics.h>
 #import "SCUI.h"
 #import "SLASViewController.h"
 #import "SLASStreamHandler.h"
 #import "SLASStream.h"
 #import "SLASTrack.h"
+#import "UIColor+SoundCloudUI.h"
+#import "UIImage+SoundCloudUI.h"
+#import "UIImage+Masking.h"
 
 @interface SLASViewController ()
 
@@ -140,6 +144,7 @@
     }];
 }
 
+
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -159,9 +164,29 @@
    		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:MyIdentifier];
    	}
 
-   	// Set up the cell.
+    // Set up the cell.
+
+
+    UIImage * mask = [[UIImage imageNamed:@"mask.png"] fixMaskImage];
+    UIImage * waveform = [mask maskImage:[UIImage imageWithColor:[UIColor blueColor] andSize:cell.frame.size]];
+
+
+    UIView * view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 360, 44)];
+    UIImageView *waveImageView = [[UIImageView alloc] initWithImage:waveform];
+    waveImageView.frame = CGRectMake(0, 22, 360, 44);
+    [view addSubview:waveImageView];
+
+    // hide things that end up outside the view
+    view.clipsToBounds = YES;
+
+    view.backgroundColor = [UIColor redColor];
+
+    cell.backgroundView = view;
+
+
     SLASTrack * track = [self.stream.tracks objectAtIndex:(NSUInteger)indexPath.row];
-   	cell.textLabel.text = [track name];
+   	//cell.textLabel.text = [track name];
+    cell.textLabel.backgroundColor = [UIColor clearColor];
 
    	return cell;
 }

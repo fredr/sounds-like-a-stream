@@ -11,5 +11,7 @@
 @implementation SLASTrack
 
 @synthesize name;
+@synthesize waveformURL;
+
 
 @end

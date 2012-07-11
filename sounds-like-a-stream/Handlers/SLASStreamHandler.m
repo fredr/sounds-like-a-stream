@@ -40,6 +40,7 @@
 
         SLASTrack * track = [[SLASTrack alloc] init];
         track.name = [origin objectForKey:@"title"];
+        track.waveformURL = [NSURL URLWithString:[origin objectForKey:@"waveform_url"]];
 
         [tracks addObject:track];
 

@@ -11,5 +11,6 @@
 @interface SLASTrack : NSObject
 
 @property (nonatomic, strong) NSString * name;
+@property (nonatomic, strong) NSURL * waveformURL;
 
 @end
