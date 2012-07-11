@@ -36,6 +36,7 @@
 		353A4DAA158F87810046525B /* SLASStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4DAA158F87810046525A /* SLASStream.m */; };
 		353A4DAA158F878100465267 /* UIImage+Masking.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4DAA158F878100465266 /* UIImage+Masking.m */; };
 		353A4DAA158F87810046526B /* SLASWaveformView.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4DAA158F87810046526A /* SLASWaveformView.m */; };
+		353A4DAA158F87810046526E /* SLASStreamTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4DAA158F87810046526D /* SLASStreamTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -542,6 +543,8 @@
 		353A4DAA158F878100465268 /* UIImage+Masking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Masking.h"; sourceTree = "<group>"; };
 		353A4DAA158F87810046526A /* SLASWaveformView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLASWaveformView.m; sourceTree = "<group>"; };
 		353A4DAA158F87810046526C /* SLASWaveformView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLASWaveformView.h; sourceTree = "<group>"; };
+		353A4DAA158F87810046526D /* SLASStreamTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLASStreamTableViewCell.m; sourceTree = "<group>"; };
+		353A4DAA158F87810046526F /* SLASStreamTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLASStreamTableViewCell.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1670,6 +1673,8 @@
 		353A4DAA158F878100465269 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				353A4DAA158F87810046526F /* SLASStreamTableViewCell.h */,
+				353A4DAA158F87810046526D /* SLASStreamTableViewCell.m */,
 				353A4DAA158F87810046526C /* SLASWaveformView.h */,
 				353A4DAA158F87810046526A /* SLASWaveformView.m */,
 			);
@@ -1891,6 +1896,7 @@
 				353A4DAA158F87810046525B /* SLASStream.m in Sources */,
 				353A4DAA158F878100465267 /* UIImage+Masking.m in Sources */,
 				353A4DAA158F87810046526B /* SLASWaveformView.m in Sources */,
+				353A4DAA158F87810046526E /* SLASStreamTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

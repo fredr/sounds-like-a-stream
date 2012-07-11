@@ -12,6 +12,7 @@
 #import "SLASStream.h"
 #import "SLASTrack.h"
 #import "SLASWaveformView.h"
+#import "SLASStreamTableViewCell.h"
 
 @interface SLASViewController ()
 
@@ -80,7 +81,7 @@
     SLASStreamHandler *handler = [[SLASStreamHandler alloc] init];
 
     NSDictionary * parameters = [[NSDictionary alloc] initWithObjectsAndKeys:
-                                                        @"12", @"limit",
+                                                        @"8", @"limit",
                                                         self.stream.pageCursor, @"cursor",
                                                         nil];
 
@@ -154,12 +155,12 @@
     static NSString *CellIdentifier = @"StreamCell";
 
    	// Try to retrieve from the table view a now-unused cell with the given identifier.
-   	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    SLASStreamTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 
    	// If no cell is available, create a new one using the given identifier.
    	if (cell == nil) {
    		// Use the default cell style.
-   		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+   		cell = [[SLASStreamTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
    	}
 
     // try to get the waveform view from cache first, to prevent flickering, and to prevent us from doing lots of requests
@@ -167,8 +168,8 @@
 
     // Set up the cell.
     SLASTrack * track = [self.stream.tracks objectAtIndex:(NSUInteger)indexPath.row];
-    //cell.textLabel.text = [track name];
-    cell.textLabel.backgroundColor = [UIColor clearColor];
+    cell.trackTitle.text = [track name];
+    cell.trackTitle.backgroundColor = [UIColor clearColor];
 
     if (view == nil) {
         view = [[SLASWaveformView alloc] initWithFrame:CGRectMake(0, 0, cell.frame.size.width, cell.frame.size.height)];
