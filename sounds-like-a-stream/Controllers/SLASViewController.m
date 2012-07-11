@@ -19,7 +19,7 @@
 @implementation SLASViewController {
 }
 
-@synthesize stream;
+@synthesize stream, isLoading, loadingView;
 
 
 - (void)viewDidLoad
@@ -27,6 +27,15 @@
     [super viewDidLoad];
 
     self.stream = [[SLASStream alloc] init];
+    self.isLoading = NO;
+
+    UIActivityIndicatorView * activityIndicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    activityIndicatorView.frame = CGRectMake(0, 0, 360, 40);
+    activityIndicatorView.color = [UIColor orangeColor];
+    [activityIndicatorView startAnimating];
+
+
+    self.loadingView = activityIndicatorView;
 
 }
 
@@ -34,7 +43,7 @@
     [super viewDidAppear:animated];
     
     if ([SCSoundCloud account] == nil) {
-        // login user if we dont have any account info
+        // login user if we don't have any account info
         [self login];
     }
     else {
@@ -57,16 +66,21 @@
 #pragma mark - SoundCloud
 - (void)getStream
 {
-    // don't request anything if we already got all
-    if (!self.stream.haveMore) return;
+    // don't request anything if we already got all, or if we are currently waiting for a request
+    if (!self.stream.haveMore || self.isLoading) return;
+
+    self.isLoading = YES;
+
+    // show loadingView in footer
+    self.tableView.tableFooterView = self.loadingView;
 
     SCAccount *account = [SCSoundCloud account];
     SLASStreamHandler *handler = [[SLASStreamHandler alloc] init];
 
     NSDictionary * parameters = [[NSDictionary alloc] initWithObjectsAndKeys:
-            @"12", @"limit",
-            self.stream.pageCursor, @"cursor",
-            nil];
+                                                        @"12", @"limit",
+                                                        self.stream.pageCursor, @"cursor",
+                                                        nil];
 
     [SCRequest  performMethod:SCRequestMethodGET
                    onResource:[NSURL URLWithString:@"https://api.soundcloud.com/me/activities/track.json"]
@@ -88,6 +102,12 @@
 
                         [self.tableView reloadData];
                     }
+
+                  // we are done loading..
+                  self.isLoading = NO;
+
+                  // remove loadingView from footer
+                  self.tableView.tableFooterView = nil;
       }];
     }
 
