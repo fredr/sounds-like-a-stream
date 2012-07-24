@@ -96,7 +96,7 @@
                         NSLog(@"Ooops, something went wrong: %@", [error localizedDescription]);
                     } else {
 
-                        [handler initWithData:data];
+                        [handler setData:data];
                         SLASStream * streamPage = [handler process];
 
                         self.stream.tracks = [self.stream.tracks arrayByAddingObjectsFromArray:streamPage.tracks];

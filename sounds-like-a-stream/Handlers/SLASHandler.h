@@ -7,7 +7,7 @@
 
 @protocol SLASHandler
 
--(id)initWithData:(NSData *)data;
+-(void)setData:(NSData *)data;
 -(id)process;
 
 @end

@@ -17,7 +17,7 @@
 @property (nonatomic, strong) NSDictionary * trackData;
 
 
-- (id)initWithData:(NSData *)data;
+- (void)setData:(NSData *)data;
 - (SLASStream *)process;
 
 @end

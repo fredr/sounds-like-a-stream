@@ -17,15 +17,9 @@
 
 
 
-- (id)initWithData:(NSData *)data {
-    self = [super init];
-    if (self) {
+- (void)setData:(NSData *)data {
 
-        self.trackData = [data objectFromJSONData];
-
-    }
-
-    return self;
+    self.trackData = [data objectFromJSONData];
 }
 
 - (SLASStream *)process {
