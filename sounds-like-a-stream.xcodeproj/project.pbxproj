@@ -19,7 +19,6 @@
 		353A4706158F7B340046524F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353A46E6158F7B340046524F /* UIKit.framework */; };
 		353A4707158F7B340046524F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353A46E8158F7B340046524F /* Foundation.framework */; };
 		353A470F158F7B340046524F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 353A470D158F7B340046524F /* InfoPlist.strings */; };
-		353A4712158F7B340046524F /* sounds_like_a_streamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4711158F7B340046524F /* sounds_like_a_streamTests.m */; };
 		353A4855158F838F0046524F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353A4854158F838F0046524F /* QuartzCore.framework */; };
 		353A4858158F83970046524F /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353A4856158F83970046524F /* AddressBook.framework */; };
 		353A4859158F83970046524F /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353A4857158F83970046524F /* AddressBookUI.framework */; };
@@ -37,6 +36,7 @@
 		353A4DAA158F878100465267 /* UIImage+Masking.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4DAA158F878100465266 /* UIImage+Masking.m */; };
 		353A4DAA158F87810046526B /* SLASWaveformView.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4DAA158F87810046526A /* SLASWaveformView.m */; };
 		353A4DAA158F87810046526E /* SLASStreamTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A4DAA158F87810046526D /* SLASStreamTableViewCell.m */; };
+		3584F11A15E44AFF00E59A36 /* SLASStreamHandlerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3584F11915E44AFF00E59A36 /* SLASStreamHandlerTests.m */; };
 		3588428F15ADCE0F00838D5A /* SoundCloud.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3588428E15ADCE0F00838D5A /* SoundCloud.bundle */; };
 /* End PBXBuildFile section */
 
@@ -138,8 +138,6 @@
 		353A4704158F7B340046524F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		353A470C158F7B340046524F /* sounds-like-a-streamTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "sounds-like-a-streamTests-Info.plist"; sourceTree = "<group>"; };
 		353A470E158F7B340046524F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		353A4710158F7B340046524F /* sounds_like_a_streamTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sounds_like_a_streamTests.h; sourceTree = "<group>"; };
-		353A4711158F7B340046524F /* sounds_like_a_streamTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sounds_like_a_streamTests.m; sourceTree = "<group>"; };
 		353A4854158F838F0046524F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		353A4856158F83970046524F /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		353A4857158F83970046524F /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
@@ -546,6 +544,8 @@
 		353A4DAA158F87810046526C /* SLASWaveformView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLASWaveformView.h; sourceTree = "<group>"; };
 		353A4DAA158F87810046526D /* SLASStreamTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLASStreamTableViewCell.m; sourceTree = "<group>"; };
 		353A4DAA158F87810046526F /* SLASStreamTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLASStreamTableViewCell.h; sourceTree = "<group>"; };
+		3584F11815E44AFF00E59A36 /* SLASStreamHandlerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLASStreamHandlerTests.h; sourceTree = "<group>"; };
+		3584F11915E44AFF00E59A36 /* SLASStreamHandlerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLASStreamHandlerTests.m; sourceTree = "<group>"; };
 		3588428E15ADCE0F00838D5A /* SoundCloud.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SoundCloud.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -652,9 +652,9 @@
 		353A470A158F7B340046524F /* sounds-like-a-streamTests */ = {
 			isa = PBXGroup;
 			children = (
-				353A4710158F7B340046524F /* sounds_like_a_streamTests.h */,
-				353A4711158F7B340046524F /* sounds_like_a_streamTests.m */,
 				353A470B158F7B340046524F /* Supporting Files */,
+				3584F11815E44AFF00E59A36 /* SLASStreamHandlerTests.h */,
+				3584F11915E44AFF00E59A36 /* SLASStreamHandlerTests.m */,
 			);
 			path = "sounds-like-a-streamTests";
 			sourceTree = "<group>";
@@ -1908,7 +1908,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				353A4712158F7B340046524F /* sounds_like_a_streamTests.m in Sources */,
+				3584F11A15E44AFF00E59A36 /* SLASStreamHandlerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2062,6 +2062,7 @@
 				INFOPLIST_FILE = "sounds-like-a-streamTests/sounds-like-a-streamTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/vendor/CocoaSoundCloudUI/**";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -2079,6 +2080,7 @@
 				INFOPLIST_FILE = "sounds-like-a-streamTests/sounds-like-a-streamTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/vendor/CocoaSoundCloudUI/**";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;

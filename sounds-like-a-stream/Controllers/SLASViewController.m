@@ -211,7 +211,7 @@
     }
     else {
 
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:track.permalink]];
+        [[UIApplication sharedApplication] openURL:track.permalink];
 
     }
 
