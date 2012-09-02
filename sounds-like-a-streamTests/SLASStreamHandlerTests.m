@@ -16,7 +16,6 @@
 - (void)setUp
 {
     [super setUp];
-    
     self.handler = [[SLASStreamHandler alloc] init];
 }
 
@@ -72,50 +71,50 @@
 }
 
 - (NSData *)dataWithNextUrl {
-    return [[NSString stringWithString:@"{\n"
-                                        "    \"collection\":  [\n"
-                                        "         {\n"
-                                        "             \"origin\":  {\n"
-                                        "                 \"id\": 56866635,\n"
-                                        "                 \"title\": \"Document One - Body Pump (D Is for Document One)\",\n"
-                                        "                 \"permalink_url\": \"http://soundcloud.com/buygore/document-one-body-pump-d-is\",\n"
-                                        "                 \"waveform_url\": \"https://w1.sndcdn.com/vtAlbEJUukbU_m.png\"\n"
-                                        "             }\n"
-                                        "         },\n"
-                                        "         {\n"
-                                        "             \"origin\":  {\n"
-                                        "                 \"id\": 56865922,\n"
-                                        "                 \"title\": \"Document One - Shouting from a mountain\",\n"
-                                        "                 \"permalink_url\": \"http://soundcloud.com/buygore/document-one-shouting-from-a\",\n"
-                                        "                 \"waveform_url\": \"https://w1.sndcdn.com/Ww8CkeclNbH8_m.png\"\n"
-                                        "             }\n"
-                                        "         }\n"
-                                        "         ],\n"
-                                        " \"next_href\": \"https://api.soundcloud.com/me/activities/track?cursor=5901fd00-ea3e-11e1-876f-556d60ed9c36&limit=2\"\n"
-                                        "}"] dataUsingEncoding:NSUTF8StringEncoding];
+    return [@"{\n"
+            "    \"collection\":  [\n"
+            "         {\n"
+            "             \"origin\":  {\n"
+            "                 \"id\": 56866635,\n"
+            "                 \"title\": \"Document One - Body Pump (D Is for Document One)\",\n"
+            "                 \"permalink_url\": \"http://soundcloud.com/buygore/document-one-body-pump-d-is\",\n"
+            "                 \"waveform_url\": \"https://w1.sndcdn.com/vtAlbEJUukbU_m.png\"\n"
+            "             }\n"
+            "         },\n"
+            "         {\n"
+            "             \"origin\":  {\n"
+            "                 \"id\": 56865922,\n"
+            "                 \"title\": \"Document One - Shouting from a mountain\",\n"
+            "                 \"permalink_url\": \"http://soundcloud.com/buygore/document-one-shouting-from-a\",\n"
+            "                 \"waveform_url\": \"https://w1.sndcdn.com/Ww8CkeclNbH8_m.png\"\n"
+            "             }\n"
+            "         }\n"
+            "         ],\n"
+            " \"next_href\": \"https://api.soundcloud.com/me/activities/track?cursor=5901fd00-ea3e-11e1-876f-556d60ed9c36&limit=2\"\n"
+            "}" dataUsingEncoding:NSUTF8StringEncoding];
 }
 
 - (NSData *)dataWithoutNextUrl {
-    return [[NSString stringWithString:@"{\n"
-                                        "    \"collection\":  [\n"
-                                        "         {\n"
-                                        "             \"origin\":  {\n"
-                                        "                 \"id\": 56866635,\n"
-                                        "                 \"title\": \"Document One - Body Pump (D Is for Document One)\",\n"
-                                        "                 \"permalink_url\": \"http://soundcloud.com/buygore/document-one-body-pump-d-is\",\n"
-                                        "                 \"waveform_url\": \"https://w1.sndcdn.com/vtAlbEJUukbU_m.png\"\n"
-                                        "             }\n"
-                                        "         },\n"
-                                        "         {\n"
-                                        "             \"origin\":  {\n"
-                                        "                 \"id\": 56865922,\n"
-                                        "                 \"title\": \"Document One - Shouting from a mountain\",\n"
-                                        "                 \"permalink_url\": \"http://soundcloud.com/buygore/document-one-shouting-from-a\",\n"
-                                        "                 \"waveform_url\": \"https://w1.sndcdn.com/Ww8CkeclNbH8_m.png\"\n"
-                                        "             }\n"
-                                        "         }\n"
-                                        "         ]\n"
-                                        "}"] dataUsingEncoding:NSUTF8StringEncoding];
+    return [@"{\n"
+            "    \"collection\":  [\n"
+            "         {\n"
+            "             \"origin\":  {\n"
+            "                 \"id\": 56866635,\n"
+            "                 \"title\": \"Document One - Body Pump (D Is for Document One)\",\n"
+            "                 \"permalink_url\": \"http://soundcloud.com/buygore/document-one-body-pump-d-is\",\n"
+            "                 \"waveform_url\": \"https://w1.sndcdn.com/vtAlbEJUukbU_m.png\"\n"
+            "             }\n"
+            "         },\n"
+            "         {\n"
+            "             \"origin\":  {\n"
+            "                 \"id\": 56865922,\n"
+            "                 \"title\": \"Document One - Shouting from a mountain\",\n"
+            "                 \"permalink_url\": \"http://soundcloud.com/buygore/document-one-shouting-from-a\",\n"
+            "                 \"waveform_url\": \"https://w1.sndcdn.com/Ww8CkeclNbH8_m.png\"\n"
+            "             }\n"
+            "         }\n"
+            "         ]\n"
+            "}" dataUsingEncoding:NSUTF8StringEncoding];
 }
 
 

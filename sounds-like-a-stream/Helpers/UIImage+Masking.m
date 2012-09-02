@@ -44,7 +44,9 @@
 
     CGImageRef masked = CGImageCreateWithMask(image.CGImage, mask);
     CGImageRelease(mask);
-    return [UIImage imageWithCGImage:masked];
+    UIImage *maskedImage = [UIImage imageWithCGImage:masked];
+    CGImageRelease(masked);
+    return maskedImage;
 }
 
 

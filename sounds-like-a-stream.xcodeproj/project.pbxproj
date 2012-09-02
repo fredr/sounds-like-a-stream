@@ -1730,7 +1730,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = SLAS;
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0440;
 				ORGANIZATIONNAME = "Devloop AB";
 			};
 			buildConfigurationList = 353A46DC158F7B340046524F /* Build configuration list for PBXProject "sounds-like-a-stream" */;
